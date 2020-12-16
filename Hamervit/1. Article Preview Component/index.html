@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Preview Component</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="img-side">
+            <img src="assets/img/drawers.jpg" alt="Decoración">
+        </div>
+        <div class="info-side">
+            <h1 class="heading">Shift the overall look and feel by
+                adding these wonderful touches to furniture in your home</h1>
+            <p class="information">Ever been in a room and felt like something was missing?
+                Perhaps it felt slightly bare and uninviting. I’ve got some
+                simple tips to help you make any room feel complete.</p>
+            <div class="bottom-side">
+                <div class="contact-info">
+                    <img src="assets/img/avatar-michelle.jpg" alt="Foto Michelle">
+                    <div>
+                        <p class="name">Michelle Appleton</p>
+                        <p class="date">28 Jun 2020</p>
+                    </div>
+                </div>
+                <div class="share" id="btnShare" onclick="displayShare()">
+                    <img src="assets/svg/icon-share.svg" alt="SVG Compartir" id="svg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="overlay" class="overlay d-none">
+        <div class="rectangule">
+            <p class="share-info">
+                S H A R E
+            </p>
+            <div class="share-icons">
+                <img src="assets/svg/icon-facebook.svg" alt="Facebook">
+                <img src="assets/svg/icon-twitter.svg" alt="Twitter">
+                <img src="assets/svg/icon-pinterest.svg" alt="Pinterest">
+            </div>
+        </div>
+        <div class="triangule"></div>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>

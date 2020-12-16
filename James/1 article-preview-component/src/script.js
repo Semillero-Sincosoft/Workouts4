@@ -74,5 +74,5 @@ share.addEventListener("mouseleave", () => {
   } else {
     share.src = "./images/bShare.svg";
     desktopHover.style.display = "none";
-  }},1000)
+  }},5000)
 });

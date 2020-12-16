@@ -183,7 +183,7 @@ body {
         position: relative;
         top: -65px;
         left: -33px;
-        display: unset;
+        display: none;
     }
    
   }

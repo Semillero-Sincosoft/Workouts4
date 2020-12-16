@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #0C122C;
+    overflow: hidden;
+}
+
+.bg {
+    background-image: url('../img/bg-desktop.png');
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    bottom: 0%;
+}
+
+.container {
+    display: flex;
+}

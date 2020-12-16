@@ -1,0 +1,252 @@
+#body{
+    background-color: #e5e5e5cc;
+}
+
+
+.marco1{
+    position: absolute;
+    width: 958px;
+    height: 361px;
+    left: calc(50% - 958px/2);
+    top: calc(50% - 361px/2 - 0.5px);
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.imagen1{
+    position: absolute;
+    width: 395px;
+    height: 361px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contenido{
+    position: absolute;
+    width: 563px;
+    height: 361px;
+    left: 395px;
+    top: -1px;
+}
+
+.marcotitulo{
+    position: absolute;
+    width: 354px;
+    height: 101px;
+    left: 467px;
+    top: 30px;
+    color: blue;
+}
+
+.titulo{
+    position: relative;
+    width: 338px;
+    height: 81px;
+    left: 72px;
+    top: 31px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #48556A;
+}
+
+.parrafo{
+    position: relative;
+    width: 340px;
+    height: 54px;
+    left: 72px;
+    top: 21px;
+    bottom: 487px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #6D7F97;
+}
+
+.foto{
+    position: relative;
+    left: 460px;
+    top: 246px;
+     
+}
+
+.datos{
+    position: relative;
+    width: 123px;
+    height: 23.16px;
+    left: 560px; 
+    top: 190px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 10px;
+    color: #49556B;
+}
+
+.fecha{
+    position: relative;
+    width: 78px;
+    height: 19px;
+    left: 560px; 
+    top: 170px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2px;
+    display: flex;
+    align-items: center;
+    color: #49556B;
+}
+
+
+.iconoCompartir{
+
+    background-image: icon-share;
+    position: absolute;
+    width: 15px;
+    height: 18px;
+    left: 770px;
+    top: 280px;
+    border-color: #6D7F97;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.iconoCompartir:active{
+    background: gray;
+}
+
+
+.marcoRedes{    
+    
+    position: absolute;
+    width: 269px;
+    height: 43px;
+    left: 650px;
+    top: 210px;
+    background: #49556B;
+    border-radius: 10px;
+
+}
+
+#redes{
+
+
+}
+
+@media (max-width:375px){
+    
+
+    .marco1{
+        position: static;
+        width: 322px;
+        height: 692px;
+        margin-left: 20px;
+        margin-top: 80px;
+                
+    }
+    
+    .imagen1{
+        position: relative;
+        width: 322px;
+        height: 314px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .contenido{
+        position: relative;
+        width: 322px;
+        height: 270px;
+        left: 2px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .marcotitulo{
+        position: absolute;
+        width: 300px;
+        height: 223px;
+        left: 22px;
+        top: 400px;
+        
+    }
+
+    .titulo{
+        position: absolute;
+        width: 280px;
+        height: 75px;
+        left: 20px;
+        top: 5px;
+       
+    }
+
+    .parrafo{
+        position: absolute;
+        width: 280px;
+        height: 104px;
+        left: 20px;
+        top: 85px;
+        font-size: 16px;
+    
+    }
+
+    .foto{
+        position: relative;
+        width: 44px;
+        height: 43px;
+        left: 10px;
+        top: 165px;
+        border-radius: 40px;
+    }
+
+    .datos{
+        position: relative;
+        width: 123px;
+        height: 19px;
+        left: 70px;
+        top: 120px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #6D7F97;
+    }
+
+    .fecha{
+        position: relative;
+        width: 78px;
+        height: 19px;
+        left: 70px;
+        top: 105px;
+        
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        
+        color: #6D7F97;
+
+    }
+
+    .icono{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: 200px;
+        top: 55px;
+    }
+}

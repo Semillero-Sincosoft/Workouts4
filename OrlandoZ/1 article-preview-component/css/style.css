@@ -1,0 +1,261 @@
+#body{
+    background-color: #e5e5e5cc;
+}
+
+
+.marco1{
+    position: absolute;
+    width: 958px;
+    height: 361px;
+    left: calc(50% - 958px/2);
+    top: calc(50% - 361px/2 - 0.5px);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.imagen1{
+    position: absolute;
+    width: 395px;
+    height: 361px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contenido{
+    position: absolute;
+    width: 563px;
+    height: 361px;
+    left: 395px;
+    top: -1px;
+}
+
+.titulo{
+    position: relative;
+    width: 338px;
+    height: 81px;
+    left: 72px;
+    top: 31px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: #48556A;
+}
+
+.parrafo{
+    position: relative;
+    width: 340px;
+    height: 54px;
+    left: 72px;
+    top: 21px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #6D7F97;
+}
+
+.foto{
+    position: absolute;
+    left: 460px;
+    top: 280px;
+     
+}
+
+.nombre{
+    position: relative;
+    width: 110px;
+    height: 23px;
+    left: 540px; 
+    top: 270px;
+    font-weight: bold;
+    font-size: 14px;
+   color: #49556B;
+}
+
+.fecha{
+    position: relative;
+    width: 78px;
+    height: 19px;
+    left: 540px; 
+    top: 250px;
+    font-family: Manrope;
+    
+    font-size: 14px;
+    line-height: 2px;
+    display: flex;
+    align-items: center;
+    color: #49556B;
+}
+
+
+#iconoCompartir{
+
+    background: url('../images/icon-share.svg') no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    left: 770px;
+    top: 200px;
+    border-color: #6D7F97;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+#iconoCompartir:active{
+    background: gray;
+}
+
+
+.marcoRedes{    
+    position: absolute;
+    width: 269px;
+    height: 43px;
+    left: 650px;
+    top: 210px;
+    background: #49556B;
+    border-radius: 10px;
+    display: block;
+}
+
+.d-none {
+    display: none;
+    
+}
+
+.nav{
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+h4{
+  margin-top: 4px;
+}
+
+
+
+@media (max-width:375px){
+    
+    .marco1{
+        position: absolute;
+        width: 322px;
+        height: 692px;
+        left: 27px;
+        top: 60px;
+                  
+    }
+    .imagen1{
+        position: relative;
+        width: 322px;
+        height: 314px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .contenido{
+        position: relative;
+        width: 322px;
+        height: 250px;
+        left: 2px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+    .titulo{
+        position: relative;
+        width: 280px;
+        height: 75px;
+        left: 20px;
+        top: 5px;
+       
+    }
+
+    .parrafo{
+        position: relative;
+        width: 280px;
+        height: 104px;
+        left: 20px;
+        font-size: 16px;
+    
+    }
+
+    .foto{
+        position: absolute;
+        width: 44px;
+        height: 43px;
+        left: 20px;
+        top: 620px;
+        border-radius: 40px;
+
+    }
+
+    .nombre{
+        position: relative;
+        width: 123px;
+        height: 19px;
+        left: 90px;
+        top: 20px;
+      
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #6D7F97;
+    }
+
+    .fecha{
+        position: relative;
+        width: 78px;
+        height: 19px;
+        left: 90px;
+        top: 10px;
+        
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        
+        color:#6D7F97;
+
+    }
+
+    #iconoCompartir{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: 250px;
+        top: -40px;
+       
+    }
+
+   
+    .marcoRedes{    
+        position: absolute;
+        width: 322px;
+        height: 69px;
+        top: 650PX;
+        left: auto;
+        background: #49556B;
+        border-radius: 10px;
+        display: block;
+    }
+
+
+}

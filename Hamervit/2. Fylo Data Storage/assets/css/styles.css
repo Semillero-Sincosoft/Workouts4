@@ -1,20 +1,11 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-=======
-* {
-    margin: 0;
-}
->>>>>>> b4cbb15d255f90b6994c4ff26126b89038add244
 
 body {
     justify-content: center;
     align-items: center;
     background-color: #0C122C;
     overflow: hidden;
-<<<<<<< HEAD
     font-family: Raleway;
-=======
->>>>>>> b4cbb15d255f90b6994c4ff26126b89038add244
 }
 
 .bg {
@@ -27,7 +18,6 @@ body {
 
 .container {
     display: flex;
-<<<<<<< HEAD
     top: 35%;
     position: absolute;
     z-index: 1;
@@ -252,6 +242,4 @@ body {
         right: 104px;
         top: 535px;
     }
-=======
->>>>>>> b4cbb15d255f90b6994c4ff26126b89038add244
 }

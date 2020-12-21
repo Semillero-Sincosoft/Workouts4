@@ -1,0 +1,201 @@
+.body{
+    background: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.fondo{
+    position: absolute;
+    width: 1440px;
+    height: 370px;
+    bottom: 0px;
+    left: 0px;
+    background: url(../img/bg-desktop.png);
+    border-radius: 200px 0px 0px 0px;
+}
+
+.marco1{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    left: 260px;
+    top: 170px;
+    background: #1E2C69;
+    border-radius: 10px 100px 10px 10px;
+}
+
+.marcoMedidor{
+    position: absolute;
+    width: 540px;
+    height: 140px;
+    left: 640px;
+    top: 215px;
+    background: #1E2C69;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.logo{
+    position: relative;
+    left: 20.9%;
+    right: 69.65%;
+    top: 30px;
+}
+
+.redes{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 65px ;
+}
+
+.marcoIcono{
+    width: 20px;
+    height: 20px;
+    background: #0C112D;
+    border-radius: 10px;
+    padding: 12px;
+    padding: 12px;
+}
+
+.barra{
+    background: hsl(229, 57%, 11%);
+    width: 457px;
+    height: 22px;
+    left: 681px;
+    top: 408px;
+    border-radius: 30px;
+    padding-top: 3px;
+    padding-left: 1px;
+}
+
+.medidor{
+    width: 343px;
+    height: 18px;
+    border-radius: 30px;
+    background: linear-gradient(10deg, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    padding-top: 2px;
+}
+
+.esfera{
+    width: 15px;
+    height: 15px;
+    margin-left: 325px;
+    background: white;
+    border-radius: 50px;
+    
+}
+
+.recuadro{
+    position: absolute;
+    width: 179px;
+    height: 73px;
+    left: 961px;
+    margin-top: 150px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 10px;
+    display: block;
+}
+
+.restante{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    margin-top: 15px;
+    margin-left: 20px; 
+}
+
+.polygon{
+    position: absolute;
+    width: 34.85px;
+    height: 22.44px;
+    left: 141.3px;
+    top: 57px;
+    background: #FFFFFF;
+    transform: rotate(41.22deg);
+}
+
+h5{
+    color: black;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.i0{
+    width: 32px;
+    height: 16px;
+    left: 685px;
+    top: 473px;
+}
+
+.i1{
+    
+    position: absolute;
+width: 56px;
+height: 16px;
+left: 450px;
+top: 82px;
+    
+}
+
+@media (max-width: 376px){
+
+    .fondo{
+        position: absolute;
+        width: 375px;
+        height: 812px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        background: url(../img/bg-mobile.png);
+}
+
+    .marco1{
+        width: 316px;
+        height: 198px;
+        left: 30px;
+        top: 176px;
+    }
+
+    .marcoMedidor{
+        width: 285px;
+        height: 143px;
+        left: 29px;
+        top: 406px;
+    }
+
+    .barra{
+        width: 265px;
+        height: 14px;
+        left: 53.56px;
+        top: 445.27px;
+        padding: 1px;
+    }
+
+    .medidor{
+        width: 204px;
+        height: 10px;
+        margin: 1px;
+    }
+
+    .esfera{
+        
+        width: 10px;
+        height: 10px;
+        margin-left: 190px;
+        margin-top: -1px;
+    }
+    .recuadro{
+        width: 188px;
+        height: 69px;
+        left: 94px;
+        top: 480px;
+    }
+    .polygon{
+        display: none;
+    }
+
+}

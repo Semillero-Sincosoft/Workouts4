@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: Inter;
+}
+
+.background .bg {
+    position: absolute;
+    margin-right: 73px;
+    right: 0px;
+}
+
+.background .curve {
+    position: absolute;
+    bottom: 0px;
+}
+
+.background .quotes {
+    position: absolute;
+    top: 147px;
+    left: 180px;
+}
+
+.container {
+    display: flex;
+}
+
+.right .profileImg {
+    border-radius: 13px;
+    height: 540px;
+    width: 540px;
+    z-index: 1;
+    position: absolute;
+    right: 165px;
+    bottom: 55px;
+    box-shadow: 0.5px 6px rgba(0, 0, 0, 0.4);
+}
+
+.slides {
+    background-color: white;
+    position: absolute;
+    height: 56px;
+    width: 112px;
+    bottom: 30px;
+    right: 532px;
+    border-radius: 28px;
+    z-index: 3;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.slides .next {
+    position: absolute;
+    z-index: 4;
+    right: 15px;
+    bottom: 16px;
+}
+
+.slides .prev {
+    position: absolute;
+    z-index: 4;
+    left: 15px;
+    bottom: 16px;
+}
+
+.slides .slideLeft {
+    border-radius: 28px 0 0 28px;
+    background-color: transparent;
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slides .slideRight {
+    border-radius: 0 28px 28px 0;
+    background-color: transparent;
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.information {
+    width: 635px;
+    height: 207px;
+    position: absolute;
+    margin: 181px 0 0 82px;
+    z-index: 2;
+}
+
+.information > p {
+    font-size: 32px;
+    color: #24213C;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile > p {
+    color: #212040;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+p.position {
+    color: #B6B6C2;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 6px;
+}

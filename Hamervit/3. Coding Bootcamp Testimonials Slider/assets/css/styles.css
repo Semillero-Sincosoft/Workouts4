@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 body {
     overflow: hidden;
@@ -94,7 +95,7 @@ body {
     transition: width 500ms;
 }
 
-.information>p {
+.information > p {
     font-size: 32px;
     color: #24213C;
 }
@@ -103,7 +104,7 @@ body {
     display: flex;
 }
 
-.profile>p {
+.profile > p {
     color: #212040;
     font-size: 20px;
     font-weight: 900;
@@ -121,16 +122,12 @@ p.position {
         top: 25%;
     }
 
-    .left {
-        display: none;
-    }
-
-
     .background .bg {
         right: unset;
         width: 450px;
         margin: 0 26.6px 0 0;
         left: 100px;
+        top: 50px;
     }
     
     .background .curve {
@@ -139,15 +136,34 @@ p.position {
 
     .background .quotes {
         position: absolute;
-        top: 500px;
-
-        display: none;
+        top: 485px;
+        left: 265px;
     }
 
     .right .profileImg {
         width: 354px;
         height: 354px;
-        left: 115px;
-        bottom: 145px;
+        left: 140px;
+        top: 90px;
+    }
+
+    .slides {
+        top: 410px;
+        left: 265px;
+    }
+
+    .information {
+        width: 470px;
+        top: 330px;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    p.position {
+        position: relative;
+        bottom: 40px;
     }
 }

@@ -93,10 +93,11 @@ body {
     margin: 181px 0 0 82px;
     z-index: 2;
     transition: width 500ms;
+    line-height: 1.4;
 }
 
 .information > p {
-    font-size: 32px;
+    font-size: 28px;
     color: #24213C;
 }
 
@@ -106,13 +107,13 @@ body {
 
 .profile > p {
     color: #212040;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 900;
 }
 
 p.position {
     color: #B6B6C2;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 400;
     margin-left: 6px;
 }

@@ -12,13 +12,13 @@
     <main class="container">
         <div class="left">
             <div class="information">
-                <p>“ I’ve been interested in coding for a while
+                <p id="testimony">“ I’ve been interested in coding for a while
                     but never taken the jump, until now. I
                     couldn’t recommend this course enough.
                     I’m now in the job of my dreams and so
                     excited about the future. ”</p>
                 <div class="profile">
-                    <p>Tanya Sinclair</p>
+                    <p id="name">Tanya Sinclair</p>
                     <p class="position">UX Engineer</p>
                 </div>
             </div>
@@ -26,15 +26,18 @@
         <div class="right">
             <img src="assets/images/image-tanya.jpg" alt="Tanya foto" class="profileImg">
             <div class="slides">
-                <div class="slideRight">
+                <div class="slideRight" onclick="changeCharacterInfo()">
                     <img src="assets/svg/icon-next.svg" alt="Next" class="next">
                 </div>
-                <div class="slideLeft">
+                <div class="slideLeft" onclick="changeCharacterInfo()">
                     <img src="assets/svg/icon-prev.svg" alt="Prev" class="prev">
                 </div>
             </div>
         </div>
     </main>
+
+
+
     <div class="background">
         <img src="assets/svg/pattern-bg.svg" alt="bg" class="bg">
         <img src="assets/svg/pattern-curve.svg" alt="Curve" class="curve">

@@ -71,6 +71,7 @@ body {
     width: 56px;
     position: absolute;
     cursor: pointer;
+    user-select: none;
 }
 
 .slides .slideRight {
@@ -81,6 +82,7 @@ body {
     position: absolute;
     right: 0px;
     cursor: pointer;
+    user-select: none;
 }
 
 .information {
@@ -89,9 +91,10 @@ body {
     position: absolute;
     margin: 181px 0 0 82px;
     z-index: 2;
+    transition: width 500ms;
 }
 
-.information > p {
+.information>p {
     font-size: 32px;
     color: #24213C;
 }
@@ -100,7 +103,7 @@ body {
     display: flex;
 }
 
-.profile > p {
+.profile>p {
     color: #212040;
     font-size: 20px;
     font-weight: 900;
@@ -111,4 +114,40 @@ p.position {
     font-size: 20px;
     font-weight: 400;
     margin-left: 6px;
+}
+
+@media(max-width: 375px) {
+    .background .bg {
+        top: 25%;
+    }
+
+    .left {
+        display: none;
+    }
+
+
+    .background .bg {
+        right: unset;
+        width: 450px;
+        margin: 0 26.6px 0 0;
+        left: 100px;
+    }
+    
+    .background .curve {
+        top: 931px;
+    }
+
+    .background .quotes {
+        position: absolute;
+        top: 500px;
+
+        display: none;
+    }
+
+    .right .profileImg {
+        width: 354px;
+        height: 354px;
+        left: 115px;
+        bottom: 145px;
+    }
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 body {
     overflow: hidden;
@@ -71,6 +72,7 @@ body {
     width: 56px;
     position: absolute;
     cursor: pointer;
+    user-select: none;
 }
 
 .slides .slideRight {
@@ -81,6 +83,7 @@ body {
     position: absolute;
     right: 0px;
     cursor: pointer;
+    user-select: none;
 }
 
 .information {
@@ -89,10 +92,12 @@ body {
     position: absolute;
     margin: 181px 0 0 82px;
     z-index: 2;
+    transition: width 500ms;
+    line-height: 1.4;
 }
 
 .information > p {
-    font-size: 32px;
+    font-size: 28px;
     color: #24213C;
 }
 
@@ -102,13 +107,64 @@ body {
 
 .profile > p {
     color: #212040;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 900;
 }
 
 p.position {
     color: #B6B6C2;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 400;
     margin-left: 6px;
+}
+
+@media(max-width: 375px) {
+    .background .bg {
+        top: 25%;
+    }
+
+    .background .bg {
+        right: unset;
+        width: 450px;
+        margin: 0 26.6px 0 0;
+        left: 100px;
+        top: 50px;
+    }
+    
+    .background .curve {
+        top: 931px;
+    }
+
+    .background .quotes {
+        position: absolute;
+        top: 485px;
+        left: 265px;
+    }
+
+    .right .profileImg {
+        width: 354px;
+        height: 354px;
+        left: 140px;
+        top: 90px;
+    }
+
+    .slides {
+        top: 410px;
+        left: 265px;
+    }
+
+    .information {
+        width: 470px;
+        top: 330px;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    p.position {
+        position: relative;
+        bottom: 40px;
+    }
 }

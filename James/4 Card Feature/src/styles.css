@@ -1,0 +1,137 @@
+body {
+  margin: 30px;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  font-style: normal;
+  text-align: center;
+  height: max-content;
+}
+h1 {
+  font-weight: 100;
+  color: gray;
+  font-size: 30px;
+}
+h2 {
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+span{
+  color: #7a7979;
+  font-weight: 100;
+}
+header {
+  font-weight: bolder;
+  padding: 15px;
+}
+p {
+  color: #7a7979;
+  font-weight: 100;
+  font-size: 8px;
+  padding: 15px;
+}
+img {
+  position: relative;
+}
+#teamBuilder {
+  border-top: solid 5px red;
+  width: 220px;
+  height: 170px;
+}
+#supervisor {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  margin-left: 20vw;
+  border-top: solid 5px rgb(83, 163, 216);
+  width: 220px;
+  height: 170px;
+}
+#karma {
+  border-top: solid 5px orange;
+  width: 220px;
+  height: 170px;
+}
+#calculator {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  margin-right: 20vw;
+  border-top: solid 5px blue;
+  width: 220px;
+  height: 170px;
+}
+.cardContainer {
+  position: relative;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+}
+.card{
+  margin: 20px;
+  border-radius: 7px;
+  margin: auto;
+  box-shadow: 3px 5px 8px grey;
+  position: relative;
+}
+img {
+  height: 45px;
+  width: 45px;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .cardContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: unset;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    align-items: center;
+  }
+  #teamBuilder {
+    border-top: solid 5px red;
+    width: 80%;
+    height: 170px;
+  }
+  #calculator {
+    grid-column: unset;
+    grid-row: unset;
+    margin: unset;
+    border-top: solid 5px blue;
+    width: 80%;
+    height: 170px;
+  }
+  #supervisor {
+    text-align: center;
+    grid-column: unset;
+    grid-row: unset;
+    margin: unset;
+    border-top: solid 5px rgb(83, 163, 216);
+    width: 80%;
+    height: 170px;
+  }
+  #karma {
+    border-top: solid 5px orange;
+    width: 80%;
+    height: 170px;
+  }
+  .card{
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 5px 8px grey;
+    position: relative;
+  }
+}

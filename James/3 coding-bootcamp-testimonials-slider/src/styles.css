@@ -16,7 +16,7 @@ html {
     height: 154px; /* I want to know what happens if you make the parent size the is relative to the child size and vice versa, i believe this was my error and trouble doing positioning*/
     width: 610px; /**/
   }
-  .testimony {
+  .testimony{
     width: 1100px;
     margin: 200px;
     height: 557px;
@@ -120,6 +120,7 @@ html {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
   @media (max-width: 1000px) {
     body {
       width: 375px;
@@ -132,6 +133,7 @@ html {
       margin: auto;
       height: auto;
       position: relative;
+      top: 0px;
       display: flex;
       flex-direction: column-reverse;
       justify-items: center;

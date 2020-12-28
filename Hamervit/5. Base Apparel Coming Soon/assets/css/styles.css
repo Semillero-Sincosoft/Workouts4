@@ -9,6 +9,21 @@ body {
     height: 800px;
 }
 
+
+body::-webkit-scrollbar {
+    
+    width: 5px;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 128, 128, 0.747);
+    border-radius: 28px;
+}
+
 section>img {
     left: 830px;
     position: absolute;
@@ -139,6 +154,7 @@ section>img {
         background: unset;
         width: 375px;
         height: 800px;
+        overflow-x: hidden;
     }
 
     .logo {
@@ -148,7 +164,6 @@ section>img {
         left: 32px;
         background-size: cover;
     }
-
 
     section>img {
         margin-top: 84px;
@@ -188,6 +203,7 @@ section>img {
     .container>form>input {
         width: 296px;
         height: 49px;
+        font-size: 14px;
     }
 
     .container>form>input::placeholder {

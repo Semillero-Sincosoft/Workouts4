@@ -10,7 +10,6 @@ const btn = document.createElement('button');
 const error = document.createElement('img');
 const arrow = document.createElement('img');
 const rightSide = document.createElement('section');
-const posterPic = document.createElement('img');
 
 container.id = 'container';
 logo.id = 'logo';
@@ -25,7 +24,6 @@ error.id = 'error';
 error.src = './images/icon-error.svg';
 arrow.src = './images/icon-arrow.svg';
 rightSide.id = 'rightSide';
-posterPic.src = './images/hero-desktop.jpg'
 
 leftSide.appendChild(header);
 leftSide.appendChild(p);
@@ -33,9 +31,24 @@ leftSide.appendChild(input);
 leftSide.appendChild(btn);
 btn.appendChild(error);
 btn.appendChild(arrow);
-rightSide.appendChild(posterPic);
 
 container.appendChild(logo);
 container.appendChild(leftSide);
 container.appendChild(rightSide);
 body.appendChild(container);
+
+function validations(){
+    const regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    val = regEx.test(input.value);
+    if(val == false){
+        error.classList.add('show');
+        alert("Please enter a valid email address to continue");
+        email.classList.add('err');
+    }else{
+        input.value != '' &&
+         alert("you have succesfully enrolled to receive discounts on our latest products")
+         location.reload();
+    }
+}
+btn.addEventListener('click', ()=>{
+    validations()});

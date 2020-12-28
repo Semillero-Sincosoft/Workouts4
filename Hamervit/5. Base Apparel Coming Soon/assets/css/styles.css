@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+    background-color: #FFF7F8;
+    background: url('../svg/bg-pattern-desktop.svg') no-repeat;
+    margin: 0;
+    font-family: Josefin Sans, sans-serif;
+    width: 1440px;
+    height: 760px;
+}
+
+section>img {
+    left: 830px;
+    position: absolute;
+}
+
+.logo {
+    background: url('../svg/logo.svg') no-repeat;
+    width: 157.59px;
+    height: 32.5px;
+    position: absolute;
+    top: 65px;
+    left: 165px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 233px;
+    left: 165px;
+}
+
+.tittle {
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: #C6999C;
+    margin: 0;
+}
+
+.container>h3 {
+    font-size: 65px;
+    color: #42393A;
+    letter-spacing: 0.25em;
+    line-height: 70px;
+    font-weight: 600;
+    width: 412px;
+    margin: 6px 0 0 0;
+}
+
+.container>p {
+    color: #B89997;
+    font-size: 16px;
+    font-weight: 600;
+    width: 458px;
+    height: 101px;
+    line-height: 26px;
+    margin-top: 31px;
+}
+
+.container>form>input {
+    border: 2px solid #DDD3D4;
+    width: 400px;
+    height: 56px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    padding-left: 23px;
+    color: #433D3D;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+}
+
+.container>form>input::placeholder {
+    letter-spacing: 0.005em;
+    font-weight: 400;
+    font-size: 16px;
+    color: #D7CBCD;
+}
+
+.container>form {
+    display: flex;
+}
+
+.container>form>.button {
+    border-radius: 28px;
+    width: 100px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 345px;
+    cursor: pointer;
+    user-select: none;
+    background: linear-gradient(269.36deg, #F29494 3.03%, #F3A9A7 61.19%, #F4ACAD 73.1%, #F6B5B6 101.46%);
+}
+
+.container>form>.button:hover {
+    background: linear-gradient(269.36deg, #F9C8CB 3.03%, #F8CECF 30.52%, #FAD3D4 63.8%, #FADADB 101.46%);
+}
+
+.container>form>p {
+    font-size: 13px;
+    color: #C27C7A;
+    position: absolute;
+    top: 415px;
+    left: 25px;
+}
+
+.d-none {
+    display: none;
+}
+
+.container>form>input.error-border {
+    border: 2px solid #C8737A;
+}
+
+.errorIcon {
+    background: url('../svg/icon-error.svg') no-repeat;
+    position: relative;
+    right: 85px;
+    top: 15px;
+    height: 24px;
+    width: 24px;
+}
+
+.check {
+    background: url('../svg/check.svg') no-repeat;
+}
+
+.container>form>input.success-border {
+    border: 2px solid #04eb84;
+}

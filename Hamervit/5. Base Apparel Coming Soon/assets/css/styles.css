@@ -6,12 +6,13 @@ body {
     margin: 0;
     font-family: Josefin Sans, sans-serif;
     width: 1440px;
-    height: 760px;
+    height: 800px;
 }
 
 section>img {
     left: 830px;
     position: absolute;
+    content: url('../images/hero-desktop.jpg');
 }
 
 .logo {
@@ -131,4 +132,84 @@ section>img {
 
 .container>form>input.success-border {
     border: 2px solid #04eb84;
+}
+
+@media(max-width: 375px) {
+    body {
+        background: unset;
+        width: 375px;
+        height: 800px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 21px;
+        top: 32px;
+        left: 32px;
+        background-size: cover;
+    }
+
+
+    section>img {
+        margin-top: 84px;
+        left: 0%;
+        position: relative;
+        content: url('../images/hero-mobile.jpg');
+    }
+
+    .container {
+        top: 377px;
+        left: 25px;
+    }
+
+    .tittle {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container>h3 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0.27em;
+        text-align: center;
+        width: 310px;
+    }
+
+    .container>p {
+        font-size: 14px;
+        font-weight: 600;
+        width: 310px;
+        height: 101px;
+        line-height: 26px;
+        margin-top: 27px;
+        text-align: center;
+    }
+
+    .container>form>input {
+        width: 296px;
+        height: 49px;
+    }
+
+    .container>form>input::placeholder {
+        font-size: 14px;
+    }
+
+    .container>form>.button {
+        width: 63px;
+        height: 49px;
+        margin-left: 247px;
+    }
+
+    .container>form>p {
+        font-size: 13px;
+        color: #C27C7A;
+        position: absolute;
+        top: 310px;
+        left: 34px;
+    }
+
+    .errorIcon {
+        right: 85px;
+        top: 14px;
+    }
 }

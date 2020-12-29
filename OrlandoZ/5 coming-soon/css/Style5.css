@@ -1,0 +1,139 @@
+body{
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container>.left{
+    position: absolute;
+    width: 832px;
+    height: 800px;
+    left: 0px;
+    top: 0px;
+    background-image: url(../img/bg-pattern-desktop.svg);
+    z-index: 3;
+}
+
+.logo{
+    position: relative;
+    background-image: url(../img/logo.svg);
+    left: 170px;
+    top: 60px;
+    width: 158px;
+    height: 31.5px;
+    z-index: 1;
+}
+
+.titulo1{
+    position: absolute;
+    width: 374px;
+    height: 191px;
+    left: 160px;
+    top: 227px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 60px;
+    color: hsl(0, 93%, 68%)
+}
+
+.titulo2{
+    position: relative;
+    width: 450px;
+    height: 120px;
+    left: 160px;
+    top: 280px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.titulo3{
+    position: relative;
+    width: 450px;
+    height: 120px;
+    left: 160px;
+    top: 210px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.texto{
+    position: absolute;
+    width: 440px;
+    height: 103px;
+    left: 167px;
+    top: 444px;
+    z-index: 2;
+    font-size: 16px;
+    color: hsl(0, 93%, 68%);
+    line-height: 30px;
+}
+
+.email{
+    position: relative;
+    left: 160px;
+    top: 350px;
+    width: 392px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid #E57F7E;
+    box-sizing: border-box;
+    padding: 5px;
+    color: rgba(65, 58, 58, 0.67);
+    
+}
+
+#correo{
+    top: 350px;
+    width: 370px;
+    border: hidden;
+    outline: none;
+    
+}
+
+.enviar{
+    position: relative;
+    left: 500px;
+    top: 315px;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    display: flex; 
+    
+    background: #F8CECF;
+    border: 1px solid rgba(243, 171, 171, 0.66);
+    box-sizing: border-box;
+    box-shadow: 2px 10px 8px 5px #ECC9CA;
+    border-radius: 30px;
+    outline: none;
+}
+
+.enviar:active {
+    background-color: tomato;
+}
+.flecha:active{
+    background-color: tomato;
+}
+
+.flecha{
+    background-color: #F8CECa;
+    border: 0px;
+    outline: none;
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.foto{
+    background-image: url(../img/hero-desktop.jpg);
+    position: absolute;
+    width: 610px;
+    height: 800px;
+    left: 830px;
+    top: 0px;
+
+}

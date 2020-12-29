@@ -1,105 +1,234 @@
 body{
     background-color: white;
-
 }
 
-.marcoDer{
-    position: relative;
-    width: 697px;
-    height: 657px;
-    left: 671px;
-    top: 51px;
-    border: black 1px solid;
-}
-
-.fondo1{
-    Width: 697px;
-    Height: 657px;
-    border: purple 1px solid;
-    z-index: 3;
-}
-
-.fondo2{
+.quotes{
     position: absolute;
     width: 120px;
     height: 100px;
     left: 260px;
     top: 214px;
-    border: red 1px solid;
 }
 
-.fondo3{
+.curve{
     position: absolute;
     left: 0px;
-    top: 646px;
-    border:yellow 1px solid;
+    bottom: 0px;
 }
 
-.marcoFoto{
-    width: 540px;
-    height: 540px;
-    border: black 1px solid;
-    margin-left: 78px;
-    margin-top: 60px;
+.bg{
+    left: 340px;
+    top: 51px;
+    width: 705px;
+    height: 705px;
     
 }
 
-p{
+.left{
+    position: relative;
+    width: 697px;
+    height: 657px;
+}
+
+.texto{
     position: absolute;
-    width: 843px;
+    width: 720px;
     height: 259px;
     left: 164px;
     top: 282px;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 42px;
-    line-height: 42px;
-    
+    font-size: 36px;
+    line-height: 39px;
     color: #202046;
+    z-index: 1;
+}
+
+.nombres{
+    position: absolute;
+    width: 137px;
+    height: 24px;
+    left: 164px;
+    top: 580px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.profesion{
+    position: absolute;
+    width: 121px;
+    height: 24px;
+    left: 312px;
+    top: 580px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #BABACF;
+}
+
+.right{
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    left: 750px;
+    top: 109px;
+}
+
+
+.foto{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 50px;
+    top: 60px;
+    
 }
 
 .sombra{
-    
-    width: 405px;
-    height: 5px;
-    margin-left: 78px;
-    margin-top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 15px 15px rgba(87, 72, 217, 0.63);
-    
-}
-
-.botones{
     position: absolute;
-    width: 116px;
-    height: 58px;
-    justify-content: space-around;
-    display: flex;
-    border: solid 1px black;
-    border-radius: 30px;
-}
-
-.bck{
-    border: solid 1px black;
-    width: 56px;
-    height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px 0px 0px 30px;
-}
-
-
-.adv{
+    width: 405px;
+    height: 89px;
+    left: 55px;
+    top: 520px;
     
-    width: 56px;
-    height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #ffffff00;
+    box-shadow: 0px 15px 15px rgba(87, 72, 217, 0.63);
+    z-index: 3;
+}
+
+.prev{
+    Width: 56px;
+    Height: 56px;
+    position: absolute;
+    top: 580px;
+    left: 100px;
+    background: #FFFFFF;
+    border-radius: 30px 0px 0px 30px;
+    z-index:2 ;
+}
+
+.next{
+    position: absolute;
+    top: 580px;
+    left: 156px;
+    Width: 56px;
+    Height: 56px;
     background: #FFFFFF;
     border-radius: 0px 30px 30px 0px;
-    border: solid 1px black;
+    z-index: 2;
 }
 
+@media (max-width: 376px){
+
+.right{
+    position: absolute;
+    width: 375px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    justify-content: flex;
+
+}
+
+.left{
+    position: absolute;
+    width: 375px;
+    height: 231px;
+    left: 0px;
+    top: 398px;
+}
+
+
+.bg{
+    position: relative;
+    left: 45px;
+    top: 41px;
+    width: auto;
+    height: auto;
+    
+}
+
+.foto{
+    position: relative;
+    width: 441px;
+    height: 440px;
+    
+}
+
+.prev{
+    left: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.quotes{
+    position: absolute;
+    width: 67.68px;
+    height: 56.5px;
+    left: 144px;
+    top: 364px;
+}
+
+.texto{
+    position: absolute;
+    width: 316px;
+    height: 152px;
+    left: 30px;
+    top: 391px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.nombres{
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    left: 139px;
+    top: 575px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.profesion{
+    position: absolute;
+    width: 88px;
+    height: 19px;
+    left: 144px;
+    top: 590px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.curve{
+    position: absolute;
+    width: 366px;
+    height: 77px;
+    left: 0px;
+    top: 780px;
+}
+
+
+
+}

@@ -40,10 +40,10 @@ body.appendChild(container);
 function validations(){
     const regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     val = regEx.test(input.value);
-    if(val == false){
+    if(!val){
         error.classList.add('show');
         alert("Please enter a valid email address to continue");
-        email.classList.add('err');
+        email.style.border = '2px solid red'
     }else{
         input.value != '' &&
          alert("you have succesfully enrolled to receive discounts on our latest products")

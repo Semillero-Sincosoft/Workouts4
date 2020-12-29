@@ -74,9 +74,7 @@ body {
   color: black;
   outline: none;
 }
-#email.err {
-  border: 2px solid red;
-}
+
 #btn {
   position: absolute;
   right: -67px;

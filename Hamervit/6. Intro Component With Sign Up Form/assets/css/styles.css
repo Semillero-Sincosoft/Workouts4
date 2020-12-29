@@ -1,5 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 body {
-    background-color: #FF7978;
+    background: url('../images/bg-intro-desktop.png') no-repeat #FF7978;
+    margin: 0;
+    height: 800px;
+    width: 1440px;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 121px 165px 121px 163px;
+    width: 1112px;
+    height: 558px;
+    justify-content: space-between;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.information>h1 {
+    margin: 164px 0 0 2px;
+    font-weight: 600;
+    font-size: 50px;
+    width: 419px;
+    height: 115px;
+    line-height: 55px;
+    color: white;
+}
+
+.information>p {
+    width: 507px;
+    height: 82px;
+    color: white;
+    font-weight: 400;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-section>.promotion {
+    border: 2px solid #864E7F;
+    display: flex;
+    justify-content: center;
+    background: #5D54A3;
+    border-radius: 10px;
+    color: white;
+    width: 540px;
+    height: 60px;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.12);
+}
+
+.form-section>form {
+    margin: 24px 0 0 0;
+    width: 540px;
+    height: 474px;
+    border-radius: 11px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-section>form>.controls {
+    margin: 40px 40px 47px 40px;
+}
+
+form>div.controls>input {
+    width: 422px;
+    height: 56px;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 7px;
+    color: #434247;
+    caret-color: #605692;
+}
+
+form>div.controls>input:focus {
+    border: 1px solid #605B79;
+}
+
+form>div.controls>input::placeholder {
+    letter-spacing: 0.015em;
+}
+
+form>div.controls>div {
+    width: 457px;
+    height: 56px;
+    background: #37CC8A;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+
+form>div.controls>p {
+    color: #CECCD9;
+    font-size: 11px;
+    margin-left: 46px;
+    font-weight: normal;
+}
+
+
+form>div.controls>p>strong {
+    color: #EB9D9D;
+    font-weight: 600;
 }

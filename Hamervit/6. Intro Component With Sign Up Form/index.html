@@ -30,16 +30,33 @@
             </div>
             <form autocomplete="off">
                 <div class="controls">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="Email Address">
-                    <input type="password" placeholder="Password">
-                    <div id="btnSubmit">CLAIM YOUR FREE TRIAL</div>
-                    <p>By clicking the button, you are agreeing to our <strong> Terms and Services </strong></p>
+                    <div class="input-group">
+                        <input type="text" placeholder="First Name" id="firstName" onfocusout="checkFirstName()" >
+                        <p id="messageErrorFirst" class="d-none"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Last Name" id="lastName" onfocusout="checkLastName()">
+                        <p id="messageErrorLast" class="d-none"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Email Address" id="emailAddress" onfocusout="checkEmail()">
+                        <p id="messageErrorEmail" class="d-none">Email Address can't be empty</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" id="pass" onfocusout="checkPass()">
+                        <p id="messageErrorPass" class="d-none">Password can't be empty</p>
+                    </div>
+                    <div class="footer-form">
+                        <div id="btnSubmit">CLAIM YOUR FREE TRIAL</div>
+                        <p>
+                            By clicking the button, you are agreeing to our
+                            <strong> Terms and Services </strong>
+                        </p>
+                    </div>
                 </div>
             </form>
         </section>
     </main>
 </body>
-
+<script src="assets/js/main.js"></script>
 </html>

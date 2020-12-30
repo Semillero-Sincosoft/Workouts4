@@ -22,3 +22,5 @@ const formText = document.createElement('span');
 textSection.id = 'textSection';
 textH1.innerHTML = 'Learn to code by <br> watching others';
 textP.innerHTML = 'See how experienced developers solve problems in real-time Watching scripted tutorials is great, but understanding how developers think is invaluable. ';
+trialText.innerHTML = '<b> Try it free 7 days </b> then $20/mo. thereafter';
+formText.innerHTML = 'By clicking the button, you are agreeding to our <b>Terms and Services</b>'

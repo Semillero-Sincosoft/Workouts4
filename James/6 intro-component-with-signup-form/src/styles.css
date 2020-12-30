@@ -113,14 +113,8 @@ input:focus{
     color: var(--Blue);
     transition: .5s;
 }
-.input{
+.inputWrap{
     position: relative;
-}
-.text-error{
-    border: 2.5px solid var(--Red);
-    color: var(--Red);
-    transition: .5s;
-    margin-bottom: 40px;
 }
 button{
     width: 100%;
@@ -142,16 +136,22 @@ button:hover{
     cursor: pointer;
     background-color: #77e2b4e8;
 }
-/* .error{
+.errorText{
+    border: 2.5px solid var(--Red);
+    color: var(--Red);
+    transition: .5s;
+    margin-bottom: 40px;
+}
+.errorImg{
     width: 24px;
     height: 24px;
     background-image: url(../images/icon-error.svg);
     background-size: cover;
     position: absolute;
-    right: 22px;
-    top: 16px;
+    right: 10px;
+    top: 18px;
 }
-#error{
+/* #error{
     color: var(--Red);
     font-weight: 400;
     font-size: 12px;

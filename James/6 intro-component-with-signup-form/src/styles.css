@@ -136,7 +136,7 @@ button:hover{
     cursor: pointer;
     background-color: #77e2b4e8;
 }
-.errorText{
+.error{
     border: 2.5px solid var(--Red);
     color: var(--Red);
     transition: .5s;
@@ -145,20 +145,19 @@ button:hover{
 .errorImg{
     width: 24px;
     height: 24px;
-    background-image: url(../images/icon-error.svg);
     background-size: cover;
     position: absolute;
     right: 10px;
     top: 18px;
 }
-/* #error{
+.errorText{
     color: var(--Red);
     font-weight: 400;
     font-size: 12px;
     position: absolute;
     right: 0;
     bottom: 15px;
-    transition: 5s;
+    transition: 2s;
 } */
 form #formText{
         margin-top:20px;

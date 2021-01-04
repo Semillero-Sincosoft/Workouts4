@@ -1,0 +1,247 @@
+
+body{
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    display: flex;
+    justify-content: center ;
+    background-color: #E6EFF6;
+    padding: 100px 0 0 0;
+}
+
+#superior{
+    position: relative;
+    width: 770px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    text-align: justify;
+    
+}
+
+#contenedor{
+        width: 770px;
+        height: 250px;
+        display: flex;
+}
+
+#inferiorR{
+        background-color: #4ABEBD;
+        width: 50%;
+        height: 250px;
+        border-radius: 0px 0px 10px 0px;
+}
+#inferiorL{
+    background-color:#2BB3B1;
+    width: 50%;
+    height: 250px;
+    border-radius: 0px 0px 0px 10px;
+    left: 10px;
+    
+}
+
+#inferiorL>.buton{
+    position: relative;
+    left:65px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.titulo{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4AA7A4;
+}
+
+.subtitulo{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #C4D577;
+}
+
+.texto{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 530px;
+    height: 44px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #98A6BD;
+}
+
+h4{
+    color: #E6EFF6;
+    Font-size: 14px;
+    line-height: 1px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.boton{
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    background-color: #BFDF32;
+    width: 250px;
+    height: 48px;
+    border-radius: 10px;
+    left: 65px;
+    padding: 12px;
+}
+
+
+.boton:hover{
+    background-color: #f6fa02af;
+    border-color:  #f6fa02af;
+}
+
+h2{
+    margin-left: 40px;
+    margin-top: 40px;
+    color:white;
+    font-size: 20px;
+    line-height: 5px;
+}
+
+h3{
+    font-size: 36px;
+    line-height: 42px;
+    margin-left: 40px;
+    margin-top: 40px;
+    color:white;
+    font-size: 40px;
+}
+
+.precio{
+    display: inline-block;
+    width: 155px;
+    height: 42px;
+    line-height: 2px;
+    
+}
+
+h1{
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 5px;
+    color: #E6EFF6;
+}
+
+.linea{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E6EFF6;
+    font-weight: normal;
+}
+
+.line{
+    position: relative;
+    margin-left: 40px;
+    top: -30px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E6EFF6;
+}
+
+li{
+    list-style: none;
+    color: #E6EFF6;
+    Font-size: 16px;
+}
+
+@media (max-width: 376px){
+
+    body{
+        position: absolute;
+        width: 375px;
+        height: 812px;
+        left: -45px;
+        
+    }
+
+    #superior{
+        width: 323px;
+        height: 245px;
+        margin-top: -100px;
+        margin-left: 50px;
+        
+    }
+
+    .titulo{
+        width: 207px;
+        height: 28px;
+        left: -80px;
+        top: -15px
+    }
+
+    .subtitulo{
+        width: 200px;
+        height: 42px;
+        left: -80px;
+        top: -40px;
+    }
+
+.texto{
+        width: 120px;
+        height: 64px;
+        left: -80px;
+        top: -50px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #contenedor{
+        width: 323px;
+        height: 225px;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    #inferiorR{
+        width: 323px;
+        height: 245px;
+        border-radius: 0px 0px 10px 10px;
+}
+
+    #inferiorL{
+        width: 323px;
+        height: 225px;
+        border-radius: 0px ;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .texto{
+        position: relative;
+        width: 250px;
+        height: 64px;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .boton{
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    width: 1440px;
+    height: 800px;
+    background: #E6EFF6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Karla, sans-serif;
+}
+
+.container {
+    width: 636px;
+    height: 475px;
+}
+
+.top-side {
+    width: 595px;
+    height: 176px;
+    background: white;
+    border-radius: 9px 9px 0 0;
+    padding: 40px 0 23px 41px;
+}
+
+.bottom-side {
+    width: 636px;
+    height: 259px;
+    border-radius: 0 0 9px 9px;
+    background: #2BB3B1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-side>p.tittle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3BABAC;
+}
+
+.top-side>p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #BCD15C;
+    margin-top: 20px;
+}
+
+.top-side>p.information {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A3A6AF;
+    width: 522px;
+    letter-spacing: -0.015em;
+    line-height: 24px;
+    margin: 11px 0 43px 0;
+}
+
+.bottom-side>.left-side {
+    padding: 41px 0 0 41px;
+}
+
+.bottom-side>.left-side>.tittle {
+    font-size: 18px;
+    color: #E4FFFF;
+    font-weight: 700;
+    margin: 0;
+}
+
+.bottom-side>.left-side>.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 138px;
+    height: 37px;
+    margin-top: 18px;
+}
+
+.bottom-side>.left-side>.price>p.price-subscription {
+    color: #E4FFFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.bottom-side>.left-side>.price>p {
+    color: #6AD8D9;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.bottom-side>.left-side>p {
+    font-size: 16px;
+    color: #E4FFFF;
+    font-weight: 400;
+    width: 247px;
+    margin-top: 7px;
+}
+
+.bottom-side>.left-side>.button-signup {
+    width: 237px;
+    height: 48px;
+    background: #BFDF32;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bottom-side>.right-side {
+    background: #4ABEBD;
+    width: 285px;
+}
+
+.bottom-side>.right-side>.tittle {
+    font-size: 18px;
+    color: #E4FFFF;
+    font-weight: 700;
+    margin: 0 0 23px 0;
+    height: 18px;
+}
+
+.bottom-side>.right-side {
+    padding: 41px 0 0 41px;
+    border-radius: 0 0 9px 0;
+}
+
+.bottom-side>.right-side>p {
+    width: 196px;
+    color: #B5FCFF;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    line-height: 21px;
+    margin: 23px 0 0 0;
+}
+
+@media(max-width: 375px) {
+    body {
+        width: 375px;
+        height: 870px;
+        align-items: unset;
+    }
+
+    .container {
+        width: 311px;
+        height: 722px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        margin-top: 72px;
+    }
+
+    .top-side {
+        width: 288px;
+        height: auto;
+        background: white;
+        border-radius: 9px 9px 0 0;
+        padding: 28px 0 23px 23px;
+    }
+
+    .top-side>p.tittle {
+        font-size: 20px;
+    }
+
+    .top-side>p {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+
+    .top-side>p.information {
+        width: 266px;
+        margin: 19px 0 0 0;
+        font-size: 14px;
+    }
+
+    .bottom-side {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .bottom-side>.left-side {
+        padding: 25px 0 0 24px;
+    }
+
+    .bottom-side>.left-side>.price {
+        width: 138px;
+        height: 37px;
+        margin-top: 18px;
+    }
+
+    .bottom-side>.left-side>.button-signup {
+        width: 263px;
+        height: 48px;
+        background: #BFDF32;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+        margin-bottom: 24px;
+    }
+    
+    .bottom-side>.right-side {
+        height: auto;
+        width: auto;
+    }
+
+    .bottom-side>.right-side {
+        padding: 25px 0 0 24px;
+        border-radius: 0 0 9px 9px;
+    }
+
+    .bottom-side>.right-side>p {
+        margin: 23px 0 34px 0;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap');
+
+body {
+    width: 1440px;
+    height: 3186px;
+    margin: 0;
+    background: url('../svg/bg-hero-desktop.svg') no-repeat #EDFBFE;
+}
+
+body>header {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 48px 0 0 80px;
+}
+
+body>header>img.logo {
+    width: 200px;
+    height: 32px;
+}
+
+body>header>span {
+    cursor: pointer;
+    width: 200px;
+    height: 48px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 24px;
+}
+
+body>main>section.hero-section {
+    display: flex;
+    margin: 51px 87px 0 80px;
+    justify-content: space-between;
+    width: 1280px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+}
+
+body>main>section.hero-section>div.information>h1 {
+    width: 474px;
+    margin: 90px 0 0 0;
+    font-size: 40px;
+}
+
+body>main>section.hero-section>div.information>p {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Open Sans, sans-serif;
+    width: 514px;
+}
+
+body>main>section.hero-section>div.information>span {
+    margin: 36px 0 147px 0;
+    width: 280px;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Open Sans, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #FE52C0;
+}
+
+body>main>section.hero-section>img {
+    width: 683px;
+    height: 482px;
+}
+
+body>main>section.features {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+}
+
+body>main>section.features>section.feature-container {
+    margin: 0 104px 0 104px;
+    width: 1232px;
+    height: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body>main>section.features>section.grow-together {
+    padding-top: 160px;
+}
+
+body>main>section.features>section.grow-together>div.information {
+    margin: 54px 0 0 120px;
+}
+
+body>main>section.features>section.feature-container>div.information>h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    width: 223px;
+    margin: 0 0 5px 0;
+}
+
+body>main>section.features>section.feature-container>div.information>p {
+    margin: 0;
+    color: #8D9194;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 25px;
+    width: 483px;
+    height: 78px;
+}
+
+body>main>section.features>section.feature-container>img {
+    width: 500px;
+    height: 340px;
+}
+
+body>main>section.features>section.feature-container.flowing-conversations>div.information>h3 {
+    width: 338px;
+}
+
+body>main>section.features>section.flowing-conversations>img {
+    margin: 0 0 0 120px;
+}

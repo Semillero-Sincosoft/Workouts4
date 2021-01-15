@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
 
 body {
     width: 1440px;
-    height: 3186px;
     margin: 0;
     background: url('../svg/bg-hero-desktop.svg') no-repeat #EDFBFE;
 }
@@ -69,6 +68,7 @@ body>main>section.hero-section>div.information>span {
     justify-content: center;
     color: white;
     background: #FE52C0;
+    cursor: pointer;
 }
 
 body>main>section.hero-section>img {
@@ -130,3 +130,145 @@ body>main>section.features>section.flowing-conversations>img {
     margin: 0 0 0 120px;
 }
 
+body>main>section.features>section.your-users>div.information {
+    margin: 54px 0 0 120px;
+}
+
+body>footer {
+    padding: 160px 0 0 0;
+    width: 100%;
+    height: 200px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body>footer>div.get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 280px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 17px;
+    z-index: 1;
+    margin: 360px 0 0 0;
+}
+
+body>footer>div.get-started>h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 65px 0 0 0;
+}
+
+body>footer>div.get-started>span {
+    margin: 29px 0 52px 0;
+    width: 280px;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Open Sans, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #FE52C0;
+    cursor: pointer;
+}
+
+body>footer>div.footer-section {
+    width: 100%;
+    position: relative;
+    bottom: 41%;
+    background: #00252E;
+    display: flex;
+}
+
+body>footer>div.footer-section>section.left-side>img.logo-footer {
+    margin: 192px 0 0 110px;
+    filter: brightness(0) invert(1);
+}
+
+body>footer>div.footer-section>section.left-side>section.business-info {
+    margin: 35px 0 0 110px;
+    color: #FFFFFF;
+    width: 385px;
+    font-size: 17px;
+    font-family: Open Sans, sans-serif;
+}
+
+body>footer>div.footer-section>section.left-side>section.business-info>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+body>footer>div.footer-section>section.left-side>section.business-info>div>p {
+    width: 353px;
+    margin: 0;
+}
+
+body>footer>div.footer-section>section.left-side>section.business-info>div>img {
+    margin-top: 4px;
+}
+
+body>footer>div.footer-section>section.left-side>section.business-info>div:not(.ubication) {
+    margin: 27px 0 0 0;
+}
+
+body>footer>div.footer-section>section.middle-side {
+    width: 700px;
+    float: left;
+}
+
+
+body>footer>div.footer-section>section.middle-side>ul {
+    margin: 271px 0 0 146px;
+    color: #FFFFFF;
+    font-size: 18px;
+    list-style-type: none;
+    font-family: Open Sans, sans-serif;
+}
+
+body>footer>div.footer-section>section.middle-side>ul>li {
+    margin: 0 80px 27px 0;
+    float: left;
+    width: 107px;
+}
+
+body>footer>div.footer-section>section.right-side>div.social-network-container {
+    margin: 271px 0 0 0;
+    display: flex;
+}
+
+body>footer>div.footer-section>section.right-side>div.social-network-container>div.social-network {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #B4D0DC;
+    margin: 0 13px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>footer>div.footer-section>section.right-side>div.social-network-container>div.social-network>img {
+    filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+}
+
+body>footer>div.footer-section>section.right-side>p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    width: 320px;
+    margin: 178px 0 65px 0;
+}

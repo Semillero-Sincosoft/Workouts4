@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 1</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+   
+</head>
+  <body>
+    <main >
+     <div class="container">
+        <img  class="containerImg" src="./assets/img/drawers.jpg" />
+    
+      <aside class="containerRight">
+        <div class="text">
+          <h1 class="titulo">Shift the overall look and feel by adding these wonderful touches to 
+              furniture in your home
+          </h1>
+          <p class="parrafo">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete
+          </p>
+          <div id="mensaje" class="contenedor-mensaje">
+            <div class="rectangulo">
+                <span class="share">
+                    SHARE
+                </span>
+                <div class="redes">
+                <img class=" icon-facebook" src="./assets/img/icon-facebook.svg" alt="">
+                <img class=" icon-twitter"src="./assets/img/icon-twitter.svg" alt="">
+                <img class=" icon-pinterest"src="./assets/img/icon-pinterest.svg" alt="">
+            </div>
+            </div>
+        <div class="triangulo">
+        
+            
+        </div>
+        </div>
+        
+        <section id="personaje" class="personaje">
+          <img class="avatar"src="./assets/img/avatar-michelle.jpg" />
+          <div class="datosPersonaje">
+            <h3 class="nombre">Michelle Appleton</h3>
+            <span class="fecha">28 Jun 2020</span>
+          </div>
+          <button class="button" onclick="Click()">
+          <i class="fas fa-share"></i>
+          </button>
+        </section>
+       </aside>
+    </div>
+    
+</div>
+    </main>
+  </body>
+  <script>
+      const mensaje = document.getElementById("mensaje");
+        const personaje = document.getElementById("personaje")
+      function Click() {
+    
+    if (mensaje.style.display === "block") {
+        mensaje.style.display = "none";
+        personaje.classList.remove('margen');
+        
+    } else {
+        mensaje.style.display = "block";
+        personaje.classList.add('margen');
+    }
+}
+  </script>
+</html>

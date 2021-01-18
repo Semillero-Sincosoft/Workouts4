@@ -127,12 +127,8 @@ display: none;
         margin: auto;
     }
     .contenedorPrincipal{
-        margin: auto;
-        background-color:#FFFFFF;
         width: 327px;
         height: 513px;
-        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
-        border-radius: 10px;
         margin-top: 33%;
         display: block;
     }
@@ -159,47 +155,36 @@ display: none;
     }
     .contenedorIconShare{
         margin-left: 60px;
-        margin-top: 5px;
+        margin-top: 12px;
+        z-index:3;
     }
     .mensaje{
     width: 327px;
-    height: 64px;
+    height: 69px;
     left: 6%;
     top: 70%;
-    border-radius: 10px 10px 0px 0px;
-    display: flex;
-    
-    
+    border-radius: 0px 0px 10px 10px;
     }
     .mensaje:before {
-        content: "";
-        position: absolute;
-        left: 83px;
-        top: 100%;
-        width: 0;
-        height: 0;
         border-left: 0px solid transparent;
         border-right: 0px solid transparent;
         border-top: 0px solid #48556A;
       }
       .shareM{
-        font-family: Manrope;
-        font-size: 14px;
-        color: #9DAEC2;
-        margin-left: 30px;
-        margin-top: 18px;
+        margin-left: 33px;
+        margin-top: 22px;
       }
       .facebook{
           margin-left: 24px;
-          margin-top: 17px;
+          margin-top: 22px;
       }
       .twitter{
         margin-left: 15px;
-        margin-top: 18px;
+        margin-top: 23px;
        }
       .pinterest{
         margin-left: 15px;
-        margin-top: 17px;
+        margin-top: 22px;
        }
 }
 

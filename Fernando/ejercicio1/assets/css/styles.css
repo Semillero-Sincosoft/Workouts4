@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  font-family: "Manrope";
+  background: #edf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  min-width: 100px;
+  max-width: 1000px;
+
+  width: 100%;
+  padding: 10%;
+}
+
+.container {
+  width: 100%;
+
+  height: 100%;
+  display: flex;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #adadad;
+}
+.container .containerImg {
+  width: 39%;
+  height: auto;
+  border-radius: 15px 0px 0px 15px;
+}
+.containerRight {
+  padding: 20px 20px 10px 60px;
+  width: 48%;
+}
+.titulo {
+  color: #4d5667;
+  line-height: 25pt;
+  font-size: 27px;
+  min-width: 300px;
+}
+.parrafo {
+  color: #899096;
+  font-size: 17px;
+  min-width: 300px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.contenedor-mensaje {
+  
+    position: relative;
+    top: -92px;
+    margin-bottom: 0px;
+    margin-left: 315px;
+    display: none;
+   
+  }
+  .margen{
+      margin-top: -90px;
+  }
+
+.personaje {
+  display: flex;
+  justify-content: space-between;
+  width: 36%;
+  position: absolute;
+  
+  
+}
+.datosPersonaje {
+  margin: auto;
+  margin-left: 20px;
+}
+.nombre {
+  color: #4d5667;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.fecha {
+  margin-top: 0px;
+  color: #899096;
+}
+.button {
+  border-radius: 250px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: 2px;
+  outline:none;
+}
+.icono {
+  width: 20px;
+  height: 15px;
+  color: #ffffff;
+}
+.button:hover{
+    background-color: #697D95;
+}
+.icono:hover{
+ color: #ffffff;
+}
+
+.rectangulo {
+  background-color: #4b576d;
+  border-radius: 10px;
+  width: 320px;
+  height: 70px;
+  display: flex;
+  padding: auto;
+  
+}
+.share {
+  margin: auto;
+  margin-left: 50px;
+  letter-spacing: 6pt;
+  font-size: 15px;
+  color: #92A1B6;
+}
+.redes {
+    
+  width: 200px;
+  height: 70px;
+  
+}
+.icon-pinterest{
+    margin: auto;
+    margin-left: 20px;
+   
+}
+.icon-facebook{
+    margin: auto;
+    margin-left: 25px;
+   
+}
+.icon-twitter{
+    margin-top: 28px;
+    margin-left:20px;
+
+}
+
+
+.triangulo {
+  width: 0;
+  height: -10px;
+  margin-left: 135px;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-bottom: 20px solid #4b576d;
+  
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding-top: 22%;
+  }
+  .container .containerImg {
+    width: 100%;
+    height: 30%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .container {
+    width: 100%;
+    height: 550px;
+    display: block;
+  }
+  .containerRight {
+    width: 290px;
+    padding: 20px 20px 20px 20px;
+  }
+  .titulo {
+    width: 100%;
+    line-height: 20pt;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .parrafo {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .personaje {
+    width: 60%;
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .nombre {
+    font-size: 14px;
+  }
+  .fecha {
+    font-size: 12px;
+  }
+  .button {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .icono {
+    width: 15px;
+    height: 10px;
+  }
+}

@@ -140,16 +140,12 @@
 }
 
 #error{
-    position: relative;
     width: 204px;
     height: 16px;
-    top :390px;
-    left: 170px;
     color: tomato;
 }
 
 #icoerror{
-    position: relative;
     width: 24px;
     height: 24px;
     background-color: #F96464;

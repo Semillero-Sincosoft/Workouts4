@@ -1,0 +1,206 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(210, 46%, 95%);
+    margin: auto;
+}
+.contenedorPrincipal{
+    margin: auto;
+    background-color:#FFFFFF;
+    width: 730px;
+    height: 280px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 13%;
+}
+
+ .Drawers{
+    height: 280px;
+    width: 286px;
+    border-radius: 10px 0px 0px 10px;
+}
+.titulo{
+    font-size: 21px;
+    color:#48556A ;
+    font-family: Manrope;
+    margin: 40px;
+    margin-bottom: 0px;
+}
+.informacion{
+    font-size:13px ;
+    font-family: Manrope;
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9DAEC2;
+}
+.infoAvatar{
+    display: flex;
+}
+.fotoAvatar{
+    border-radius: 25px;
+    height: 40px;
+    margin: 0px 16px 40px 40px;
+}
+
+.nombreAvatar{
+    margin: 0px;
+    font-family: Manrope;
+    font-size: 13px;
+    color:#48556A ;
+}
+.fecha{
+    margin: 0px;
+    margin-top: 5px;
+    font-family: Manrope;
+    font-size: 13px;
+    color:#9DAEC2 ;
+}
+.contenedorIconShare{
+    width: 32px;
+    height: 32px;
+    margin-left: 160px;
+    margin-top: 5px;
+    background-color: hsl(210, 46%, 95%);
+    align-items: center;
+    border-radius: 20px;
+    fill: #6E8098;
+    cursor: pointer;
+}
+.iconShare{
+    margin:9px;
+}
+.contenedorIconShare:hover{
+background-color:#6C7F97;
+fill: white;
+}
+.mensaje{
+    position: absolute;
+width: 230px;
+height: 55px;
+left: 65%;
+top: 49%;
+background: #48556A;
+box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+display: none;
+
+
+}
+.mensaje:before {
+    content: "";
+    position: absolute;
+    left: 83px;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #48556A;
+  }
+  .shareM{
+    font-family: Manrope;
+    font-size: 14px;
+    color: #9DAEC2;
+    margin-left: 30px;
+    margin-top: 18px;
+  }
+  .facebook{
+      margin-left: 24px;
+      margin-top: 17px;
+  }
+  .twitter{
+    margin-left: 15px;
+    margin-top: 18px;
+   }
+  .pinterest{
+    margin-left: 15px;
+    margin-top: 17px;
+   }
+
+@media screen and (max-width:600px){
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: hsl(210, 46%, 95%);
+        margin: auto;
+    }
+    .contenedorPrincipal{
+        margin: auto;
+        background-color:#FFFFFF;
+        width: 327px;
+        height: 513px;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        margin-top: 33%;
+        display: block;
+    }
+    
+     .Drawers{
+        width: 327px;
+        height: 197px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .titulo{
+        font-size: 16px;
+        margin: 33px;
+        margin-bottom: 0px;
+    }
+    .informacion{
+        font-size:13px ;
+        margin: 33px;
+        margin-top: 20px;
+        margin-bottom: 36px;
+    }
+    .fotoAvatar{
+        height: 40px;
+        margin: 0px 16px 40px 33px;
+    }
+    .contenedorIconShare{
+        margin-left: 60px;
+        margin-top: 5px;
+    }
+    .mensaje{
+    width: 327px;
+    height: 64px;
+    left: 6%;
+    top: 70%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    
+    
+    }
+    .mensaje:before {
+        content: "";
+        position: absolute;
+        left: 83px;
+        top: 100%;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 0px solid #48556A;
+      }
+      .shareM{
+        font-family: Manrope;
+        font-size: 14px;
+        color: #9DAEC2;
+        margin-left: 30px;
+        margin-top: 18px;
+      }
+      .facebook{
+          margin-left: 24px;
+          margin-top: 17px;
+      }
+      .twitter{
+        margin-left: 15px;
+        margin-top: 18px;
+       }
+      .pinterest{
+        margin-left: 15px;
+        margin-top: 17px;
+       }
+}
+
+

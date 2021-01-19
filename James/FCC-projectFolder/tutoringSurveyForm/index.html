@@ -6,6 +6,70 @@
     <title>Survey Form : Virtual Tutoring</title>
 </head>
 <body>
-    
+    <section  class="signUpForm">
+        <h1 id="title">Virtual Tutoring Survey form </h1>
+        <span id="description">Thank you for taking the time to give us feedback</span>
+        <img src="./img/icon-close.svg" class="close" alt="">
+        <form id="survey-form" class="signUpForm">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Please Enter Your Name...">
+            <br>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Please Enter Your Email Address...">
+            <br>'
+            <label for="number" id="number-label"></label>
+            <input type="number" id="number" max="30" min="5" placeholder="Please Enter Your Age...">
+            <br>
+            <select name="occupation" id="dropdown" placeholder="Please Choose an Option...">
+                <option value="Primera">Primera</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Tecnico">Tecnico</option>
+                <option value="Technologo">Technologo</option>
+                <option value="Universitario">Universitario</option>
+                <option value="Carrera Professional">Carrera Professional</option>            
+            </select>
+            <section class="multipleChoice">
+            <h4>Would you recommend Vritual Tutoring to friends?</h4>
+                <input type="radio" name="recommend" value="Defenetly"><label>Defenetly</label>  
+                <br>              
+                <input type="radio" name="recommend" value="Maybe"><label>Maybe</label>
+                <br>
+                <input type="radio" name="recommend" value="Not Sure"><label>Not Sure</label>
+                <br>
+                <br>
+                <br>
+            <h4>What type of tutoring would you like to receive?</h4>
+                <input type="checkbox" name="type" value="English"><label>English</label>  
+                <br>              
+                <input type="checkbox" name="type" value="Semantic HTML"><label>Semantic HTML</label>
+                <br>
+                <input type="checkbox" name="type" value="CSS"><label>CSS</label>
+                <br>
+                <input type="checkbox" name="type" value="Responsive Web Design"><label>Responsive Web Design</label>
+                <br>
+                <input type="checkbox" name="type" value="Vanilla Javascript"><label>Vanilla Javascript</label>
+                <br>
+                <input type="checkbox" name="type" value="JQuery"><label>JQuery</label>
+                <br>
+                <input type="checkbox" name="type" value="SASS"><label>SASS</label>
+                <br>
+                <input type="checkbox" name="type" value="Node.js"><label>Node.js</label>
+                <br>
+                <input type="checkbox" name="type" value="React"><label>React</label>
+                <br>
+                <input type="checkbox" name="type" value="Angular"><label>Angular</label>
+                <br>
+                <input type="checkbox" name="type" value="Back-End w/ Javascript"><label>Back-End w/ Javascript</label>
+                <br>
+            </section>
+            <textarea id="feedback" name="feedback" placeholder="Please leave your addictional feedback here .....">
+                
+            </textarea>
+            <button id="submit"  class="submitValidate" >
+                Sign Me Up!
+            </button>
+        </section>
+        </form>
+
 </body>
 </html>

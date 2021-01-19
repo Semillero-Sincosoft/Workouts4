@@ -1,3 +1,4 @@
+//Función para mostrar las redes sociales
 function mostrarRedes(){
     var social = document.getElementById("social-networks");
     if (social.style.display === "none") {

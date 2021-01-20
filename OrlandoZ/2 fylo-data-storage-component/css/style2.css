@@ -13,6 +13,7 @@
     left: 0px;
     background: url(../img/bg-desktop.png);
     border-radius: 200px 0px 0px 0px;
+    background-size: cover;
 }
 
 .marco1{

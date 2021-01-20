@@ -3,8 +3,10 @@ body{
     width: 100%;
     background-color: hsl(210, 46%, 95%);
     margin: auto;
+    position: absolute;
 }
 .contenedorPrincipal{
+    position: relative;
     margin: auto;
     background-color:#FFFFFF;
     width: 730px;
@@ -19,6 +21,7 @@ body{
     height: 280px;
     width: 286px;
     border-radius: 10px 0px 0px 10px;
+    content:url("images/drawers1.jpg");
 }
 .titulo{
     font-size: 21px;
@@ -76,11 +79,11 @@ background-color:#6C7F97;
 fill: white;
 }
 .mensaje{
-    position: absolute;
+position: absolute;
 width: 230px;
 height: 55px;
-left: 65%;
-top: 49%;
+left: 76%;
+top: 51%;
 background: #48556A;
 box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
@@ -91,7 +94,7 @@ display: none;
 .mensaje:before {
     content: "";
     position: absolute;
-    left: 83px;
+    left: 43%;
     top: 100%;
     width: 0;
     height: 0;
@@ -120,12 +123,6 @@ display: none;
    }
 
 @media screen and (max-width:600px){
-    body{
-        height: 100%;
-        width: 100%;
-        background-color: hsl(210, 46%, 95%);
-        margin: auto;
-    }
     .contenedorPrincipal{
         width: 327px;
         height: 513px;
@@ -135,12 +132,14 @@ display: none;
     
      .Drawers{
         width: 327px;
-        height: 197px;
+        height: 210px;
         border-radius: 10px 10px 0px 0px;
+        content:url("images/drawers.jpg");
     }
     .titulo{
         font-size: 16px;
         margin: 33px;
+        margin-top: 20px;
         margin-bottom: 0px;
     }
     .informacion{
@@ -161,8 +160,8 @@ display: none;
     .mensaje{
     width: 327px;
     height: 69px;
-    left: 6%;
-    top: 70%;
+    left: 0;
+    top: 86%;
     border-radius: 0px 0px 10px 10px;
     }
     .mensaje:before {

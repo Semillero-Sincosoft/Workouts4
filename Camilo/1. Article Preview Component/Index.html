@@ -17,7 +17,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Article Preview Component</title>
-        <link rel="stylesheet" href="Ejercicio 1/assest/css/styles.css">
+        <link rel="stylesheet" href="assest/css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -25,7 +25,7 @@
 
     <main class="container">
         <div class="imagen">
-            <img src="Ejercicio 1/assest/imagenes/drawers.jpg" alt="imagen2">
+            <img src="assest/imagenes/drawers.jpg" alt="imagen2">
 
         </div>
         <div class="Info">
@@ -42,14 +42,14 @@
             </p>
             <div class="persona">
                 <div class="contacto">
-                    <img src="Ejercicio 1/assest/imagenes/avatar-michelle.jpg" alt="">
+                    <img src="assest/imagenes/avatar-michelle.jpg" alt="">
                     <div>
                         <h1 class="nombre">Michelle Appleton</h1>
                         <h1 class="fecha">28 Jun 2020</h1>
                     </div>
                 </div>
-                <div class="Compartir">
-                    <img src="Ejercicio 1/assest/iconos/icon-share.svg" alt="Icono Compartir">
+                <div class="Compartir" id="btnCompartir" onclick="Share()">
+                    <img src="assest/iconos/icon-share.svg" alt="Compartir" id="svg">
                 </div>
             </div>
 
@@ -61,9 +61,9 @@
                 S H A R E
             </p>
             <div class="share-icons">
-                <img src="Ejercicio 1/assest/iconos/icon-facebook.svg" alt="Facebook">
-                <img src="Ejercicio 1/assest/iconos/icon-twitter.svg" alt="Twitter">
-                <img src="Ejercicio 1/assest/iconos/icon-pinterest.svg" alt="Pinterest">
+                <img src="assest/iconos/icon-facebook.svg" alt="Facebook">
+                <img src="assest/iconos/icon-twitter.svg" alt="Twitter">
+                <img src="assest/iconos/icon-pinterest.svg" alt="Pinterest">
             </div>
         </div>
         <div class="triangule"></div>
@@ -71,7 +71,19 @@
 
 
 </body>
-<script src="Ejercicio 1/assets/js/main.js"></script>
+<script>
+    function Share() {
+    console.time("Share")
+    document.getElementById('overlay').classList.toggle('d-none')
+    document.getElementById('btnCompartir').classList.toggle('active')
+    if(document.getElementById('btnCompartir').classList.contains('active')) {
+        document.getElementById('svg').src = "assest/iconos/icon-share-active.svg"
+    } else {
+        document.getElementById('svg').src = "assest/iconos/icon-share.svg"
+    }
+    console.timeEnd('Share')
+}
+</script>
 
 </html>
 </body>

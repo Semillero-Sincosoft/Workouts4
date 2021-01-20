@@ -30,7 +30,7 @@ font-family: Manrope;
   font-size: 13px;
 }
 
-.presentacion img{
+.img{
   margin-bottom: 0px;
   height: 330px;
   width:40%;
@@ -85,4 +85,8 @@ border-radius: 50%;
   .producto-texto{
     width: 20px;
   }
+  .datos-personaje{
+  margin:auto;
+  margin-left: 30px;
+}
 }

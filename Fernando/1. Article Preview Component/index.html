@@ -10,7 +10,7 @@
   <body>
     <main >
      <div class="container">
-        <img  class="containerImg" src="./assets/img/drawers.jpg" />
+        <img  class="containerImg"  />
     
       <aside class="containerRight">
         <div class="text">
@@ -33,20 +33,20 @@
                 <img class=" icon-pinterest"src="./assets/img/icon-pinterest.svg" alt="">
             </div>
             </div>
-        <div class="triangulo">
-        
-            
+        <div class="triangulo">      
         </div>
         </div>
         
         <section id="personaje" class="personaje">
-          <img class="avatar"src="./assets/img/avatar-michelle.jpg" />
+          <div class="datoIcono">
+          <img class="avatar avatar2"src="./assets/img/avatar-michelle.jpg" />
           <div class="datosPersonaje">
             <h3 class="nombre">Michelle Appleton</h3>
             <span class="fecha">28 Jun 2020</span>
           </div>
+        </div>
           <button class="button" onclick="Click()">
-          <img src="./assets/img/icon-share.svg" class="icono" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path  class=" button"  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
         </section>
        </aside>
@@ -57,17 +57,24 @@
   </body>
   <script>
       const mensaje = document.getElementById("mensaje");
-        const personaje = document.getElementById("personaje")
+        const datoIcono = document.querySelector(".datoIcono")
+
+        
       function Click() {
-    
+        console.time(mensaje)
     if (mensaje.style.display === "block") {
         mensaje.style.display = "none";
-        personaje.classList.remove('margen');
         
-    } else {
-        mensaje.style.display = "block";
-        personaje.classList.add('margen');
+        datoIcono.classList.remove("visible")
+       
     }
+    
+     else {
+        mensaje.style.display = "block";
+        datoIcono.classList.add("visible")
+
+    }
+    console.timeEnd(mensaje);
 }
   </script>
 </html>

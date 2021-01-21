@@ -50,7 +50,7 @@
                 <div class="rectangulo">
                     
                     <h1 class="numero">
-                        185
+                        
                     </h1>
                     <span class="left">
                         GB LEFT
@@ -71,13 +71,22 @@
 const numLeft = document.querySelector(".numero");
 const barra = document.querySelector(".contenidoBarra")
 let num=0;
+let contador=1000;
 function numeroContador(){
+    if(contador===816)clearInterval(timer2);
+    contador--
+    numLeft.innerText = `${contador}`;
+    
+}
+let timer2= setInterval(numeroContador, 8)
+
+
+function barraProgreso(){
     if(num>75)clearInterval(timer);
     num++
-    numLeft.innerText = `${num+108}`;
     barra.style.width= num+"%";
 }
-let timer= setInterval(numeroContador, 20)
+let timer= setInterval(barraProgreso, 20)
 
 </script>
 </html>

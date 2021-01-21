@@ -1,8 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    max-width: 1440px;
+    box-sizing: content-box;
+
 }
 
 header{
@@ -11,15 +11,6 @@ header{
     padding: 70px 100px;
     height: 520px;
     justify-content: space-between;
-    
-}
-
-.interno{
-    display: flex;
-    align-items: center ;
-    justify-content: space-between;
-    height: 400px;
-    margin-top: 80px;
 }
 
 nav{
@@ -28,7 +19,8 @@ nav{
     align-items: center;
 }
 
-.boton{
+
+.boton1{
     padding: 10px 60px;
     border-radius: 30px;
     border: 1px solid gray;
@@ -37,84 +29,126 @@ nav{
 }
 
 nav>.boton:hover{
-        background-color:rgba(255, 255, 255, 0.178);
-        border: solid 0.5px;
+    background-color:rgba(77, 206, 84, 0.603);
+    border: solid 0.5px;
 }
 
-.cabecera{
-        width: 450px;
-}
-
+                            
 .titulo{
-    font-size: 42px;
-    line-height: 40px;
+    position: absolute;
+    width: 450px;
+    top: 200px;
+    font-size: 36px;
+    line-height: 50px;
     font-weight: 500px;
 }
 
 .parrafo{
+    position: absolute;
+    top: 390px;
     height: 63px;
     width: 500px;
     font-weight: 500;
     font-size: 22px;
     line-height: 25px;
-    
 }
 
-div>.boton{
-        margin-top: 50px;
-        background-color: #FF52BF;
-        color: white;
-        font-weight: bold;
-        font-size: 15px;
-        padding: 25px 80px;
+.boton{
+    position: absolute;
+    border-radius: 30px;
+    background-color: #FF52BF;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 80px;
+    outline: none;
 }
 
-.imagen>img{
-        width: 660px;
-        height: 480px;
+.botonRosado{
+        width: 300px;
+        padding: 15px 80px;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: -80px;
 }
-                         
+
+aside{
+    padding: 0px 50px 0px 0px;
+    float: right;
+    width: 600px;
+    height: 480px;
+}
+
+.mockup{
+    max-width: auto;
+    height: 100%;
+}
+                                        
+
 .container{
     display: flex;
     flex-direction: center;
     justify-content: center;
-    padding: 60px;
+    padding: 30px;
+    width: 100%;
+    height: auto;
 }
 
 .marco{
     display: flex;
-    align-items: center ;
-    justify-content: space-around;
     border-radius: 20px;
     border:none;
     box-sizing: border-box;
     box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 20px 30px 50px 100px;
+    padding: 10px 30px 10px 100px;
     background-color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
-.primero{
-    width: 80%;
-    height: 250px;
-    
+.marco2{
+    display: flex;
+    border-radius: 20px;
+    border:none;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 30px 10px 100px;
+    background-color: white;
 }
 
-                              
+h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.pInterno{  
+    width: 480px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #808D99;
+    padding: 10px;
+}
+
+.imagenMarco{
+    width: 300px;
+    height: 240px;
+}
+                                                
+
 .container2{
     display: grid;
     justify-content: center;
-    padding: 80px;
+    padding: 60px;
     
 }
 
 .marcoContainer{
     width: 700px;
-    height: 250px;
+    height: 200px;
     border-radius: 20px;
     border:none;
     box-sizing: border-box;
@@ -123,14 +157,15 @@ div>.boton{
     background-color: white;
     display: grid;
     justify-content: center;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px;
 }
 
-.primero2{
-    width: 90%;
-    height: 250px;
-    z-index: 1;
+.botonRosa{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
 }
+
 
 h2{
     font-weight: bold;
@@ -149,7 +184,10 @@ h2{
     height: 240px;
 }
 
-                   
+
+
+                                                
+
 .footer{
     margin-top: -200px;
     height: 250px;
@@ -158,9 +196,18 @@ h2{
     top: 100px;
     padding: 200px 100px 100px 100px;
     display: grid;
-    grid-template-columns: 30px 380px 300px 300px  300px;
+    grid-template-columns: 30px 380px 30px 250px 30px 250px  30px 250px;
     padding: 300px 0px 50px 100px;
     z-index: 4;
+}
+
+.logofooter{
+        width: 200px;
+        height: 50px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .navfooter{
@@ -173,6 +220,7 @@ h2{
 
 .negativo{
         filter: invert(100%);
+        
         -webkit-filter: invert(100%);
 }
 
@@ -208,4 +256,216 @@ h2{
     align-items: center;
     justify-content:inherit;
     
+}
+
+
+                                                                         
+    @media(max-width:375px){
+
+    body{
+        height: 720px;
+        
+    }
+
+    header{
+        background-image: url(../images/bg-hero-mobile.svg);
+        background-color: #EBFBFF;
+        padding: 20px;
+        height: 600px;
+        display: flexbox;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 75px;
+        height: 15px;
+    } 
+
+    .boton1{
+        width: 150px;
+        height: 22px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 13px;
+        padding: 0px;
+    }
+
+    .boton{
+        width: 300px;
+        height: 22px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 5px;
+        margin-top: -100px;
+        margin-left: 70px;
+    }
+                                            
+    .interno{
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo{
+        width: 320px;
+        top:150px;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 500px;
+    }
+
+    .parrafo{
+        top: 250px;
+        height: 63px;
+        width: 320px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        
+    }
+
+    .botonRosado{
+        display: flex;
+        justify-content: center;
+    }
+    .boton{
+        font-size: 10px;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    aside{
+        position: relative;
+        width: 265px;
+        height: 161px;
+        top: -80px;
+        left:50px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    aside{
+        float: center;
+        margin-top: 465px;
+    }
+
+    .img{
+        width: 265px;
+        height: 161px;
+        
+    }   
+                                                
+    
+    .container{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 20px 0px;
+        width: 350px;
+        height: auto;
+        }
+
+    .marco{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center ;
+        display: flex;
+        box-sizing: border-box;
+        padding: 20px;
+        
+    }
+
+    .marco2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        display: flex;
+        box-sizing: border-box;
+        padding: 20px;
+        
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: 0px;
+        width: 100%;
+        height: 60%;
+    }
+
+    h2{
+        font-size: 16px;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+    }
+
+    .pInterno{
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        line-height: 19px;
+        width: 100%;
+        height: auto;
+    }
+
+    .divImagenMarco1{
+        width: 250px;
+        height: 200px;
+    }
+
+    .imagenMarco1{
+        width: auto;
+        height: 100%;
+    }
+
+                                  
+
+    .container2{
+        display: grid;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    
+    .marcoContainer{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border:none;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white;
+        display: grid;
+        justify-content: row;
+        padding: 20px 0px 20px 0px;
+    }
+
+
+
+
+                                     
+
+    .footer{
+        height: 600px;
+        grid-template-columns: 30px 300px;
+        grid-template-rows: 220px 130px 150px 200px ;
+        margin-left: -80px;
+    }
+
+
+
 }

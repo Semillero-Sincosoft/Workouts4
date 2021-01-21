@@ -112,7 +112,7 @@ body::before{
     background-image: linear-gradient(45deg, #F2A49E, #FB4D92);
     border-radius: 20px;
     position: relative;
-    animation: smooth 4s ;
+    animation: smooth 40s ;
 }
 @keyframes smooth {
     from {width: 0%;}

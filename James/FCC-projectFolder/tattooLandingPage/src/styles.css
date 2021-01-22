@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+body{
+    width: 1440px;
+    height: 900px;
+    background-color: #DBE4EC;
+
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+header img{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+header b{
+     font-family: 'Redressed', cursive;
+     font-size: 35px;
+     margin-left: 20px;
+     position: relative;
+     top: -20px;
+}
+header ul{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+}
+.nav-link{
+    right: 50px;
+    margin-right: 40px;
+}

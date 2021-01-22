@@ -1,9 +1,6 @@
-casi completo 90% aprox
+casi completo 95% aprox
+pdt por verificacion
 
-falta terminar el responsive
-casi completo 85% aprox
-pendiente por corregir logo del footer
-centrar boton encima de footer
 
 ### james
 too many divs

@@ -73,12 +73,12 @@ const barra = document.querySelector(".contenidoBarra")
 let num=0;
 let contador=1000;
 function numeroContador(){
-    if(contador===816)clearInterval(timer2);
+    if(contador===186)clearInterval(timer2);
     contador--
     numLeft.innerText = `${contador}`;
     
 }
-let timer2= setInterval(numeroContador, 8)
+let timer2= setInterval(numeroContador, 1)
 
 
 function barraProgreso(){
@@ -86,7 +86,7 @@ function barraProgreso(){
     num++
     barra.style.width= num+"%";
 }
-let timer= setInterval(barraProgreso, 20)
+let timer= setInterval(barraProgreso, 45)
 
 </script>
 </html>

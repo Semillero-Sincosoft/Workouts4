@@ -1,0 +1,214 @@
+@font-face{
+    font-family:Raleway;
+    src:url(Raleway.ttf);
+  }
+    body {
+    background: hsl(229, 57%, 11%);
+    font-family: Raleway;
+           justify-content:center;
+    }
+    .desktop {
+    background-image: url('img/bg-desktop.png');
+    position: absolute;
+    width: 99.3%;
+    height: 330px;
+    bottom: 0%;
+    z-index: -1;
+    }
+    .contenedor{
+        position: absolute;
+        top:35%;
+        left:20%;
+        display: flex;
+    }
+    .primera-carta{
+    position: relative;
+    background-color: #1E2C69;
+    width: 349px;
+    height: 201px;
+    border-radius: 12px 100px 12px 12px;
+    
+    }
+    .Fylo{
+    position: relative;
+    display: flex;
+    left: 10%;
+    top: 20%;
+    }
+    .icons{
+    position: relative;
+    display: flex;
+    top: 20px;
+    }
+    .pagina{   
+    width: 49px;
+    height: 49px;
+    background: #0C122A;
+    border-radius: 12px;
+    margin: 31px 16px 0px 0px;
+    }
+    .carpeta{
+    width: 49px;
+    height: 49px;
+    background: #0C122A;
+    border-radius: 12px;
+    margin: 31px 16px 0px 0px;
+    }
+    .archivo{
+    width: 49px;
+    height: 49px;
+    background: #0C122A;
+    border-radius: 12px;
+    margin: 31px 16px 0px 0px;
+    }
+    .document{
+    margin: 12px 14.28px 12px 17px;
+    }
+    .folder {
+    margin: 15px 20px 180px 13px;
+    }
+    .upload {
+    height: 18px;
+    margin: 15px 14.28px 12px 12px;
+    }
+    .segunda-carta {
+    font-style: #ffffff;
+    position: relative;
+    bottom:30%;
+    background-color: #1E2C69;
+    width: 500px;
+    height: 150px;
+    border-radius: 12px 12px 12px 12px;
+    }
+    .Gb-left{
+    width: 179px;
+    height: 72px;
+    position: absolute;
+    z-index: 3;
+    right: 50px;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    background: rgb(255, 255, 255);
+    }
+    .triangulo{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    right: -61px;
+    top: 33px;
+    z-index: 2;
+    border-left: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-right: 28px solid white;
+    border-top: 28px solid transparent;
+    }
+    .span{
+    position: absolute;
+    color:cornsilk;
+    font-size: 15px;
+    bottom: 55%;
+    left:60px;
+    }
+    progress{
+    font-size:5px;
+    position: relative;
+    width: 380px;
+    height: 15px;
+    left: 60px;
+    bottom: -50%;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    }
+    progress[value]::-webkit-progress-bar{
+    background-color: rgb(12, 18, 44);
+    border-radius: 12px 12px 12px 12px;
+    }
+    progress[value]::-webkit-progress-value{
+    background:linear-gradient(30deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 12px 12px 12px 12px;
+    }
+    h5{
+    color: cornsilk;
+    position: absolute;
+    left: 380px;
+    bottom: 10%;
+    }
+    h6{
+    color:cornsilk;
+    position: relative;
+    left: 70px;
+    bottom:-37%;
+    }
+    h2{
+        font-size: 13px;
+        position: absolute;
+        right: 10%;
+        bottom: 20%;
+    }
+    h1{
+        font-size:30px;
+        position: absolute;
+        left: 10%;
+        bottom: 0%;
+        
+    }
+    @media screen and (max-width: 1040px){
+        .desktop {
+    background-repeat:no-repeat;
+    background-size:cover ;
+    background-image: url('img/bg-mobile.png');
+    width: 100%;
+    height: 100%;
+    }
+    .primera-carta{
+        width: 300x;
+        height: 200px;
+        top:140px;
+        left: 20px;
+        }
+    .segunda-carta {
+        left: 6%;
+        top: 160px;
+        width: 350px;
+        height: 150px;
+        
+        }
+        .triangulo {
+            display: none;
+        }
+        progress{
+            position: absolute;
+            width: 300px;
+            top:50%;
+            left: 6%;
+        }
+        .Gb-left{
+            position: relative;
+            top: 85%; 
+            left: 100px;
+        }
+        .span{
+            position: absolute;
+            top:35px;
+        }
+        h5{
+            position: absolute;
+            top: 50%;
+            left: 77%;
+        }
+        h6{
+            position: absolute;
+            top: 50%;
+            left: 7%;   
+        }
+        h1{
+            position: relative;
+            bottom: 10pxpx;
+            left: -25%;
+            font-size: 40px;
+            font-weight: 50%;
+        }
+    }

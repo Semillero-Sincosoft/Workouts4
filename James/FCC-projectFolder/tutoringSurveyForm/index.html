@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
     <title>Survey Form : Virtual Tutoring</title>
 </head>
+
 <body>
-    
+    <div class="img"></div>
+    <div class="blueTint"></div>
+    <section class="signUpForm">
+        <h1 id="title">Virtual Tutoring Survey form </h1>
+        <span id="description">Thank you for taking the time to give us feedback</span>
+        
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Please Enter Your Name...">
+            <br>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Please Enter Your Email Address...">
+            <br>
+            <label for="number" id="number-label">Age(optional)</label>
+            <input type="number" id="number" max="30" min="5" placeholder="Please Enter Your Age...">
+            <br>
+            <select name="occupation" id="dropdown" placeholder="Please Choose an Option...">
+                <option value="Please Choose an Option...">Please Choose an Option...</option>
+                <option value="Student">Student</option>
+                <option value="Tutor">Tutor</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Front End Developer">Front End Developer</option>
+                <option value="Back End Developer">Back End Developer</option>
+                <option value="Architech">Architech</option>
+            </select>
+            <section id="multipleChoice">
+                <h4>Would you recommend Vritual Tutoring to friends?</h4>
+                <input type="radio" name="recommend" value="Defenetly"><label>Defenetly</label>
+                <br>
+                <input type="radio" name="recommend" value="Maybe"><label>Maybe</label>
+                <br>
+                <input type="radio" name="recommend" value="Not Sure"><label>Not Sure</label>
+                <br>
+                <h4>What type of tutoring would you like to receive?</h4>
+                <input type="checkbox" name="type" value="English"><label>English</label>
+                <br>
+                <input type="checkbox" name="type" value="Semantic HTML"><label>Semantic HTML</label>
+                <br>
+                <input type="checkbox" name="type" value="CSS"><label>CSS</label>
+                <br>
+                <input type="checkbox" name="type" value="Responsive Web Design"><label>Responsive Web Design</label>
+                <br>
+                <input type="checkbox" name="type" value="Vanilla Javascript"><label>Vanilla Javascript</label>
+                <br>
+                <input type="checkbox" name="type" value="JQuery"><label>JQuery</label>
+                <br>
+                <input type="checkbox" name="type" value="SASS"><label>SASS</label>
+                <br>
+                <input type="checkbox" name="type" value="Node.js"><label>Node.js</label>
+                <br>
+                <input type="checkbox" name="type" value="Back-End w/ Javascript"><label>Back-End w/ Javascript</label>
+                <br>
+            </section>
+            <label for="feedback" id="feedback-label">Please leave your addictional feedback here.....</label>
+            <textarea id="feedback" name="feedback" placeholder="Please leave your addictional feedback here .....">
+
+            </textarea>
+            <button id="submit" class="submitValidate">
+                SUBMIT
+            </button>
+    </section>
+    </form>
+
 </body>
+
 </html>

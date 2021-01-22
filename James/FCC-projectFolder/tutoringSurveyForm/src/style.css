@@ -1,0 +1,118 @@
+html{
+    height: 100%;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+*{
+    margin: 0px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+}
+div.blueTint{
+    width: 100%;
+    height: 100%;
+    opacity: 51%;
+    background-color: #040989;
+    z-index: -1;
+    position: absolute;
+    left:0px;
+}
+.signUpForm{
+    color: white;
+}
+#description{
+    position: relative;
+    left: 35%;
+    top: 20px;
+    font-size: 15px;
+}
+#title{
+    position: relative;
+    left: 30%;
+    top: 30px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+#survey-form{
+    border-radius: 20px;
+    height: 790px;
+    width: 520px;
+    background-color: black;
+    position: relative;
+    left: 15%;
+    margin-top: 5%;;
+}
+input{
+    position: relative;
+    top: 10px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+#name-label,#email-label,#number-label{
+    position: relative;
+    font-size: 12px;
+}
+#name-label{
+    left: 75px;
+    top: 15px;
+}
+#email-label{
+    left: 75px;
+    top: 15px;
+}
+#number-label{
+    left: 75px;
+    top: 15px;
+}
+#name,#email,#number{
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#name,#email,#number::placeholder{
+    font-size: 10px;
+}
+#dropdown{
+    position: relative;
+    top: 27px;
+    width: 82%;
+    height: 23px;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+#multipleChoice{
+    position: relative;
+    top: 40px;
+    left: 70px;
+}
+#multipleChoice input{
+    left: -30px;
+    top: 3px;
+}
+#feedback{
+    position: relative;
+    top: 60px;
+    left: 70px;
+    width: 80%;
+    height: 65px;
+}
+#feedback-label{
+    position: relative;
+    top: 55px;
+    left: 70px;
+}
+.submitValidate{
+    border-radius: 20px;
+    background-color: #34b713;
+    color: white;
+    height: 35px;
+    width: 200px;
+    position: relative;
+    top: 80px;
+    left: 180px;
+    font-size: 15px;
+}

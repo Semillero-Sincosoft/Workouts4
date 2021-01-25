@@ -1,0 +1,257 @@
+html {
+    background: #0C122C;
+}
+
+
+body{
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    font-family: "Raleway";
+    font-size: 14px; 
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+/*Contenedor Principal*/
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Fondo*/
+.fondo{
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background: url("../images/bg-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+}
+/* Sección de las acciones */
+.acciones{
+    position: relative;
+    margin-right: 2%;
+    height: 200px;
+    width: 346px;
+    background: #1D2C67;
+    border-radius: 20px 100px 20px 20px;
+    align-self: center;
+    
+}
+
+.logo{
+    position: absolute;
+    height: 40px;
+    width: 135px;
+    left: 44px;
+    top: 41px;
+    content:url("../images/logo.svg");
+}
+
+.btnaccion{
+    height: 49px;
+    width: 47px;
+    left: 0px;
+    top: 0px;
+    border-radius: 12px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0C122C;
+    outline: none;
+    margin: 0px 10px 0px 10px;
+    position: relative;
+}
+
+.botones{
+    position: relative;
+    top: 55%;
+    margin-left: 44px;
+    min-width: 220px;
+    height: 10px;
+}
+
+/*Carta donde se ubica el porcentaje de almacenamiento*/
+
+.almacenamiento{
+    top: 3.5%;
+    height: 154px;
+    width: 548px;
+    position: relative;
+    background: #1D2C67;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.porcentaje{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.titulo{
+    margin-left: 44px;
+}
+
+.stat{
+    height: 22px;
+    width: 87%;
+    position: absolute;
+    left: 44px;
+    background: #0C122C;
+    border-radius: 100px;
+}
+
+.stat2{
+    position: relative;
+    margin: 3px 0px 0px 5px;
+    height: 16px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #FFA399 0%, #FF4D97 100.54%);
+}
+
+.circulo{
+    height: 13px;
+    width: 13px;
+    border-radius: 100px;
+    float: right;
+    margin: 1px 2px 0px 0px;
+    background: #FFFFFF;
+}
+
+/* Sección del cuadro indicando cuánto queda de almacenamiento*/
+.triangulo{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 30px solid #ffffff;
+    z-index: 3;
+    bottom:47px;
+    right: 30px;
+    float: right;
+
+  }
+  .cuadromen{
+      position : absolute;
+      width: 179px;
+      height: 79px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      bottom:64px;
+      right: 30px;
+      float: right;
+    
+  }
+
+  .nroIndicador{
+      font-size: 39px;
+      color: #0C122C;
+      font-weight: 700;
+      margin-left: 20PX;
+  }
+
+  .gris{
+    color:#848794;
+    margin-left: 10px;
+  }
+
+  .derecha{
+      margin-top: 10px;
+      margin-right: 30px;
+      float: right;
+  }
+
+  .izquierda{
+    margin-top: 10px;
+    margin-left: 50px;
+    float: left;
+  }
+
+@media screen and (max-width: 667px){
+
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .fondo{
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: url("../images/bg-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        bottom: 0;
+    }
+    
+    .acciones{
+        position: relative;
+        margin-right: 2%;
+        height: 200px;
+        width: 325px;
+        top: 0px;
+    }
+    
+    .almacenamiento{
+        top: 3.5%;
+        height: 154px;
+        width: 325px;
+        margin-right: 7px;
+    }
+
+    .porcentaje{
+        bottom: 15px;
+    }
+
+    .stat{
+        height: 22px;
+        width: 78%;
+        position: absolute;
+        left: 36px;
+    }
+    
+    .stat2{
+        position: relative;
+        margin: 3px 0px 0px 5px;
+        height: 16px;
+        width: 65%;
+        border-radius: 100px;
+        background: linear-gradient(90deg, #FFA399 0%, #FF4D97 100.54%);
+    }
+
+    .cuadromen{
+        position : absolute;
+        width: 179px;
+        height: 72px;
+        bottom:64px;
+        top: 93px;
+        right: 68px;
+        float: none;
+      
+    }
+
+    .triangulo{
+        display: none;
+    
+      }
+}

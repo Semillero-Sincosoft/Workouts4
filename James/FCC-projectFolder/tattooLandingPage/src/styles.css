@@ -3,15 +3,19 @@
     font-family: 'Reem Kufi', sans-serif;
 }
 body{
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    height: 1700px;
     background-color: #DBE4EC;
-
+}
+main{
+    display: flex;
+    justify-content: center;
 }
 header{
     width: 100%;
     position: fixed;
     background-color: white;
+    z-index: 3;
 }
 header img{
     margin-top: 20px;
@@ -27,12 +31,168 @@ header b{
 header ul{
     position: absolute;
     top: 40px;
-    right: 100px;
+    right: 0px;
     list-style-type:none;
     display: flex;
     flex-direction: row;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .nav-link{
     right: 50px;
     margin-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    
 }
+.nav-link:hover{
+    cursor: pointer;
+    font-size: 22px;
+}
+#form{
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+}
+#email{
+    width: 480px;
+    height: 50px;
+    border-radius: 10px;
+}
+#email::placeholder{
+    text-align: center;
+}
+input#submit{
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    background-color: #34B713;
+    color: white;
+    font-size: 18px;
+}
+input#submit:hover{
+    cursor: pointer;
+    background-color: #4cac33d2;
+}
+#pricing{
+    position: relative;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#pricing img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: -50px;
+}
+aside span{
+    font-family: 'Redressed', cursive;
+     font-size: 35px;
+     position: relative;
+     top: -50px;
+     left: -10px;
+}
+aside p{
+    position: relative;
+    left: 90px;
+    top: -50px;
+    font-size: 20px;
+}
+iframe{
+    border: 2px solid red;
+    z-index: 2;
+    position: absolute;
+    top: 950px;
+}
+section#lovePrices{
+    position: absolute;
+    top: 1500px;
+    display: flex;
+}
+section#lovePrices div{
+    position: absolute;
+    left: 25%;
+}
+section#lovePrices h2{
+    position: absolute;
+    font-size: 60px;
+    top: -60px;
+    left: 5em;
+   
+}
+section#lovePrices i{
+    position: absolute;
+    top: 10px;
+    left: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+article{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+article aside{
+    margin: 30px;
+    background-color: white;
+    height: 480px;
+    width: 400px;
+    text-align: center;
+}
+article aside  h3{
+    font-family: 'Redressed', cursive;
+    font-size: 35px;
+    background-color: lightgray;
+    padding: 10px;
+}
+article aside span{
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
+article aside span b{
+    margin-top: 5px;
+    font-size: 80px;
+    font-family: 'Redressed', cursive;
+    color: #34B713;
+}
+button.btn{
+    background-color: #34B713;
+    color: white;
+    height: 50px;
+    width: 80%;
+    font-size: 30px;
+    margin-top: 30px;
+}
+button.btn:hover{
+    cursor: pointer;
+    background-color: #4cac33d2;
+}
+@media only screen and (max-width: 734px) {
+    header{
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        background-color: white;
+        z-index: 3;
+    }
+    header img{
+        position: relative;
+        left: 20%;
+    }
+    header b{
+         left: 20%;
+    }
+    header ul{
+        top: 100px;
+        left: 20%;
+    }
+  }

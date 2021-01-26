@@ -1,0 +1,567 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  height: 3000px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1f;
+  width: 1440px;
+  position: relative;
+  left: 75px;
+}
+.intro {
+  position: absolute;
+  background-color: hsl(193, 100%, 96%);
+  height: 540px;
+  width: 1200px;
+  box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+  border-radius: 10px;
+}
+img.logo {
+  position: absolute;
+  top: 20px;
+  height: 17px;
+  width: 110px;
+  left: 20px;
+}
+h1 {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  width: 450px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.intro > p {
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  width: 500px;
+  color: hsl(208, 11%, 55%);
+}
+img.mock {
+  position: absolute;
+  top: 45px;
+  height: 420px;
+  width: 600px;
+  left: 570px;
+}
+.btn {
+  position: absolute;
+  top: 370px;
+  left: 20px;
+  height: 50px;
+  width: 300px;
+  border-radius: 25px;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+.grow {
+  position: absolute;
+  height: 450px;
+  width: 1200px;
+  top: 600px;
+  box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+  border-radius: 10px;
+}
+.grow > img {
+  position: absolute;
+  height: 350px;
+  top: 20px;
+  left: 750px;
+}
+h2 {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}
+.grow > p {
+  position: absolute;
+  top: 150px;
+  left: 170px;
+  width: 520px;
+  color: hsl(208, 11%, 55%);
+}
+.flow {
+  position: absolute;
+  height: 500px;
+  width: 1200px;
+  top: 1100px;
+  box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+  border-radius: 10px;
+}
+.flow > img {
+  position: absolute;
+  height: 350px;
+  top: 80px;
+  left: 10px;
+}
+.flow > h3 {
+  position: absolute;
+  left: 650px;
+  top: 100px;
+  font-size: 30px;
+}
+.flow > p {
+  position: absolute;
+  width: 500px;
+  left: 650px;
+  top: 160px;
+  color: hsl(208, 11%, 55%);
+}
+.user {
+  position: absolute;
+  height: 500px;
+  width: 1200px;
+  top: 1650px;
+  box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+  border-radius: 10px;
+}
+.user > img {
+  position: absolute;
+  height: 350px;
+  top: 80px;
+  left: 700px;
+}
+.user > h4 {
+  position: absolute;
+  font-size: 30px;
+  left: 80px;
+  top: 125px;
+}
+.user > p {
+  position: absolute;
+  width: 490px;
+  left: 80px;
+  top: 200px;
+  color: hsl(208, 11%, 55%);
+}
+.ready {
+  position: absolute;
+  height: 210px;
+  width: 800px;
+  left: 240px;
+  top: 2250px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+  border-radius: 13px;
+  z-index: 1;
+  background-color: white;
+}
+.ready > h5 {
+  position: absolute;
+  letter-spacing: 2px;
+  left: 140px;
+  top: -10px;
+  font-size: 30px;
+}
+.btn2 {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  height: 70px;
+  width: 370px;
+  border-radius: 45px;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  color: white;
+  font-size: 17px;
+  z-index: 2;
+}
+footer {
+  position: absolute;
+  color: white;
+  top: 2375px;
+  height: 570px;
+  width: 1250px;
+  z-index: 0;
+  margin-left: -45px;
+  background-color: hsl(192, 100%, 9%);
+}
+img.whiteLogo {
+  position: absolute;
+  height: 35px;
+  width: 200px;
+  top: 160px;
+  left: 135px;
+}
+img.location {
+  position: absolute;
+  top: 235px;
+  left: 165px;
+}
+.locationLorem {
+  position: absolute;
+  top: 230px;
+  left: 205px;
+  width: 380px;
+  color: hsl(208, 11%, 55%);
+}
+img.phone {
+  position: absolute;
+  top: 355px;
+  left: 165px;
+}
+.phoneNum {
+  position: absolute;
+  top: 350px;
+  left: 215px;
+  color: hsl(208, 11%, 55%);
+}
+img.email {
+  position: absolute;
+  top: 425px;
+  left: 165px;
+}
+.emailAdd {
+  position: absolute;
+  top: 420px;
+  left: 215px;
+  color: hsl(208, 11%, 55%);
+}
+.spans {
+  position: absolute;
+  top: 230px;
+  left: 700px;
+  width: max-content;
+  color: hsl(208, 11%, 55%);
+}
+span.one {
+  position: absolute;
+  width: max-content;
+}
+span.two {
+  position: absolute;
+  left: 170px;
+}
+span.three {
+  position: absolute;
+  width: max-content;
+  top: 50px;
+}
+span.four {
+  position: absolute;
+  top: 50px;
+  left: 170px;
+}
+span.five {
+  position: absolute;
+  top: 100px;
+}
+span.six {
+  position: absolute;
+  width: max-content;
+  top: 100px;
+  left: 170px;
+}
+img.socialMedia {
+  position: absolute;
+  top: 225px;
+  right: 160px;
+  height: 40px;
+}
+.copyright {
+  position: absolute;
+  font-size: 11px;
+  top: 500px;
+  right: 65px;
+  color: hsl(208, 11%, 55%);
+}
+@media only screen and (max-width: 1200px) {
+  body{
+    width: 375px;
+    height: max-content;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+    left: 5px;
+  }
+  .intro {
+    position: absolute;
+    background-color: unset;
+    height: 760px;
+    width: 375px;
+    box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+    border-radius: 10px;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  img.logo {
+    position: absolute;
+    top: 20px;
+    height: 17px;
+    width: 110px;
+    left: 20px;
+  }
+  h1 {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    width: 350px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+  }
+  .intro > p {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    text-align: center;
+    width: 330px;
+    height: max-content;
+    color: black;
+  }
+  .btn {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    color: white;
+    font-size: 15px;
+  }
+  img.mock {
+    position: absolute;
+    top: 500px;
+    height: 250px;
+    width: 330px;
+    left: 20px;
+  }
+  .grow {
+    position: absolute;
+    height: 500px;
+    width: 375px;
+    top: 800px;
+    box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+    border-radius: 10px;
+  }
+  .grow > img {
+    position: absolute;
+    height: 200px;
+    top: 10px;
+    left: 60px;
+  }
+  h2 {
+    position: absolute;
+    top: 250px;
+    left: 85px;
+  }
+  .grow > p {
+    position: absolute;
+    text-align: center;
+    top: 310px;
+    left: 25px;
+    width: 330px;
+    color: hsl(208, 11%, 55%);
+  }
+  .flow {
+    position: absolute;
+    height: 470px;
+    width: 375px;
+    top: 1340px;
+    box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+    border-radius: 10px;
+  }
+  .flow > img {
+    position: absolute;
+    height: 210px;
+    top: 10px;
+    left: 35px;
+  }
+  .flow > h3 {
+    left: 40px;
+    top: 230px;
+    font-size: 30px;
+    width: 310px;
+  }
+  .flow > p {
+    width: 330px;
+    text-align: center;
+    left: 20px;
+    top: 310px;
+    color: hsl(208, 11%, 55%);
+  }
+  .user {
+    height: 600px;
+    width: 375px;
+    top: 1900px;
+    box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+    border-radius: 10px;
+    z-index: -1;
+  }
+  .user > img {
+    position: absolute;
+    height: 220px;
+    top: 5px;
+    left: 40px;
+  }
+  .user > h4 {
+    position: absolute;
+    font-size: 30px;
+    left: 110px;
+    top: 275px;
+  }
+  .user > p {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    left: 30px;
+    top: 370px;
+    color: hsl(208, 11%, 55%);
+  }
+  .ready {
+    position: absolute;
+    height: 140px;
+    width: 350px;
+    left: 10px;
+    top: 2420px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
+    border-radius: 20px;
+    z-index: 1;
+    background-color: white;
+  }
+  .ready > h5 {
+    position: absolute;
+    letter-spacing: 2px;
+    width: 340px;
+    left: 15px;
+    top: -10px;
+    font-size: 17px;
+  }
+  .btn2 {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    height: 35px;
+    width: 200px;
+    border-radius: 45px;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    color: white;
+    font-size: 10px;
+    z-index: 2;
+  }
+  footer {
+    position: absolute;
+    color: white;
+    top: 2500px;
+    left: 45px;
+    height: 900px;
+    width: 375px;
+    z-index: 0;
+    margin-left: -45px;
+    background-color: hsl(192, 100%, 9%);
+  }
+  img.whiteLogo {
+    position: absolute;
+    height: 35px;
+    width: 200px;
+    top: 130px;
+    left: -7px;
+  }
+  img.location {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+  }
+  .locationLorem {
+    position: absolute;
+    top: 205px;
+    left: 65px;
+    width: 310px;
+    color: hsl(208, 11%, 55%);
+  }
+  img.phone {
+    position: absolute;
+    top: 335px;
+    left: 30px;
+  }
+  .phoneNum {
+    position: absolute;
+    top: 330px;
+    left: 75px;
+    color: hsl(208, 11%, 55%);
+  }
+  img.email {
+    position: absolute;
+    top: 425px;
+    left: 30px;
+  }
+  .emailAdd {
+    position: absolute;
+    top: 420px;
+    left: 75px;
+    color: hsl(208, 11%, 55%);
+  }
+  .spans {
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    width: max-content;
+    color: hsl(208, 11%, 55%);
+  }
+  span.one {
+    position: absolute;
+    width: max-content;
+  }
+  span.two {
+    position: absolute;
+    top: 145px;
+    left: 0px;
+  }
+  span.three {
+    position: absolute;
+    width: max-content;
+    top: 50px;
+  }
+  span.four {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+  }
+  span.five {
+    position: absolute;
+    top: 100px;
+  }
+  span.six {
+    position: absolute;
+    width: max-content;
+    top: 240px;
+    left: 0px;
+  }
+  img.socialMedia {
+    position: absolute;
+    top: 800px;
+    right: 100px;
+    height: 50px;
+  }
+  .copyright {
+    position: absolute;
+    font-size: 11px;
+    top: 850px;
+    right: 75px;
+    color: hsl(208, 11%, 55%);
+  }
+}

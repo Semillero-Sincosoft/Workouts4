@@ -1,0 +1,106 @@
+@font-face{
+    font-family:Inter;
+    src:url(Inter.ttf);
+  }
+* {
+    background-color: #ffffff;
+}
+.primer {
+    background:none;
+    position: relative;
+    left: 47%;
+    width: 50%;
+    height: 50%;
+    z-index: inherit;
+}
+.segundo {
+    background:none;
+    position: absolute;
+    left: 0%;
+    width: 45%;
+    height: 22.5%;
+    bottom: 0%;  
+    z-index: inherit;
+}
+.tercero {
+    background: none;
+    position: absolute;
+    top: 28%;
+    right: 70.5%;
+    z-index: inherit;
+}
+p {
+    font-weight:500;
+    background: none;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 28px;
+    width: 40%;
+    height: 20%;
+    font-family: Inter;
+    z-index: 1;
+}
+.image {
+    background-color: blue;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    position: absolute;
+    left: 51.5%;
+    top: 10%;
+    z-index: unset;
+    width: 39%;
+    height: 80%;
+}
+.tanya{
+    margin-top: 1%;
+    width: 20.5%;
+    height: 6%;
+    font-family: Inter;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    left:15%;
+    top:65%;
+    display: flex;
+    word-spacing: 2px;
+    font-size: 17px;
+}
+h4 {
+    font-family: Inter;
+    margin-right: 10px;
+}
+h5 {
+    color: gray;
+}
+.botones {
+    font-family: Inter;
+    font-weight: 10px;
+    font-size: 50px;
+    background:none;
+    position: absolute;
+    top: 88%;
+    left: 55%;
+    width: 10%;
+    height: 3.5%;
+    z-index: 1;
+    display:flex;
+}
+.boton1 {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.19), 10px 0 0 rgba(0,0,0,0.23);
+    font-size:18px;
+    border-radius: 20px 0px 0px 20px;
+    width: 5%;
+    height: 1.75%;
+    border: none;
+}
+.boton2 {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0.23);
+    border-radius: 0px 20px 20px 0px;
+    font-size:18px;
+    width: 5%;
+    height: 1.75%;
+    border: none;
+}
+@media screen and (max-width: 600px){
+
+}

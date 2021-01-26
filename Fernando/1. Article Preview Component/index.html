@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 1</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+   
+</head>
+  <body>
+    <main >
+     <div class="container">
+        <img  class="containerImg"  />
+    
+      <aside class="containerRight">
+        <div class="text">
+          <h1 class="titulo">Shift the overall look and feel by adding these wonderful touches to 
+              furniture in your home
+          </h1>
+          <p class="parrafo">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete
+          </p>
+          <div id="mensaje" class="contenedor-mensaje">
+            <div class="rectangulo">
+                <span class="share">
+                    SHARE
+                </span>
+                <div class="redes">
+                <img class=" icon-facebook" src="./assets/img/icon-facebook.svg" alt="">
+                <img class=" icon-twitter"src="./assets/img/icon-twitter.svg" alt="">
+                <img class=" icon-pinterest"src="./assets/img/icon-pinterest.svg" alt="">
+            </div>
+            </div>
+        <div class="triangulo">      
+        </div>
+        </div>
+        
+        <section id="personaje" class="personaje">
+          <div class="datoIcono">
+          <img class="avatar avatar2"src="./assets/img/avatar-michelle.jpg" />
+          <div class="datosPersonaje">
+            <h3 class="nombre">Michelle Appleton</h3>
+            <span class="fecha">28 Jun 2020</span>
+          </div>
+        </div>
+          <button class="button" onclick="Click()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path  class=" button"  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+          </button>
+        </section>
+       </aside>
+    </div>
+    
+</div>
+    </main>
+  </body>
+  <script>
+      const mensaje = document.getElementById("mensaje");
+        const datoIcono = document.querySelector(".datoIcono")
+
+        
+      function Click() {
+        console.time(mensaje)
+    if (mensaje.style.display === "block") {
+        mensaje.style.display = "none";
+        
+        datoIcono.classList.remove("visible")
+       
+    }
+    
+     else {
+        mensaje.style.display = "block";
+        datoIcono.classList.add("visible")
+
+    }
+    console.timeEnd(mensaje);
+}
+  </script>
+</html>

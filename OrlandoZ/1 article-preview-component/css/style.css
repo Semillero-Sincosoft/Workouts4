@@ -5,7 +5,7 @@
 
 .marco1{
     position: absolute;
-    width: 958px;
+    width: 858px;
     height: 361px;
     left: calc(50% - 958px/2);
     top: calc(50% - 361px/2 - 0.5px);
@@ -24,7 +24,7 @@
 
 .contenido{
     position: absolute;
-    width: 563px;
+    width: 463px;
     height: 361px;
     left: 395px;
     top: -1px;
@@ -80,7 +80,6 @@
     left: 540px; 
     top: 250px;
     font-family: Manrope;
-    
     font-size: 14px;
     line-height: 2px;
     display: flex;
@@ -90,12 +89,11 @@
 
 
 #iconoCompartir{
-
     background: url('../images/icon-share.svg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     left: 770px;
     top: 200px;
     border-color: #6D7F97;
@@ -122,6 +120,17 @@
     display: block;
 }
 
+.triangulo{
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 115px;
+    top: 40px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid#49556B;
+}
+
 .d-none {
     display: none;
     
@@ -132,8 +141,6 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    
-    
 }
 
 .icon{
@@ -142,10 +149,11 @@
 }
 
 h4{
-  margin-top: 4px;
+    margin-top: 4px;
+    font-weight: normal;
 }
 
-
+                                 
 
 @media (max-width:375px){
     
@@ -155,7 +163,7 @@ h4{
         height: 692px;
         left: 27px;
         top: 60px;
-                  
+
     }
     .imagen1{
         position: relative;
@@ -180,7 +188,6 @@ h4{
         height: 75px;
         left: 20px;
         top: 5px;
-       
     }
 
     .parrafo{
@@ -189,7 +196,6 @@ h4{
         height: 104px;
         left: 20px;
         font-size: 16px;
-    
     }
 
     .foto{
@@ -208,7 +214,7 @@ h4{
         height: 19px;
         left: 90px;
         top: 20px;
-      
+
         font-family: Manrope;
         font-style: normal;
         font-weight: bold;
@@ -242,20 +248,33 @@ h4{
         height: 20px;
         left: 250px;
         top: -40px;
-       
+        z-index: 1;
+        background-color: #FFFFFF;
     }
 
-   
-    .marcoRedes{    
+    .marcoRedes{
         position: absolute;
         width: 322px;
-        height: 69px;
-        top: 650PX;
+        height: 75px;
+        top: 620PX;
         left: auto;
         background: #49556B;
-        border-radius: 10px;
         display: block;
-    }
+        border-radius: 0px 0px 10px 10px ;
+        justify-content: center;
+}
+
+#iconoCompartir :active{
+    background-color: white;
+}
+
+nav{
+    width: 230px;
+    z-index: 2;
+}
+.triangulo{
+    display: hidden;
+}
 
 
 }

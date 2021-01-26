@@ -1,0 +1,1 @@
+Proyecto pendiente por vista movil y por utilizar el js

@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio # 1</title>
-</head>
-
-<body>
-
-
     <!DOCTYPE html>
     <html lang="es">
 
@@ -18,74 +6,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Article Preview Component</title>
         <link rel="stylesheet" href="assest/css/styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-
+        
     </head>
 
-    <main class="container">
-        <div class="imagen">
-            <img src="assest/imagenes/drawers.jpg" alt="imagen2">
+    <body>
+        <main class="container">
+            <div class="imagen">
+                <img src="assest/imagenes/drawers.jpg" alt="imagen2">
 
-        </div>
-        <div class="Info">
-            <h1 class="heading">
-                Shift the overall look and feel by
-                adding these wonderful touches to
-                furniture in your home
-            </h1>
-            <p class="content">
-                Ever been in a room and felt like something was missing?
-                Perhaps it felt slightly bare and uninviting.
-                I’ve got some simple tips to help you make any room feel complete.
+            </div>
+            <div class="Info">
+                <h1 class="heading">
+                    Shift the overall look and feel by
+                    adding these wonderful touches to
+                    furniture in your home
+                </h1>
+                <p class="content">
+                    Ever been in a room and felt like something was missing?
+                    Perhaps it felt slightly bare and uninviting.
+                    I’ve got some simple tips to help you make any room feel complete.
 
-            </p>
-            <div class="persona">
-                <div class="contacto">
-                    <img src="assest/imagenes/avatar-michelle.jpg" alt="">
-                    <div>
-                        <h1 class="nombre">Michelle Appleton</h1>
-                        <h1 class="fecha">28 Jun 2020</h1>
+                </p>
+                <div class="persona">
+                    <div class="contacto">
+                        <img src="assest/imagenes/avatar-michelle.jpg" alt="">
+                        <div>
+                            <h1 class="nombre">Michelle Appleton</h1>
+                            <h1 class="fecha">28 Jun 2020</h1>
+                        </div>
+                    </div>
+                    <div class="Compartir" id="btnCompartir" onclick="Compartir()">
+                        <img src="assest/iconos/icon-share.svg" alt="Compartir" id="svg">
                     </div>
                 </div>
-                <div class="Compartir" id="btnCompartir" onclick="Share()">
-                    <img src="assest/iconos/icon-share.svg" alt="Compartir" id="svg">
+
+            </div>
+        </main>
+        <div id="overlay" class="overlay d-none">
+            <div class="rectangule">
+                <p class="share-info">
+                    S H A R E
+                </p>
+                <div class="share-icons">
+                    <img src="assest/iconos/icon-facebook.svg" alt="Facebook">
+                    <img src="assest/iconos/icon-twitter.svg" alt="Twitter">
+                    <img src="assest/iconos/icon-pinterest.svg" alt="Pinterest">
                 </div>
             </div>
-
+            <div class="triangule"></div>
         </div>
-    </main>
-    <div id="overlay" class="overlay d-none">
-        <div class="rectangule">
-            <p class="share-info">
-                S H A R E
-            </p>
-            <div class="share-icons">
-                <img src="assest/iconos/icon-facebook.svg" alt="Facebook">
-                <img src="assest/iconos/icon-twitter.svg" alt="Twitter">
-                <img src="assest/iconos/icon-pinterest.svg" alt="Pinterest">
-            </div>
-        </div>
-        <div class="triangule"></div>
-    </div>
+    </body>
 
+    <script>
+        function Compartir() {
+            console.time("Compartir")
+            document.getElementById('overlay').classList.toggle('d-none')
+            document.getElementById('btnCompartir').classList.toggle('active')
+            if (document.getElementById('btnCompartir').classList.contains('active')) {
+                document.getElementById('svg').src = "assest/iconos/icon-share-active.svg"
+            } else {
+                document.getElementById('svg').src = "assest/iconos/icon-share.svg"
+            }
+            console.timeEnd('Compartir')
+        }
+    </script>
 
-</body>
-<script>
-    function Share() {
-    console.time("Share")
-    document.getElementById('overlay').classList.toggle('d-none')
-    document.getElementById('btnCompartir').classList.toggle('active')
-    if(document.getElementById('btnCompartir').classList.contains('active')) {
-        document.getElementById('svg').src = "assest/iconos/icon-share-active.svg"
-    } else {
-        document.getElementById('svg').src = "assest/iconos/icon-share.svg"
-    }
-    console.timeEnd('Share')
-}
-</script>
+    </html>
+    </body>
 
-</html>
-</body>
-
-</html>
+    </html>

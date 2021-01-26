@@ -1,0 +1,183 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+    position: absolute;
+    margin: 0;
+    background-color: #ffffff;
+   
+  }
+ .fondo{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+.fondoDerecha{
+    position: relative;
+    float: right;
+    margin-right: 4%;
+    width: 50%;
+    height: 80%;
+    margin-top: 3%;
+}
+.comillas{
+    width: 8%;
+    position: absolute;
+    margin-top: 163px;
+    margin-left: 18.8%;
+    height: 13%;
+}
+.nube{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 20%;
+}
+
+main{
+    position: absolute;
+    width: 79.5%;
+    height: 83%;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 2;
+    margin-top: 48px;
+    display: flex;
+
+}
+.tanya{
+    position: relative;
+    width: 50%;
+    height: 80%;
+    left: 50%;
+    margin-top: 4%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.23);
+}
+.button{
+    position: relative;
+    width: 10%;
+    height: 8%;
+    left: 5.7%;
+    margin-top: 448px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: -0px 10px 50px  rgba(0, 0, 0, .4);
+    outline: none;
+}
+.icon{
+    margin-top: 4px;
+    width: 15%;
+    height: 40%;
+    outline: none;
+}
+.next{
+
+margin-right: 30%;
+
+}
+.prev{
+    margin-left: 5%;
+}
+
+.texto{
+   
+    position: absolute;
+    width: 54%;
+    height: 80%;
+    z-index: 3;
+    margin-top: 170px;
+    margin-left: 3%;
+
+}
+.descripcion{
+    font-size: 2.1vw;
+    margin-top: 0;
+    line-height: 37px;
+    color: #474561;
+    font-weight: 350;
+}
+.datos{
+    color: #BDBBC6;
+    display: flex;
+}
+.nombre{
+    color: #0C1229;
+}
+.profesion{
+    margin-top: 22px;
+    margin-left: 1%;
+}
+@media screen and (max-width: 600px) {
+    .fondoDerecha{
+        
+        float: none;
+        width: 80%;
+        height: 50%;
+        margin:11%;
+        margin-top: 5%;
+    }
+    .tanya{
+       
+        width: 80%;
+        height: 50%;
+        left: 11%;
+        margin-top: 1.5%;
+        
+    }
+    
+    .comillas{
+        width: 8%;
+        position: absolute;
+        margin-top: -35px;
+        margin-left: 45%;
+        height: 5%;
+    }
+    
+    .nube{
+       
+        width: 80%;
+        height: 10%;
+    }
+    .texto{
+        margin-top: 307px;
+        margin-left: 2%;
+        text-align: center;
+        width: 97%;
+        height: 70%;
+        
+    }
+    .descripcion{
+        font-size: 4.5vw;
+        line-height: 25px;
+        margin-top: 8%;
+    }
+    .button{
+       
+        width: 22%;
+        height: 6%;
+        left: 38%;
+        margin-top: 265px;
+        position: absolute;
+        
+    }
+    .icon{
+        margin-top: 2px;
+        
+    }
+    
+    .datos{
+        display: block;
+    }
+    .profesion{
+     margin-top: 0px;
+    }
+    .nombre{
+        margin-bottom: 3px;
+    }
+}

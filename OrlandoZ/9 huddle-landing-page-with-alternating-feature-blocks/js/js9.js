@@ -22,16 +22,6 @@
  
 
 
-
-
-
-
-
-
-
-
-
-
 function mensaje(){
     alert("boton try it")
 }

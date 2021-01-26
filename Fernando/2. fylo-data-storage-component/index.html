@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>2. fylo-data-storage-component</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containerArriba">
+        
+    </div>
+    <aside class="containerCentro">
+        <section class="contenedorIconos">
+            <img src="./assets/img/logo.svg" alt="" class="logo">
+            <div class="todoIconos">
+            <div class="icono">
+                <img src="./assets/img/icon-document.svg" alt="" class="document">
+            </div>
+            <div class="icono">
+                <img src="./assets/img/icon-folder.svg" alt="" class="folder">
+            </div>
+            <div class="icono">
+                <img src="./assets/img/icon-upload.svg" alt="" class="upload">
+            </div>
+           </div>
+        </section>
+        <section class="contenedorDerecho">
+            <div class="contenedorBarra">
+            <span class="texto">
+                You’ve used <b class="h2"></b> of your storage
+            </span>
+            
+            <div class="barra">
+                <div class="contenidoBarra">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="GB">
+                <span class="GB-min">0GB</span>
+                <span class="GB-max">1000GB</span>
+            </div>
+            </div>
+            
+            <div class="mensaje">
+                <div class="rectangulo">
+                    
+                    <h2 class="numero">
+                        
+                    </h2>
+                    <span class="left">
+                        GB LEFT
+                    </span>
+                </div>
+                <div class="triangulo">
+                
+                </div>
+            </div>
+            
+        </section>
+    </aside>
+    
+    <img class="containerImgAbajo" src="./assets/img/bg-desktop.png" alt="">
+</body>
+<script>
+    
+const numLeft = document.querySelector(".numero");
+const numH2 = document.querySelector(".h2");
+const barra = document.querySelector(".contenidoBarra")
+let num=0;
+let contador=1000;
+let contadorH2=0;
+function numeroContador(){
+    if(contadorH2===816 || contador===186 )clearInterval(timer2);
+    contador--
+    contadorH2++
+    numLeft.innerText = `${contador}`;
+    numH2 .innerText = `${contadorH2}`;
+    
+}
+
+
+function barraProgreso(){
+    if(num>75)clearInterval(timer);
+    num++
+    barra.style.width= num+"%";
+}
+let timer= setInterval(barraProgreso, 45)
+let timer2= setInterval(numeroContador, 1)
+</script>
+</html>

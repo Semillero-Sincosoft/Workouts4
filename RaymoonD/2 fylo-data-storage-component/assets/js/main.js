@@ -1,14 +1,15 @@
 
+let men =1000;
 let num = 0;
 let mensaje = document.getElementById("mensaje")
 function Calculador(){
 
-    if(num === 184) clearInterval(timer);
-    num ++ ;
-    mensaje.innerText = num;
+    if(men === 186) clearInterval(timer);
+    men -- ;
+    mensaje.innerText = men;
 
 }
-let timer = setInterval(Calculador, 10);
+let timer = setInterval(Calculador, 3);
 
 let progreso = document.getElementById("stat2")
 function Barra(){
@@ -18,4 +19,4 @@ function Barra(){
     progreso.style.width = num + "%";
 
 }
-let timer2 = setInterval(Barra, 80);
+let timer2 = setInterval(Barra, 65);

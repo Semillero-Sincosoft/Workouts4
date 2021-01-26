@@ -1,11 +1,207 @@
-html{
-    background-color:  hsl(229, 57%, 11%);
-    background-image: url("images/bg-desktop.png");
-    background-repeat: no-repeat;
-    background-position: 0% -75%;
-    background-size: cover;
-}
 body{
-    width: 100%;
-    height: 100%;   
+    background-color:  hsl(229, 57%, 11%); 
 }
+
+.principal{
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.ContentenLeft{
+    position: relative;
+    width: 349px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    margin-right: 30px;
+    border-radius: 10px 100px 10px 10px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+}
+.ContentenRight{
+    top: 23px;
+    position: relative;
+    width: 540px;
+    height: 154px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+}
+.Logo{
+    margin: 40px;
+}
+.Logos{
+    margin:40px;
+    display: flex;
+}
+.loguitos{
+    width: 48px;
+    height: 48px;
+    background-color:  hsl(229, 57%, 11%);
+    margin-right: 16px;
+    border-radius: 10px;
+}
+.iconos1{
+    margin: 12px 14px;
+}
+.iconos2{
+    margin: 14px 12px;
+}
+.iconos3{
+    margin: 16px 12px;
+}
+.labelProgreso{
+    color:hsl(243, 100%, 93%);
+    margin: 40px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: Raleway;
+}
+progress{
+    -webkit-appearance: none;
+    margin-left: 40px;
+    margin-top: 18px;
+    width: 458px;
+    height: 20px;    ;
+    border: solid 2px #151E49;
+    border-radius: 10px;
+}
+progress[value]::-webkit-progress-bar {
+    background-color:#151E49;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  progress[value]::-webkit-progress-value {
+    background:linear-gradient(30deg,hsl(6, 100%, 80%) ,hsl(335, 100%, 65%) );
+    border-radius: 10px; 
+  }
+  .bolita {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 100%;
+    left: 43px;
+    top: 50%;
+    background-color: white;
+  }
+  .gigas{
+      display: flex;
+  }
+  .GigasCero{
+    font-family: Raleway;
+    margin-left: 40px;
+    margin-top: 5px;
+    color:hsl(243, 100%, 93%);
+}
+  .Gigas{
+      font-family: Raleway;
+      margin-left: 360px;
+      margin-top: 5px;
+      color:hsl(243, 100%, 93%);
+  }
+  .mensaje{
+    position: absolute;
+    width: 179px;
+    height: 72px;
+    right: 40px;
+    top: -25%;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 10px;
+    font-family: Raleway;
+    color:#848794;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .mensaje::before{
+    content: "";
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 20px solid #FFFFFF;
+  }
+  .spaceLeft{
+    color:hsl(229, 57%, 11%);
+    font-size: 40px;
+    margin-top:10px;
+  }
+  .Gbleft{
+      margin:30px 10px 10px 10px;
+  }
+  .bg{
+    content:url("images/bg-desktop.png");
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    left: 0;
+}
+  @media screen and (max-width:400px){
+    body{
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+    }
+    .principal{
+        display: block;
+        margin:1em;
+        margin-top: 7em;
+    }
+    .ContentenLeft{
+        display: flex;
+        width: 325px;
+    }
+    .Logos{
+        margin-top: auto;
+        margin-left: -180px;
+        
+    }
+
+    .ContentenRight{
+    width: 325px;
+    display: block;
+ 
+    padding-top: 40px;
+    }
+    .labelProgreso{
+        margin-left: 50px;
+        margin-top: 0;
+    }
+
+    progress{
+        width: 261px;
+        height: 20px;    ;
+        border: solid 2px #151E49;
+        border-radius: 10px;
+        margin-left: 32px;
+    }
+    .GigasCero{
+      margin-left: 32px;
+  }
+    .Gigas{
+        margin-left: 174px;
+    }
+    .mensaje{
+        width: 172px;
+        right: 25%;
+        top: 75%;
+        border-radius: 10px;
+      }
+      .mensaje::before{
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 0px solid #FFFFFF;
+        
+      }
+      .bolita {
+          display: none;
+      }
+      .bg{
+          display: none;
+      }
+  }

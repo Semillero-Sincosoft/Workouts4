@@ -2,12 +2,10 @@ body{
     font-family: Quicksand;
     color: #474F54;
     width: auto;
-    
-    border: rgb(17, 0, 255) 1px solid;
     padding: 30px;
 }
 
-.titulo{
+#title{
     width: auto;
     height: auto;
     font-weight: bold;
@@ -30,17 +28,21 @@ header{
         justify-items: center;
 }
 
-.left{
+#img-div{
     width: 100%;
+    
+    
+    }
+
+#image{
+    max-width: 100%;
+    display: block;
     height: auto;
+    margin: 0 auto
+        
 }
 
-.imgCabecera{
-        width: 80%;
-        height: auto;
-}
-
-.pCabecera{
+#tribute-info{
     position: relative;
     right: 80px;
     width: 75%;
@@ -59,9 +61,10 @@ header{
     height: 216px;
     text-align: center;
     font-weight: bolder;
+    min-width: 500px;
 }
 
-.imagen{
+#fotos{
     padding: 26px;
     justify-items: center;
     width: 20%;
@@ -72,20 +75,24 @@ header{
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
-.integrante{
-    width: 80%;
-    height: 80%;
+#integrantes{
+    width: 100%;
+   
+}
+
+#img-caption{
+    font-size: 14px;
 }
 
 .texto{
     width: 80%;
     height: auto;
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
 }
 
-main{
+#main{
     width: 100%;
     height: auto;
     display: flex;
@@ -101,28 +108,116 @@ main{
     box-sizing: border-box;
 }
 
-.discografia{
-    box-sizing: border-box;
-    border: inset 8px rgba(128, 128, 128, 0.466);
-    width: 40%;
-    height: auto;
-    float: right;
-}
-b{
-    font-size: 24px;
+
+.subtitulo{
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content:  center;
 }
 
-ul{
+.trabajos{
     font-size: 20px;
     text-align: center;
+    list-style: none;
+    line-height : 35px;
 }
 
 footer{
-        padding: 0px 20px;
+    position: relative;
+    left: 20px;
 }
+
+#tribute-link{
+    font-size: 20px;
+    font-weight: bold ;
+}
+
+
+                                      
+@media(max-width: 375px){
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .cabecera{
+        display: table-row;
+        justify-content: column;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+
+    .left{
+        display: flex;
+        justify-content: column;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .imgCabecera{
+            width: auto;
+            height: 100%;
+    }
+    .pCabecera{
+        font-size: 14px;
+        width: 80%;
+        width: auto;
+        padding: 10px;
+    }
+
+    .integrantes{   
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .imagen{
+        width: 50%;
+        height: auto;
+    }
+    main{
+        width: 100%;
+        height: auto;
+        display: table-row;
+        justify-content: column;
+        padding: 40px 0px;
+        box-sizing: border-box;
+    }
+
+        .texto{
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .discografia{
+            width: 90%;
+            height: 100%;
+            float: right;
+        }
+
+        ul{
+            font-size: 14px;
+        }
+
+        footer{
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+}
+
+
+
 
 
 

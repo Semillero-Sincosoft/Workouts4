@@ -80,16 +80,17 @@ p4.innerHTML =
 
 whiteLogo.classList.add("whiteLogo");
 whiteLogo.src = "./images/whiteLogo.svg";
-home.classList.add("home");
-home.src = "./images/icon-home.svg";
+home.classList.add("location");
+home.src = "./images/icon-location.svg";
+homeLorem.classList.add('homeLorem');
 homeLorem.innerHTML =
   "lorem ipsum dolor sir amet, consectur <br> adispicing elit, sed do eusimod tempor inciddunt<br> ut labore et dolore magna aloqua";
 phoneImg.classList.add("phone");
 phoneImg.src = "./images/icon-phone.svg";
 phoneNum.classList.add("phoneNum");
-phoneImg.innerHTML = "+1-543-123-4567";
+phoneNum.innerHTML = "+1-543-123-4567";
 emailImg.classList.add("email");
-emailImg.src = "./images/icon-phone.svg";
+emailImg.src = "./images/icon-email.svg";
 emailAdd.classList.add("emailAdd");
 emailAdd.innerHTML = "example@huddle.com";
 

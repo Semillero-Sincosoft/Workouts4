@@ -1,0 +1,222 @@
+html {
+    background: #ffffff;
+}
+
+
+body{
+    color: #202046;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    font-family: "Inter";
+    font-size: 2.4vw;
+}
+
+
+.fondo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+.comillas{
+    position: absolute;
+    right: 55%;
+    left: 18%;
+    top: 26%;
+    width: 8.5%;
+    height: auto;
+}
+
+.parteInferior{
+    top: 76.5%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 23.5%;
+}
+
+.figuritas{
+    position: absolute;
+    right: 5%;
+    top: 7%;
+    width : 41%;
+    height: 87%;
+}
+
+.ContPrincipal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario{
+    position: absolute;
+    float: right;
+    height: auto;
+    width: 35%;
+    right:8%;
+    top: 15%;
+
+}
+
+
+.imgusuario{
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 12px 61px -1px rgba(0, 0, 0, 0.2);
+}
+
+.comentarios{
+    height: 60%;
+    width: 52%;
+    top: 10%;
+    position: relative;
+    right: 15% ;
+}
+
+p{
+    width: 92%;
+}
+
+span{
+    font-size: 1.2vw;
+}
+
+.btniz{
+    height: 54px;
+    width: 60px;
+    border-radius: 100px 0px 0px 100px;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+}
+
+.btnder{
+    height: 54px;
+    width: 60px;
+    border-radius: 0px 100px 100px 0px;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    outline: none;
+}
+.botones{
+    left: 5%;
+    position: absolute;
+    bottom: -5%;
+}
+
+@media screen and (max-width: 700px){
+
+    body{
+        font-size: 2.4vw; 
+    }
+    .fondo{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .comillas{
+        position: absolute;
+        right: 55%;
+        left: 18%;
+        top: 26%;
+        width: 8.5%;
+        height: auto;
+    }
+    
+    .parteInferior{
+        top: 96.5%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 45%;
+        height: 23.5%;
+    }
+    
+    .figuritas{
+        position: absolute;
+        right: 0%;
+        top: 7%;
+        width : 100%;
+        height: auto;
+    }
+    
+    .ContPrincipal{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .usuario{
+        position: relative;
+        float: none;
+        height: auto;
+        width: 55%;
+        right:0%;
+        top: -22%;
+        left: 25%;
+    }
+    
+    .btniz{
+        height: 54px;
+        width: 60px;
+        border-radius: 100px 0px 0px 100px;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        background: #FFFFFF;
+    }
+    
+    .btnder{
+        height: 54px;
+        width: 60px;
+        border-radius: 0px 100px 100px 0px;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        background: #FFFFFF;
+    }
+
+    .usuario{
+        position: absolute;
+        float: none;
+        height: auto;
+        width: 80%;
+        right:0%;
+        top: 15%;
+        left: 11.5%;
+    }
+
+    .comentarios{
+        height: 60%;
+        width: 52%;
+        top: 75%;
+        position: relative;
+        right: 0% ;
+    }
+}

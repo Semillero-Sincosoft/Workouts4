@@ -11,18 +11,17 @@ body {
 }
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  display: grid;
-  grid-template-rows: 1f;
-  width: 1440px;
+  width: 100%;
+  height: auto;
   position: relative;
   left: 75px;
 }
 .intro {
-  position: absolute;
-  background-color: hsl(193, 100%, 96%);
+  width: 80%;
   height: 540px;
-  width: 1200px;
+  background-color: hsl(193, 100%, 96%);
   box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
   border-radius: 10px;
 }
@@ -56,7 +55,7 @@ img.mock {
   width: 600px;
   left: 570px;
 }
-.btn {
+.btn{
   position: absolute;
   top: 370px;
   left: 20px;
@@ -71,7 +70,7 @@ img.mock {
 .grow {
   position: absolute;
   height: 450px;
-  width: 1200px;
+  width: 80%;
   top: 600px;
   box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
   border-radius: 10px;
@@ -167,7 +166,7 @@ h2 {
   top: -10px;
   font-size: 30px;
 }
-.btn2 {
+#btn2 {
   position: absolute;
   top: 100px;
   left: 220px;

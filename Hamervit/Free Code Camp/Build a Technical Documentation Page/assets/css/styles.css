@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background: #0e0e10;
+  font-family: Inter, sans-serif;
+  display: flex;
+  margin: 0 20px 0 0;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  width: 298px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #1f1f23;
+}
+
+#navbar > header > img {
+  margin: 32px 0 33px 0;
+}
+
+#navbar > ul {
+  list-style-type: none;
+  font-size: 24px;
+  text-align: center;
+}
+
+#navbar ul li:before {
+  display: block;
+  width: 270px;
+  height: 1px;
+  margin: 0 0 11px 0;
+  background: white;
+  content: "";
+}
+
+#navbar ul li {
+  margin: 0 0 26px 0;
+}
+
+li.understanding {
+  width: 260px;
+}
+
+#main-doc {
+  margin: 0 0 0 70px;
+  overflow: auto;
+  padding-top: 74px;
+}
+
+.main-section {
+  margin: 0 0 70px 0;
+}
+
+.main-section > header {
+  font-weight: bold;
+  margin: 0 0 40px 0;
+  font-size: 20px;
+}
+
+.main-section > ul,
+ol {
+  padding: 0 0 0 32px;
+}
+
+.main-section > ul > li,
+.main-section > ol > li {
+  margin: 10px auto 20px auto;
+}
+
+p > a {
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  body {
+    flex-direction: column;
+  }
+}

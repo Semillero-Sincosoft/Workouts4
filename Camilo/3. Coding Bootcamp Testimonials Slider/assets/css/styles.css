@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: Inter;
+}
+
+.background .bg {
+    position: absolute;
+    margin-right: 73px;
+    right: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.texto {
+
+    width: 635px;
+    height: 207px;
+    position: absolute;
+    margin: 181px 0 0 82px;
+    z-index: 2;
+    transition: width 500ms;
+    line-height: 1.4;
+    font-family: Inter;
+    color: #3F3E4C;
+}
+
+.texto>p {
+    font-size: 1.8vw;
+    color: #24213C;
+    padding-left: 16%;
+    padding-right: 5%;
+    padding-top: 5%;
+    
+}
+
+.perfil {
+    display: flex;
+    padding-left: 16%;
+    padding-right: 0%;
+    padding-top: 0%;
+}
+
+.perfil>p {
+    color: #212040;
+    font-size: 1.1vw;
+    font-weight: 900;
+
+}
+
+p.position {
+    color: #B6B6C2;
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-left: 6px;
+
+}
+
+.bg {
+    top: 5%;
+    width: 43.32%;
+    left: 42%;
+}
+
+.curve {
+
+    position: absolute;
+    width: 39%;
+    height: 119.95px;
+    left: 0px;
+    top: 535px;
+}
+
+.quotes {
+    position: absolute;
+    width: 100px;
+    left: 18.12%;
+    right: 73.61%;
+    top: 27%;
+    bottom: 60.75%;
+
+}
+.tanya{
+    position: absolute;
+    width: 34%;
+    left: 46.32%;
+    top: 12.5%;
+    bottom: 11.12%;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slides {
+    background-color: white;
+    position: absolute;
+    height: 56px;
+    width: 112px;
+    bottom: 77px;
+    right: 585px;
+    border-radius: 28px;
+    z-index: 3;
+    box-shadow: 0 2px rgb(0 0 0 / 40%);
+}
+
+.slides .slideRight {
+    border-radius: 0 28px 28px 0;
+    background-color: transparent;
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    user-select: none;
+    top: 20px;
+    left: 80px;
+}
+
+.slides .slideLeft {
+    border-radius: 28px 0 0 28px;
+    background-color: transparent;
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    top: 20px;
+    left: 20px;
+}
+
+@media(max-width: 667px){
+
+
+
+
+    .background .bg {
+        position: absolute;
+        margin-right: 73px;
+        right: 0px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .texto {
+    
+        width: 635px;
+        height: 207px;
+        position: absolute;
+        margin: 181px 0 0 82px;
+        z-index: 2;
+        transition: width 500ms;
+        line-height: 1.4;
+        font-family: Inter;
+        color: #3F3E4C;
+    }
+    
+    .texto>p {
+        position: absolute;
+width: 323px;
+height: 147px;
+left: 23px;
+top: 400px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 133.1%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #3F3E4C;
+    }
+    
+    .perfil {
+        display: flex;
+        padding-left: 16%;
+        padding-right: 0%;
+        padding-top: 0%;
+    }
+    
+    .perfil>p {
+        color: #212040;
+        font-size: 1.1vw;
+        font-weight: 900;
+    
+    }
+    
+    p.position {
+        color: #B6B6C2;
+        font-size: 1.1vw;
+        font-weight: 400;
+        margin-left: 6px;
+    
+    }
+    
+    .bg {
+        top: 5%;
+        width: 43.32%;
+        left: 42%;
+    }
+    
+    .curve {
+    
+        position: absolute;
+        width: 39%;
+        height: 119.95px;
+        left: 0px;
+        top: 535px;
+    }
+    
+    .quotes {
+        position: absolute;
+        width: 100px;
+        left: 18.12%;
+        right: 73.61%;
+        top: 27%;
+        bottom: 60.75%;
+    
+    }
+    .tanya{
+        position: absolute;
+        width: 34%;
+        left: 46.32%;
+        top: 12.5%;
+        bottom: 11.12%;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .slides {
+        background-color: white;
+        position: absolute;
+        height: 56px;
+        width: 112px;
+        bottom: 77px;
+        right: 585px;
+        border-radius: 28px;
+        z-index: 3;
+        box-shadow: 0 2px rgb(0 0 0 / 40%);
+    }
+    
+    .slides .slideRight {
+        border-radius: 0 28px 28px 0;
+        background-color: transparent;
+        height: 56px;
+        width: 56px;
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+        user-select: none;
+        top: 20px;
+        left: 80px;
+    }
+    
+    .slides .slideLeft {
+        border-radius: 28px 0 0 28px;
+        background-color: transparent;
+        height: 56px;
+        width: 56px;
+        position: absolute;
+        cursor: pointer;
+        user-select: none;
+        top: 20px;
+        left: 20px;
+    }
+    
+
+
+
+
+
+
+
+
+} 

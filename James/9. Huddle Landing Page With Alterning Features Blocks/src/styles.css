@@ -1,36 +1,39 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
-  width: 1440px;
+  width: 100%;
   height: 3000px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  display: grid;
-  grid-template-rows: 1f;
-  width: 1440px;
-  position: relative;
-  left: 75px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 .intro {
-  position: absolute;
-  background-color: hsl(193, 100%, 96%);
+  width: 90%;
   height: 540px;
-  width: 1200px;
+  background-color: hsl(193, 100%, 96%);
   box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
   border-radius: 10px;
+  position: relative;
 }
 img.logo {
   position: absolute;
   top: 20px;
   height: 17px;
-  width: 110px;
+  width: 10%;
   left: 20px;
 }
 h1 {
@@ -40,7 +43,7 @@ h1 {
   width: 450px;
   letter-spacing: 3px;
   font-weight: bolder;
-  font-size: 35px;
+  font-size:35px ;
 }
 .intro > p {
   position: absolute;
@@ -54,9 +57,9 @@ img.mock {
   top: 45px;
   height: 420px;
   width: 600px;
-  left: 570px;
+  right: 1%;
 }
-.btn {
+.btn{
   position: absolute;
   top: 370px;
   left: 20px;
@@ -71,7 +74,7 @@ img.mock {
 .grow {
   position: absolute;
   height: 450px;
-  width: 1200px;
+  width: 90%;
   top: 600px;
   box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
   border-radius: 10px;
@@ -80,7 +83,7 @@ img.mock {
   position: absolute;
   height: 350px;
   top: 20px;
-  left: 750px;
+  right: 2%;
 }
 h2 {
   position: absolute;
@@ -97,7 +100,7 @@ h2 {
 .flow {
   position: absolute;
   height: 500px;
-  width: 1200px;
+  width: 90%;
   top: 1100px;
   box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
   border-radius: 10px;
@@ -110,21 +113,21 @@ h2 {
 }
 .flow > h3 {
   position: absolute;
-  left: 650px;
+  right: 15%;
   top: 100px;
   font-size: 30px;
 }
 .flow > p {
   position: absolute;
   width: 500px;
-  left: 650px;
+  right: 5%;
   top: 160px;
   color: hsl(208, 11%, 55%);
 }
 .user {
   position: absolute;
   height: 500px;
-  width: 1200px;
+  width: 90%;
   top: 1650px;
   box-shadow: 1px 1px 25px hsla(214, 3%, 59%, 0.26);
   border-radius: 10px;
@@ -133,7 +136,7 @@ h2 {
   position: absolute;
   height: 350px;
   top: 80px;
-  left: 700px;
+  right: 5%;
 }
 .user > h4 {
   position: absolute;
@@ -148,10 +151,10 @@ h2 {
   top: 200px;
   color: hsl(208, 11%, 55%);
 }
-.ready {
+.ready{
   position: absolute;
   height: 210px;
-  width: 800px;
+  width: 60%;
   left: 240px;
   top: 2250px;
   border-radius: 20px;
@@ -163,16 +166,16 @@ h2 {
 .ready > h5 {
   position: absolute;
   letter-spacing: 2px;
-  left: 140px;
-  top: -10px;
-  font-size: 30px;
+  left: 20%;
+  top: 10px;
+  font-size: 2vw;
 }
-.btn2 {
+#btn2 {
   position: absolute;
   top: 100px;
-  left: 220px;
-  height: 70px;
-  width: 370px;
+  left: 25%;
+  height: 27%;
+  width: 50%;
   border-radius: 45px;
   background-color: hsl(322, 100%, 66%);
   border: none;
@@ -185,9 +188,8 @@ footer {
   color: white;
   top: 2375px;
   height: 570px;
-  width: 1250px;
+  width: 90%;
   z-index: 0;
-  margin-left: -45px;
   background-color: hsl(192, 100%, 9%);
 }
 img.whiteLogo {
@@ -202,7 +204,7 @@ img.location {
   top: 235px;
   left: 165px;
 }
-.locationLorem {
+.homeLorem {
   position: absolute;
   top: 230px;
   left: 205px;
@@ -290,7 +292,7 @@ img.socialMedia {
     display: flex;
     flex-direction: row;
     width: 375px;
-    left: 5px;
+    left: 50%;
   }
   .intro {
     position: absolute;
@@ -329,7 +331,7 @@ img.socialMedia {
     height: max-content;
     color: black;
   }
-  .btn {
+  .btn{
     position: absolute;
     top: 400px;
     left: 20px;
@@ -450,7 +452,7 @@ img.socialMedia {
     top: -10px;
     font-size: 17px;
   }
-  .btn2 {
+  #btn2{
     position: absolute;
     top: 70px;
     left: 70px;
@@ -486,12 +488,13 @@ img.socialMedia {
     top: 210px;
     left: 30px;
   }
-  .locationLorem {
+  .homeLorem {
     position: absolute;
     top: 205px;
     left: 65px;
     width: 310px;
     color: hsl(208, 11%, 55%);
+    font-size: 15px;
   }
   img.phone {
     position: absolute;

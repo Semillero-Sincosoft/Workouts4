@@ -57,7 +57,7 @@ function numCounter(){
     num ++ ;
     spaceLeftNum.innerText = num;
 }
-let timer = setInterval(numCounter, 200)
+let timer = setInterval(numCounter, 20)
 
 spaceLeftText.innerHTML = 'GB LEFT';
 message.innerHTML = `You've used <b> ${1000-185} </b>of your storage`;

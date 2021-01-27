@@ -55,7 +55,7 @@ logo.src = "./images/logo.svg";
 h1.innerHTML = "Build The Community Your Fans Will Love";
 p1.innerHTML =
   "Huddle re-images the way we build communities. You have a voice, but so does your audience. Create <br> connetions with your users as you engage in genuine discussion.";
-btn1.classList.add("btn1");
+btn1.classList.add("btn");
 btn1.innerHTML = "Get Started For Free";
 mockupImg.classList.add("mock");
 mockupImg.src = "./images/illustration-mockups.svg";
@@ -76,7 +76,7 @@ user.classList.add("user");
 userImg.src = "./images/illustration-your-users.svg";
 h4.innerHTML = "Your Users";
 p4.innerHTML =
-"it takes no time at all to integrate Huddle with you app's authentication solution. This means, once <br> signed in to your app, your users can start chatting immediately";
+  "it takes no time at all to integrate Huddle with you app's authentication solution. This means, once <br> signed in to your app, your users can start chatting immediately";
 
 whiteLogo.classList.add("whiteLogo");
 whiteLogo.src = "./images/whiteLogo.svg";
@@ -87,15 +87,16 @@ homeLorem.innerHTML =
 phoneImg.classList.add("phone");
 phoneImg.src = "./images/icon-phone.svg";
 phoneNum.classList.add("phoneNum");
-phoneImg.innerHTML = "+1-543-123-4567"
+phoneImg.innerHTML = "+1-543-123-4567";
 emailImg.classList.add("email");
 emailImg.src = "./images/icon-phone.svg";
 emailAdd.classList.add("emailAdd");
-emailAdd.innerHTML = "example@huddle.com"
+emailAdd.innerHTML = "example@huddle.com";
 
 ready.classList.add("ready");
 h5.innerHTML = "Ready To Build Your Community?";
-btn2.classList.add("btn2");
+btn2.classList.add("btn");
+btn2.id = "btn2";
 btn2.innerHTML = "Get Started For Free";
 
 spans.classList.add("spans");
@@ -115,8 +116,8 @@ six.innerHTML = "Contact Us";
 
 socialMedia.classList.add("socialMedia");
 socialMedia.src = "./images/socialMedia.png";
-copyRight.classList.add('copyright');
-copyRight.innerHTML = "&#169;Copyright 2021 Huddle. All rights reserved"
+copyRight.classList.add("copyright");
+copyRight.innerHTML = "&#169;Copyright 2021 Huddle. All rights reserved";
 
 body.appendChild(container);
 container.appendChild(intro);
@@ -167,4 +168,3 @@ footer.appendChild(emailAdd);
 footer.appendChild(spans);
 footer.appendChild(socialMedia);
 footer.appendChild(copyRight);
-

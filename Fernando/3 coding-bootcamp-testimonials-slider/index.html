@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main>
+    <main class="contenedor">
       <div class="texto">
         <p class="descripcion">
           “ I’ve been interested in coding for a while but never taken the jump,
@@ -40,35 +40,48 @@
   </body>
   <script>
     
-    const next = document.querySelector(".next");
-    const prev = document.querySelector(".prev");
-    const imagen = document.querySelector(".tanya")
-    const descripcion = document.querySelector(".descripcion")
-      next.addEventListener('click',atras)
-      prev.addEventListener('click',siguiente)
+let imagenes=[['./assets/img/image1.jpg','hols'],['./assets/img/image2.jpg','adios'],['./assets/img/image3.jpg','correr']];
+cont = 0;
 
-let numero=true;
-let numero2=false
-    function siguiente(){
+    function carrousel(contenedor){
+      contenedor.addEventListener('click', e => {
+        let atras = contenedor.querySelector(".next"),
+            adelante = contenedor.querySelector(".prev"),
+            img = contenedor.querySelector(".tanya"),
+            text= contenedor.querySelector(".descripcion");
+            tgt = e.target;
+
+   if(tgt == atras){
+     if(cont > 0){
+       img.src= imagenes[cont - 1][0];
+       text.innerText= imagenes[cont - 1][1];
+       cont--;
+     }
+     else{
+      img.src= imagenes[imagenes.length -1][0];
+      text.innerText= imagenes[imagenes.length -1][1];
+       cont = imagenes.length - 1;
+     }
+   }
+   else if(tgt == adelante){
+    if(cont < imagenes.length -1){
+      img.src= imagenes[cont + 1][0];
+      text.innerText= imagenes[cont + 1][1];
+       cont++;
+     }
+     else{
+      img.src= imagenes[0][0];
+      text.innerText= imagenes[0][1];
+       cont = 0;
+     }
+   }
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () =>{
+      let contenedor = document.querySelector('.contenedor');
+      carrousel(contenedor);
+    });
       
-      if(numero==true){
-      imagen.src="./assets/img/image2.jpg";
-      descripcion.innerText="hola"
-      numero=false;
-      }
-      if(numero2==false){
-      imagen.src="./assets/img/image2.jpg";
-      descripcion.innerText="hola"
-      numero2=true;
-      }
-    }
-    function atras(){
-      numero--;
-      if(numero<1)
-      numero=3;
-      imagen.src="./assets/img/image"+numero+".jpg";
-      descripcion.innerText="chao"
-    }
-    
+
   </script>
 </html>

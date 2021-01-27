@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+body {
+    position: absolute;
+
+    overflow: hidden;
+    background-color: #EDF2F8;
+    font-family: Manrope;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+
+    display: flex;
+    position: relative;
+    margin: auto;
+    top: 0%;
+}
+
+.imagen img {
+    border-radius: 10px 0px 0px 5px;
+    width: 278px;
+    height: 285px;
+
+}
+
+.Info {
+    width: 453.22px;
+    height: 285px;
+    left: 631.78px;
+    top: 258px;
+    background: #FFFFFF;
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4D5667;
+    font-family: Manrope;
+    line-height: 27px;
+    margin: 31px 57px 16px 42px;
+
+}
+
+.persona {
+    display: flex;
+}
+
+.content {
+    color: #9EAFC2;
+    font-weight: bold;
+    font-family: Manrope;
+    font-style: normal;
+    font-size: 13px;
+    margin: 0 56px 22px 42px;
+
+}
+
+.contacto {
+    display: flex;
+}
+
+.contacto img {
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 42px;
+}
+
+
+
+.contacto .nombre {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0 0 0 16px;
+    color: #4D5667;
+}
+
+.contacto .fecha {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 13px;
+    margin: 0 0 0 16px;
+    color: #4D5667;
+}
+
+.Compartir {
+
+    align-self: flex-end;
+    background-color: #EDF2F8;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 0px 40px 37px auto;
+    user-select: none;
+
+}
+
+.active {
+    background-color: #6D7F97;
+}
+
+.Compartir img {
+
+    margin: 8px 8px 8px 8px;
+    fill: #FFFFFA;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 300px;
+    left: 595px;
+
+}
+
+.triangule {
+    position: absolute;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 15px solid #48556A;
+    margin: 55px auto 12px 380px;
+}
+
+.rectangule {
+    position: absolute;
+    background-color: #48556A;
+    width: 248px;
+    height: 55px;
+    border-radius: 11px;
+    margin-left: 267px;
+    box-shadow: 5px 5px 5px #AAAAAA;
+
+}
+
+.share-info {
+    color: #8F9EB3;
+    margin: 0px 19px 0px 37px;
+    top: 18px;
+    position: absolute;
+}
+
+.rectangule img {
+    margin-left: 16px;
+}
+
+.share-icons {
+    position: absolute;
+    top: 18px;
+    right: 30px;
+}
+
+.d-none {
+    display: none;
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        top: 0%;
+        left: 0%;
+    }
+
+    .imagen img {
+        border-radius: 10px 10px 0 0;
+        width: 327px;
+        height: 199px;
+    }
+
+    .Info {
+        margin-top: 0;
+        width: 327px;
+        height: max-content;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .heading {
+        font-size: 16px;
+        font-weight: 800px;
+        color: #515D6D;
+        margin: 37px 34px 15px 32px;
+    }
+
+    .content {
+        color: #9EAFC2;
+        font-weight: bold;
+        font-size: 13px;
+        margin: 0 27px 33px 32px;
+    }
+
+    .persona {
+        top: 10%;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 711px;
+        left: -250px;
+    }
+
+    .triangule {
+        display: none;
+    }
+
+    .rectangule {
+        position: relative;
+        left: auto;
+        top: -58px;
+        background-color: #48556A;
+        width: 327px;
+        height: 64px;
+        border-radius: 0 0 10px 10px;
+        margin-left: 267px;
+
+    }
+
+    .share-icons {
+        position: absolute;
+        top: 18px;
+        right: 50px;
+    }
+
+    .active {
+        z-index: 1000;
+    }
+
+}

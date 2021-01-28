@@ -38,7 +38,7 @@ header{
     max-width: 100%;
     display: block;
     height: auto;
-    margin: 0 auto
+    margin: 0 auto;
         
 }
 
@@ -76,8 +76,8 @@ header{
 }
 
 #integrantes{
-    width: 100%;
-   
+    width: 90%;
+    height: 90%;
 }
 
 #img-caption{

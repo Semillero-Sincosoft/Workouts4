@@ -3,16 +3,19 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 body {
   background: #0e0e10;
   font-family: Inter, sans-serif;
   display: flex;
+  margin: 0 20px 0 0;
   height: 100vh;
 }
-header {
-  flex-grow: 1;
+
+a {
+  text-decoration: none;
 }
 
 #navbar {
@@ -24,7 +27,7 @@ header {
   background: #1f1f23;
 }
 
-#navbar > img {
+#navbar > header > img {
   margin: 32px 0 33px 0;
 }
 
@@ -32,7 +35,6 @@ header {
   list-style-type: none;
   font-size: 24px;
   text-align: center;
-  color: white;
 }
 
 #navbar ul li:before {
@@ -53,13 +55,37 @@ li.understanding {
 }
 
 #main-doc {
-  flex-grow: 10;
+  margin: 0 0 0 70px;
   overflow: auto;
-  padding-top: 72px;
+  padding-top: 74px;
 }
 
-.sect {
-  width: 100px;
-  height: 100px;
-  background-color: violet;
+.main-section {
+  margin: 0 0 70px 0;
+}
+
+.main-section > header {
+  font-weight: bold;
+  margin: 0 0 40px 0;
+  font-size: 20px;
+}
+
+.main-section > ul,
+ol {
+  padding: 0 0 0 32px;
+}
+
+.main-section > ul > li,
+.main-section > ol > li {
+  margin: 10px auto 20px auto;
+}
+
+p > a {
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  body {
+    flex-direction: column;
+  }
 }

@@ -1,4 +1,4 @@
-let tanya=true;
+let tanya = true;
 const left = document.querySelector(".left");
 const texto = document.querySelector(".texto");
 const info = document.querySelector(".info");
@@ -8,8 +8,8 @@ const foto = document.querySelector(".foto");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
-prev.addEventListener('click', cambios());
-next.addEventListener('click', cambios())
+prev.addEventListener("click", cambios());
+next.addEventListener("click", cambios());
 
 texto.innerHTML = "I´ve been interested in coding for a while but never taken the jump, until now. I couldn´t recommend this course enough. I´m now in the job of my dreams and so excited about the future.";
 nombres.innerHTML = "Tanya Sinclair";

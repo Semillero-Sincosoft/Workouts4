@@ -10,7 +10,8 @@ body{
     display: flex;
     margin: 0;
     font-family: "Inter";
-    font-size: 2.4vw;
+    font-size: 2.1vw;
+    
 }
 
 
@@ -44,11 +45,11 @@ body{
     position: absolute;
     right: 5%;
     top: 7%;
-    width : 41%;
+    max-width : 100%;
     height: 87%;
 }
 
-.ContPrincipal{
+main{
     height: 100%;
     width: 100%;
     display: flex;
@@ -56,15 +57,21 @@ body{
     justify-content: center;
     align-items: center;
 }
+.info{
+
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*border: 1px solid black;*/
+
+}
 
 .usuario{
-    position: absolute;
+    position: relative;
     float: right;
     height: auto;
-    width: 35%;
-    right:8%;
-    top: 15%;
-
+    width: 55%;;
 }
 
 
@@ -76,10 +83,11 @@ body{
 
 .comentarios{
     height: 60%;
-    width: 52%;
-    top: 10%;
+    width: 85%;
+    top: 13%;
     position: relative;
-    right: 15% ;
+    z-index: 1;
+    left: 6%;
 }
 
 p{
@@ -89,35 +97,38 @@ p{
 span{
     font-size: 1.2vw;
 }
-
+b{
+    font-size: 1.4vw;
+}
 .btniz{
-    height: 54px;
-    width: 60px;
+    height: 50%;
+    width: 35%;
     border-radius: 100px 0px 0px 100px;
     position: relative;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     background: #FFFFFF;
+    outline:none;
+    border: none;
 }
 
 .btnder{
-    height: 54px;
-    width: 60px;
+    height: 50%;
+    width: 35%;
     border-radius: 0px 100px 100px 0px;
     position: relative;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     background: #FFFFFF;
     outline: none;
+    border:none;
 }
 .botones{
     left: 5%;
     position: absolute;
-    bottom: -5%;
+    bottom: -20%;
+    height: 25%;
+    width: 40%;
+}
+
+button{
+    box-sizing: content-box;
 }
 
 @media screen and (max-width: 700px){
@@ -133,31 +144,33 @@ span{
         z-index: -1;
     }
     
-    .comillas{
-        position: absolute;
-        right: 55%;
-        left: 18%;
-        top: 26%;
-        width: 8.5%;
-        height: auto;
-    }
-    
-    .parteInferior{
-        top: 96.5%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 45%;
-        height: 23.5%;
-    }
-    
     .figuritas{
         position: absolute;
         right: 0%;
         top: 7%;
-        width : 100%;
+        max-width : 100%;
         height: auto;
     }
+    
+    
+    .comillas{
+        position: absolute;
+        right: 55%;
+        left: 44%;
+        top: 66%;
+        width: 18.5%;
+        height: auto;
+    }
+    
+    .parteInferior{
+        top: 85.7%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    
     
     .ContPrincipal{
         height: 100%;
@@ -167,56 +180,60 @@ span{
         justify-content: center;
         align-items: center;
     }
-    
-    .usuario{
-        position: relative;
-        float: none;
-        height: auto;
-        width: 55%;
-        right:0%;
-        top: -22%;
-        left: 25%;
-    }
-    
-    .btniz{
-        height: 54px;
-        width: 60px;
-        border-radius: 100px 0px 0px 100px;
-        position: relative;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        background: #FFFFFF;
-    }
-    
-    .btnder{
-        height: 54px;
-        width: 60px;
-        border-radius: 0px 100px 100px 0px;
-        position: relative;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        background: #FFFFFF;
-    }
-
-    .usuario{
-        position: absolute;
-        float: none;
-        height: auto;
+    .info{
         width: 80%;
-        right:0%;
-        top: 15%;
-        left: 11.5%;
+        justify-content: center;
+        align-items:center ;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    
+    .usuario{
+        position: relative;
+        float: right;
+        height: 90%;
+        width: 100%;;
     }
 
     .comentarios{
+
+        font-size: 4.2vw;
         height: 60%;
-        width: 52%;
-        top: 75%;
+        width: 85%;
+        top: 23%;
         position: relative;
-        right: 0% ;
+        z-index: 1;
+        left: 6%;
+        margin-top: 12%;
+    }
+    
+    .botones{
+        left: 30%;
+        position: absolute;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    span{
+        top: 20%;
+        font-size: 4.2vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    b{
+        position: relative;
+        font-size: 4.2vw;
+        text-align: center;
+    }
+
+    .info-personal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        right: 6%;
     }
 }

@@ -2,8 +2,6 @@
     --fontType: inter;
 }
 body{
-height: 100%;
-width: auto;
 font-family: var(--fontType);
 }
 .patternbg{
@@ -19,18 +17,30 @@ font-family: var(--fontType);
     bottom: 0;
     left:0;
     width: auto;
+    width: auto;
+    height:20%;
     z-index: -1;
 }
 .quotesbg{
     position: absolute;
     left: 22%;
     top: 20%;
+    width: auto;
+    height:16%;
     z-index: -1;
+}
+.allPage{
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
 .principalcontent{
     position: relative;
     display: flex;
     margin:4%;
+    margin-bottom: 9%;
 }
 .imageprofile{
     position: relative;
@@ -48,7 +58,7 @@ font-family: var(--fontType);
     font-size: 2.4vw;
     color: hsl(240, 38%, 20%);
     z-index: 2;
-    margin-right: -7%;
+    margin-right: -8%;
     line-height: 3vw;
 }
 .namesProfessions{
@@ -70,3 +80,84 @@ font-family: var(--fontType);
     background-color: fff;
     border-radius: 100%;
 }
+.icons{
+    display: flex;
+    background-color: white;
+    position: absolute;
+    bottom: -5%;
+    right: 32%;
+    border-radius: 28px;
+}
+.iconnext{
+    cursor: pointer;
+    margin: 1.5vw;
+}
+.iconprev{
+    cursor: pointer;
+    margin: 1.5vw;
+    }
+    @media screen and (max-width:600px){
+        .patternbg{
+            right:5%;
+            top: 5%;
+            height:40%;
+        }
+        .curvebg{
+            height:90px;
+        }
+        .quotesbg{
+            left: 40%;
+            top: 50%;
+            height:8%;
+        }
+        .allPage{
+            display: block;
+            position:relative;
+        }
+        .principalcontent{
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 0%;
+            margin-top: 20%;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .imageprofile{
+            width: 81%;
+            margin-right: 0%;
+            margin-top: 0%;
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+        }
+        .description{
+            font-size: 5vw;
+            line-height: 7vw;
+            margin: 0%;
+            margin-top: 32%;
+        }
+        .namesProfessions{
+            display: flex;
+            flex-direction: column;
+            left: 30%;
+            top: 100%;
+            font-size: 5vw;
+        }
+        .name{
+            margin:0%;
+            margin-top: 20%;
+        }
+        .profession{
+            margin-top: 5%;
+        }
+        .icons{
+            bottom: 47%;
+            right: inherit;
+        }
+        .iconnext{
+            margin: 3.5vw;
+        }
+        .iconprev{
+            margin: 3.5vw;
+
+    }}

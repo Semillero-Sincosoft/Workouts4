@@ -90,6 +90,7 @@ h5 {
     display:flex;
 }
 .boton1 {
+    outline: none;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.19), 10px 0 0 rgba(0,0,0,0.23);
     font-size:18px;
     border-radius: 20px 0px 0px 20px;
@@ -98,6 +99,7 @@ h5 {
     border: none;
 }
 .boton2 {
+    outline: none;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.19), 0 0 0 rgba(0,0,0,0.23);
     border-radius: 0px 20px 20px 0px;
     font-size:18px;

@@ -1,58 +1,25 @@
-
-let tanya="“ I’ve been interested in coding for a while but never taken the jump,until now. I couldn’t recommend this course enough. I’m now in the jobof my dreams and so excited about the future.”";
-let john="“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”";
-let riqui="Riqui puig is a young footballer who with a smile and effort wants to get ahead in the club of his dreams.";
-let contenido=[['img/image-tanya.jpg',tanya,'Tanya Sinclair ','UX Engineer'],['img/image-john.jpg',john,'John Tarkpor','Junior Front-end Developer'],['img/image-riqui.jpeg',riqui,'Riqui Piug','Master in soccer ']];
+let contenido=[{foto:'img/image-tanya.jpg',aporte:"“ I’ve been interested in coding for a while but never taken the jump,until now. I couldn’t recommend this course enough. I’m now in the jobof my dreams and so excited about the future.”",nombre:'Tanya Sinclair ',dedicacion:'UX Engineer'},
+{foto:'img/image-john.jpg',aporte:"“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”",nombre:'John Tarkpor',dedicacion:'Junior Front-end Developer'},
+{foto:'img/image-riqui.jpeg',aporte:"“Riqui puig is a young footballer who with a smile and effort wants to get ahead in the club of his dreams.“",nombre:'Riqui Piug',dedicacion:'Master in soccer '}];
 let contador=0;
 
+let foto = document.querySelector('.image');
+let nombre = document.querySelector('.nombre');
+let aporte = document.querySelector('.aporte');
+let dedicacion = document.querySelector('.dedicacion');
+const derecha = document.querySelector(".boton2");
+const izquierda = document.querySelector(".boton1");
 
-
-function carrusel (contenedor) {
-  contenedor.addEventListener('click', e=>{
-    const derecha = contenedor.querySelector(".boton2");
-    const izquierda = contenedor.querySelector(".boton1");
-    let image = contenedor.querySelector(".image"),
-    aporte = contenedor.querySelector(".aporte"),
-    nombre = contenedor.querySelector(".nombre"),
-    dedicacion = contenedor.querySelector(".dedicacion"),
-    tgt = e.target;
-
-    if (tgt==izquierda){
-      if(contador>0){
-        image.src=contenido[contador-1][0];
-        aporte.innerText=contenido[contador-1][1];
-        nombre.innerText=contenido[contador-1][2];
-        dedicacion.innerText=contenido[contador-1][3];
-        contador--;
-      }
-        else {
-          image.src=contenido[contenido.length-1][0];
-          aporte.innerText=contenido[contenido.length-1][1];
-          nombre.innerText=contenido[contenido.length-1][2];
-          dedicacion.innerText=contenido[contenido.length-1][3];
-          contador=contenido.length-1;
-      }
-    }
-    else if (tgt==derecha){
-      if(contador<contenido.length-1){
-        image.src=contenido[contador+1][0];
-        aporte.innerText=contenido[contador+1][1];
-        nombre.innerText=contenido[contador+1][2];
-        dedicacion.innerText=contenido[contador+1][3];
-        contador++;
-      }
-      else {
-        image.src=contenido[0][0];
-        aporte.innerText=contenido[0][1];
-        nombre.innerText=contenido[0][2];
-        dedicacion.innerText=contenido[0][3];
-        contador=0; 
-      }
-    }
-  })
-}
-
-document.addEventListener('DOMContentLoaded',()=>{
-  let contenedor = document.querySelector('.container');
-  carrusel(contenedor);
+  derecha.addEventListener('click', e=>{
+    contador>=contenido.length-1?contador = 0:contador++; 
+    pintardatos()
 })
+izquierda.addEventListener('click', e=>{
+  contador<=0?contador=contenido.length-1:contador--;
+pintardatos()})
+function pintardatos (){
+  foto.src =`${contenido[contador].foto}`
+  nombre.innerText=`${contenido[contador].nombre}`
+  aporte.innerText=`${contenido[contador].aporte}`
+  dedicacion.innerText=`${contenido[contador].dedicacion}`
+}

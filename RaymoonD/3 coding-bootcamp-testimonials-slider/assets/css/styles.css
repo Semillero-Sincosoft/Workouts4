@@ -97,37 +97,34 @@ p{
 span{
     font-size: 1.2vw;
 }
-
+b{
+    font-size: 1.4vw;
+}
 .btniz{
-    height: 44px;
-    width: 50px;
+    height: 50%;
+    width: 35%;
     border-radius: 100px 0px 0px 100px;
     position: relative;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     background: #FFFFFF;
     outline:none;
+    border: none;
 }
 
 .btnder{
-    height: 44px;
-    width: 50px;
+    height: 50%;
+    width: 35%;
     border-radius: 0px 100px 100px 0px;
     position: relative;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     background: #FFFFFF;
     outline: none;
+    border:none;
 }
 .botones{
     left: 5%;
     position: absolute;
-    bottom: -5%;
-    height: 10%;
+    bottom: -20%;
+    height: 25%;
+    width: 40%;
 }
 
 button{
@@ -212,12 +209,31 @@ button{
     }
     
     .botones{
-        left: 25%;
+        left: 30%;
         position: absolute;
-        bottom: -5%;
     }
 
     p{
         text-align: center;
+    }
+
+    span{
+        top: 20%;
+        font-size: 4.2vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    b{
+        position: relative;
+        font-size: 4.2vw;
+        text-align: center;
+    }
+
+    .info-personal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        right: 6%;
     }
 }

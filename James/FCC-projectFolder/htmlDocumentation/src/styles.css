@@ -15,8 +15,10 @@
     align-items: center;
     flex-direction: column;
     border: 2px solid #FE4C1E;
+    position: relative;
     position: fixed;
     top: 0;
+    background-color: white;
   }#navbar header img{
     position: relative;
     top: -20px;
@@ -24,7 +26,7 @@
   #navbar > ul{
     position: relative;
     top: -25px;
-    height: 100vh;
+    height: 495px;
     width: 400px;
     list-style: none;
   }
@@ -41,11 +43,8 @@ li{
     text-align: center;
     color:  #FE4C1E;
     width: 99.8%;
-    height: 44px;
+    height: 65px;
     border: 2px solid #FE4C1E;
-  }
-  #main-doc{
-      margin-left: 420px;
   }
   header{
       text-align: center;
@@ -55,4 +54,25 @@ li{
   }
   p{
     margin-top: 20px;
+    margin-bottom: 20px;
   }
+  section{
+    margin-left: 500px;
+  }
+  code{
+    position: relative;
+    border: 2px solid blue;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 734px) {
+    *{
+        font-size: 20px;
+    }
+    header{
+      font-size: 20px !important;
+    }
+    section{
+        width: 400px;
+    }

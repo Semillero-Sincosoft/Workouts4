@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="" id="formulario">    
+    <form action="" id="survey-form">    
         <header>
                 <div>
-                    <span id="title">Instituto Educativo</span>
+                    <h1 id="title">Instituto Educativo</h1>
                 </div>
                 <div>
                     <p id="description">Formulario de Información Estudiantil</p>
@@ -21,103 +21,109 @@
         </header>
 
         <main>
-            <div>
-                    <section id="survey-form">
-                            <div>
-                                <span>Nombres</span>
-                                <input type="text" placeholder="Name" id="name" required>
+            <section>
+                    <section>
+                            <div class="marcos">
+                                <em>Nombres:</em>
+                                <input type="text" placeholder="Nombres" id="name" required>
                             </div>
-                            <div>
-                                <span>Apellidos</span>
-                                <input type="text" placeholder="lastName" id="lastName" required>
+                            
+                            <div class="marcos">
+                                <em>Apellidos:</em>
+                                <input type="text" placeholder="Apellidos" id="lastName" required>
                             </div>
-                            <section>
-                                    <span>Tipo de Documento</span>
-                                    <label for="RC">
-                                        <input type="radio" name="identificacion" checked>RC
+                            <div class="marcos">
+                                    <em>Tipo de Documento</em>
+                                    <label for="RC" class="espacio">
+                                        <input type="radio" name="identificacion" checked class="espacio">RC
                                         <input type="radio" name="identificacion">TI
                                         <input type="radio" name="identificacion">CC
                                         <input type="radio" name="identificacion">CE
                                         <input type="radio" name="identificacion">PA
                                         <input type="radio" name="identificacion">MS
                                         <input type="radio" name="identificacion">AS
-                                </label>
-                                    <span>Número de Identificaión</span>
-                                    <input type="text" placeholder="Número Identicicación" id="numDocumento"> 
-                            </section>
+                                </label><br>
+                                    <em>Número de Identificación</em>
+                                    <input type="text" placeholder="Número Identificación" id="numDocumento"> 
+                            </div>
                             <section>
-                                    <div>
-                                        <label for="fechaNacimiento" id="calendario">Fecha De Nacimiento:</label>
+                                    <div class="marcos">
+                                        <em>Fecha De Nacimiento:</em>
                                         <input type="date" id="fechaNacimiento" name="fechaNacimiento">
                                     </div>
-                                    <div>
-                                        <span>Genero</span>
+                                    <div class="marcos">
+                                        <em>Genero</em>
                                         <label for="genero">
                                             <input type="radio" name="genero" checked>M
                                             <input type="radio" name="genero">F
                                         </label>
                                     </div>
                             </section>
-                            <section>
-                                <span>Contacto</span><br>
-                                Fijo<input type="number" placeholder="Numero Tel. Fijo" id="numTelFijo" min="1" max="4999999999">
-                                <span>Celular</span><input type="number" placeholder="Numero Celular" id="numTelCelular" min="1" max="4999999999">
-                                <br>
-                                <span>Email</span><input type="text" placeholder="Correo Electrónico" id="email">
-                            </section>
-                            <section>
-                                <span>Dirección</span><input type="text" id="direccion"><br>
-                                <span>Barrio</span><input type="text" id="barrio">
-                                <span>Localidad</span><input type="text" id="localidad">
-                                <span>Ciudad</span><input type="text" id="ciudad">
-                            </section>
-                            <section>
-                                <span>Jornada</span><input type="text" id="jornada">
-                                <span>Grado</span><input type="text" id="grado">
-                                <span>Curso</span><input type="text" id="curso">
-                                <span>Sede</span><input type="text" id="sede">
-                            </section>
+                                    <div class="marcos">
+                                        <em>Contacto</em><br>
+                                        Fijo<input type="number" placeholder="Numero Tel. Fijo" id="numTelFijo" min="1" max="4999999999">
+                                        <em>Celular</em><input type="number" placeholder="Numero Celular" id="numTelCelular" min="1" max="4999999999">
+                                        <br>
+                                        <span>Email</span><input type="text" placeholder="Correo Electrónico" id="email">
+                                    </div>
+                            <div class="marcos">
+                                <em>Dirección</em><input type="text" id="direccion"><br>
+                                <em>Barrio</em><input type="text" id="barrio">
+                                <em>Localidad</em><input type="text" id="localidad">
+                                <em>Ciudad</em><input type="text" id="ciudad">
+                            </div>
+                            <div class="marcos">
+                                <em>Jornada</em><input type="text" id="jornada">
+                                <em>Grado</em><input type="text" id="grado">
+                                <em>Curso</em><input type="text" id="curso">
+                                <em>Sede</em><input type="text" id="sede">
+                            </div>
 
-                            <section>
-                                    <aside id="Left">
-                                        <span>Áreas de Interes</span>
-                                        <label for="interes">
-                                            <br><input type="checkbox">Ciencias <br>
-                                                <input type="checkbox">Matemáticas <br>
-                                                <input type="checkbox">Pintura<br>
-                                                <input type="checkbox">Música<br>
-                                                <input type="checkbox">Química<br>
-                                                <input type="checkbox">Humanidades<br>
-                                                <input type="checkbox">Medicina<br>
-                                                <input type="checkbox">Electrónica<br>
-                                                <input type="checkbox">Sistemas<br>
-                                                <input type="checkbox">Lenguaje<br>
+                            <div class="areas" >
+                                <div class="izquierda">
+                                    <aside id="Left"  class="marcos">
+                                        <em>Áreas de Interes</em>
+                                        <label for="interes"><br>
+                                            <br><input type="checkbox" name="iencias">Ciencias <br>
+                                                <input type="checkbox" name="matematicas">Matemáticas <br>
+                                                <input type="checkbox" name="pintura">Pintura<br>
+                                                <input type="checkbox" name="musica">Música<br>
+                                                <input type="checkbox" name="quimica">Química<br>
+                                                <input type="checkbox" name="humanidades">Humanidades<br>
+                                                <input type="checkbox" name="medicina">Medicina<br>
+                                                <input type="checkbox" name="electronica">Electrónica<br>
+                                                <input type="checkbox" name="sistemas">Sistemas<br>
+                                                <input type="checkbox" name="lenguaje">Lenguaje<br>
                                         </label>
-                                    </aside>    
-                                    <aside id="right">    
-                                        <div>
-                                            <span>Observaciones</span>
+                                    </aside>   
+                                </div>
+                                <div class="derecha">
+                                    <aside id="right" class="marcos">   
+                                        <em>Observaciones</em> 
+                                        <section>
                                             <input type="text" id="observaciones">
-                                        </div>
+                                        </section>
+                                        <br>
+                                        
+                                    </div>
 
-                                        <button>CANCELAR</button>
-                                        <button>ENVIAR</button>
-
+                                    
                                     </aside>
 
-                            </section>
-                            
-                            
-                            
-                            
+                            </div>
+
                     </section>
-            </div>
+                    <div id="botones">
+                        <button class="cancelar">CANCELAR</button>
+                        <button class="aceptar">ENVIAR</button>
+                    </div>
+            </section>
     </form>    
         </main>
     
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
-        <script src="js/js.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

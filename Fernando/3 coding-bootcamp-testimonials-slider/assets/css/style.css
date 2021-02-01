@@ -84,6 +84,9 @@ margin-right: 30%;
 .prev{
     margin-left: 5%;
 }
+.icon:hover{
+    color: crimson;
+}
 
 .texto{
    

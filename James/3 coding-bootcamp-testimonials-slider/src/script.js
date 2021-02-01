@@ -1,5 +1,4 @@
 const body = document.getElementById("body");
-
 const testimony = document.createElement("main");
 
 const left = document.createElement("aside");
@@ -15,8 +14,6 @@ const prev = document.createElement("button");
 const prevArrow = document.createElement("img");
 const next = document.createElement("button");
 const nextArrow = document.createElement("img");
-
-let currentTestimony = "Tanya Sinclair";
 
 testimony.classList.add("testimony");
 
@@ -50,54 +47,46 @@ testimony.appendChild(left);
 testimony.appendChild(right);
 body.appendChild(testimony);
 
-prev.addEventListener("click", swapPrev);
-next.addEventListener("click", swapNext);
 
-function swapPrev() {
-  if (currentTestimony == "John Tarkpor") {
-    quote.innerHTML =
-      "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”";
-    names.innerHTML = "Tanya Sinclair";
-    position.innerHTML = "UX Engineer";
-    profilePic.src = "./images/image-tanya.jpg";
-    currentTestimony = "Tanya Sinclair";
-  } else if (currentTestimony == "James Chaves") {
-    quote.innerHTML =
-      "“ If you want to lay the best foundation possible I’d recommend taking this course The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”";
-    names.innerHTML = "John Tarkpor";
-    position.innerHTML = "Junior Front-End Developer";
-    profilePic.src = "./images/image-john.jpg";
-    currentTestimony = "John Tarkpor";
-  } else {
-    quote.innerHTML =
-      "“ If you want to lay a foundation for English learning Combined with Software course. Look no further, English4Coders is here. I'm getting better at coding and improving my English at the same time. “";
-    position.innerHTML = "Auxiliary Software Dev";
-    names.innerHTML = " James Chaves";
-    profilePic.src = "./images/image-james.jpg";
-    currentTestimony = " James Chaves";
-  }
+let people = [
+  {quote : '“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”',
+  names : "Tanya Sinclair",
+  position: "UX Engineer",
+  profilePic: "./images/image-tanya.jpg"},
+  
+  {quote : '“ If you want to lay the best foundation possible I’d recommend taking this course The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
+  names : "John Tarkpor",
+  position: "Junior Front-End Developer",
+  profilePic: "./images/image-john.jpg"},
+
+  {quote : "“ If you want to lay a foundation for English learning Combined with Software course. Look no further, English4Coders is here. I'm getting better at coding and improving my English at the same time. “",
+  names : " James Chaves",
+  position: "Auxiliary Software Dev",
+  profilePic: "./images/image-james.jpg"}
+]
+
+quote.innerText = people[0].quote;
+names.innerText = people[0].names;
+position.innerText = people[0].position;
+profilePic.src = people[0].profilePic;
+
+let counter = 0;
+
+function swapInfo(btn){
+  counter >= people.length-1 && btn.id != 'prev' ? counter = 0 : 
+  counter <= 0 && btn.id == 'prev' ? counter = people.length-1 :  
+  btn.id == 'prev' ? counter -- : counter++;
+  showInfo(counter);
+ }
+function showInfo(counter){
+  quote.innerText = `${people[counter].quote}`;
+  names.innerText  = `${people[counter].names}`;
+  position.innerText  = `${people[counter].position}`;
+  profilePic.src = `${people[counter].profilePic}`;
 }
-function swapNext() {
-  if (currentTestimony == "Tanya Sinclair") {
-    quote.innerHTML =
-      "“ If you want to lay the best foundation possible I’d recommend taking this course The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”";
-    names.innerHTML = "John Tarkpor";
-    position.innerHTML = "Junior Front-End Developer";
-    profilePic.src = "./images/image-john.jpg";
-    currentTestimony = "John Tarkpor";
-  } else if (currentTestimony == "John Tarkpor") {
-    quote.innerHTML =
-      "“ If you want to lay a foundation for English learning Combined with Software course. Look no further, English4Coders is here. I'm getting better at coding and improving my English at the same time. “";
-    names.innerHTML = " James Chaves";
-    position.innerHTML = "Auxiliary Software Dev";
-    profilePic.src = "./images/image-james.jpg";
-    currentTestimony = "James Chaves";
-  } else {
-    quote.innerHTML =
-      "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”";
-    names.innerHTML = "Tanya Sinclair";
-    position.innerHTML = "UX Engineer";
-    profilePic.src = "./images/image-tanya.jpg";
-    currentTestimony = "Tanya Sinclair";
-  }
-}
+let buttons = Array.from(document.getElementsByTagName('button'));
+
+buttons.forEach(button => button.addEventListener('click', ()=>{
+      swapInfo(button);
+}))
+

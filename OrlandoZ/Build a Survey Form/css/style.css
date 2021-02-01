@@ -1,0 +1,128 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#survey-form{
+    background-color:  #E1E8EE;
+    border: #474F54 1px solid;
+    width: 577px;
+    height: auto;
+    padding: 40px;
+}
+
+#title{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#description{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+div.marcos{
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div{
+        background-color: #ffffff;
+        width: 570px;
+        border-radius: 10px;
+}
+
+input#name{
+    width: 80%;
+    height: auto;
+}
+
+input#lastName{
+    width: 80%;
+    height: auto;
+}
+
+em{
+    padding: 10px;
+    font-weight: 700;
+}
+
+input{
+        border-radius: 5px;
+        border: 2px solid #E1E8EE ;
+}
+
+.espacio{
+    display: flex;
+    justify-content: space-around;
+}
+
+#fechaNacimiento {
+    margin: .4rem 0;
+}
+
+.areas{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #E1E8EE;
+    
+}
+
+#left{
+        display: inline-block;
+        width: 20%;
+        height: auto;
+        padding: 10px;
+}
+
+.izquierda{
+        width: 30%;
+        height: auto;
+}
+
+.derecha{
+    width: 60%;
+    height: auto;
+}
+
+#right{
+        padding: 20px;
+        width: 60%;
+        height: auto;
+}
+
+#observaciones{
+    width: 140%;
+    min-height: 200px;
+    justify-content: center;
+}
+
+#botones{
+    float: right;
+    height: auto;
+    width: auto;
+    background-color: #E1E8EE;
+}
+
+button{
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.cancelar{
+    background-color: rgb(221, 64, 64);
+}
+.aceptar{
+    background-color: rgb(64, 196, 64);
+}
+

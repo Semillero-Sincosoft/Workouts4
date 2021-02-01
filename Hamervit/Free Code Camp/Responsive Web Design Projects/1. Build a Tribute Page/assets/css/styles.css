@@ -1,4 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
 * {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 96px 166px;
   margin: 0;
-  padding: 0;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.left-side > h1 {
+  font-weight: 500;
+  margin: 106px 0 0 0;
+  font-size: 36px;
+}
+
+.left-side > p {
+  font-weight: 900;
+  margin: 10px 0 0 0;
+  font-size: 36px;
+}
+
+.img-div {
+  height: 100%;
+}
+
+.img-div > img {
+  height: auto;
+  min-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.img-div > div {
+  transform: rotate(-45deg);
+  width: 25%;
+  position: relative;
+  bottom: 21%;
+  left: 1%;
+  font-weight: lighter;
+}
+
+.achievements {
+  margin: 63px 0 0 0;
+}
+
+.achievements > h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0 49px 0 48px;
+}
+
+.left-side > #tribute {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 0 0;
+}
+
+li {
+  margin-top: 5px;
 }

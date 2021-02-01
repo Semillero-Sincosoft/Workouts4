@@ -24,76 +24,105 @@
             <section>
                     <section>
                             <div class="marcos">
-                                <em>Nombres:</em>
+                                <label id="name-label">Nombres:</label>
                                 <input type="text" placeholder="Nombres" id="name" required>
                             </div>
                             
                             <div class="marcos">
-                                <em>Apellidos:</em>
+                                <label>Apellidos:</label>
                                 <input type="text" placeholder="Apellidos" id="lastName" required>
                             </div>
                             <div class="marcos">
-                                    <em>Tipo de Documento</em>
-                                    <label for="RC" class="espacio">
-                                        <input type="radio" name="identificacion" checked class="espacio">RC
-                                        <input type="radio" name="identificacion">TI
-                                        <input type="radio" name="identificacion">CC
-                                        <input type="radio" name="identificacion">CE
-                                        <input type="radio" name="identificacion">PA
-                                        <input type="radio" name="identificacion">MS
-                                        <input type="radio" name="identificacion">AS
+
+                                
+                                <label>Tipo de Documento</label>
+                                    <label for="identificacion" class="espacio">
+                                        <input type="radio" name="ID" value="RC" class="espacio" checked>RC
+                                        <input type="radio" name="ID" value="TI">TI
+                                        <input type="radio" name="ID" value="CC">CC
+                                        <input type="radio" name="ID" value="CE">CE
+                                        <input type="radio" name="ID" value="PA">PA
+                                        <input type="radio" name="ID" value="MS">MS
+                                        <input type="radio" name="ID" value="AS">AS
                                 </label><br>
-                                    <em>Número de Identificación</em>
-                                    <input type="text" placeholder="Número Identificación" id="numDocumento"> 
+
+
+                                    <label id="number-label">Número De Identificación:</label>
+                                    <input type="number" placeholder="Número Identificación" id="number" min="1000000" max="2000000000"required> 
                             </div>
                             <section>
                                     <div class="marcos">
-                                        <em>Fecha De Nacimiento:</em>
+                                        <label>Fecha De Nacimiento:</label>
                                         <input type="date" id="fechaNacimiento" name="fechaNacimiento">
                                     </div>
                                     <div class="marcos">
                                         <em>Genero</em>
-                                        <label for="genero">
-                                            <input type="radio" name="genero" checked>M
-                                            <input type="radio" name="genero">F
+                                        <label id="genero">
+                                            <input type="radio" name="genero" checked value="male">M
+                                            <input type="radio" name="genero" value="female">F
+                                            <input type="radio" name="genero" value="lbbti">LGBTI
                                         </label>
                                     </div>
                             </section>
                                     <div class="marcos">
-                                        <em>Contacto</em><br>
-                                        Fijo<input type="number" placeholder="Numero Tel. Fijo" id="numTelFijo" min="1" max="4999999999">
-                                        <em>Celular</em><input type="number" placeholder="Numero Celular" id="numTelCelular" min="1" max="4999999999">
+                                        <label>Contacto</label><br>
+                                        <label for="numTelFijo">Fijo</label> 
+                                        <input type="number" placeholder="Numero Tel. Fijo" id="numTelFijo" >
+                                        <label>Celular</label><input type="number" placeholder="Numero Celular" id="numTelCelular" min="1" max="4999999999">
                                         <br>
-                                        <span>Email</span><input type="text" placeholder="Correo Electrónico" id="email">
+                                        <label for="email" id="email-label">Email</label><input type="email" placeholder="Correo Electrónico" id="email" required>
                                     </div>
                             <div class="marcos">
-                                <em>Dirección</em><input type="text" id="direccion"><br>
-                                <em>Barrio</em><input type="text" id="barrio">
-                                <em>Localidad</em><input type="text" id="localidad">
-                                <em>Ciudad</em><input type="text" id="ciudad">
+                                <label>Dirección</label><input type="text" id="direccion"><br>
+                                <label>Barrio</label><input type="text" id="barrio">
+                                <label>Localidad</label><input type="text" id="localidad">
+                                <label>Ciudad</label><input type="text" id="ciudad">
                             </div>
                             <div class="marcos">
-                                <em>Jornada</em><input type="text" id="jornada">
-                                <em>Grado</em><input type="text" id="grado">
-                                <em>Curso</em><input type="text" id="curso">
-                                <em>Sede</em><input type="text" id="sede">
+                                <label for="jornada" >Jornada</label>
+                                            <select name="jornada" id="dropdown">
+                                                <option value="ju">Jornada Única</option>
+                                                <option value="jm">Mañana</option>
+                                                <option value="jt">Tarde</option>
+                                            </select>
+                                <label for="grado" id="grado">Grado</label>
+                                            <select name="grado" id="grado">
+                                                <option value="primero">1°</option>
+                                                <option value="segundo">2°</option>
+                                                <option value="tercero">3°</option>
+                                                <option value="cuarto">4°</option>
+                                                <option value="quinto">5°</option>
+                                                <option value="sexto">6°</option>
+                                                <option value="septimo">7°</option>
+                                                <option value="octavo">8°</option>
+                                                <option value="noveno">9°</option>
+                                                <option value="decimo">10°</option>
+                                                <option value="undecimo">11°</option>
+                                            </select>
+                                <label for="curso">Curso</label>
+                                            <select name="curso" id="curso">
+                                                <option value="uno">01</option>
+                                                <option value="dos">02</option>
+                                                <option value="tres">03</option>
+                                                <option value="cuatro">04</option>
+                                            </select>
                             </div>
 
                             <div class="areas" >
                                 <div class="izquierda">
                                     <aside id="Left"  class="marcos">
-                                        <em>Áreas de Interes</em>
+                                        <label>Áreas de Interes</label>
                                         <label for="interes"><br>
-                                            <br><input type="checkbox" name="iencias">Ciencias <br>
-                                                <input type="checkbox" name="matematicas">Matemáticas <br>
-                                                <input type="checkbox" name="pintura">Pintura<br>
-                                                <input type="checkbox" name="musica">Música<br>
-                                                <input type="checkbox" name="quimica">Química<br>
-                                                <input type="checkbox" name="humanidades">Humanidades<br>
-                                                <input type="checkbox" name="medicina">Medicina<br>
-                                                <input type="checkbox" name="electronica">Electrónica<br>
-                                                <input type="checkbox" name="sistemas">Sistemas<br>
-                                                <input type="checkbox" name="lenguaje">Lenguaje<br>
+                                            <br><input type="checkbox" value="ciencias" name="area">Ciencias <br>
+                                                <input type="checkbox" value="matematicas"name="area">Matemáticas <br>
+                                                <input type="checkbox" value="pintura" name="area">Pintura<br>
+                                                <input type="checkbox" value="musica" name="area">Música<br>
+                                                <input type="checkbox" value="quimica" name="area">Química<br>
+                                                <input type="checkbox" value="humanidades" name="area">Humanidades<br>
+                                                <input type="checkbox" value="medicina" name="area">Medicina<br>
+                                                <input type="checkbox" value="electronica" name="area">Electrónica<br>
+                                                <input type="checkbox" value="sistemas" name="area">Sistemas<br>
+                                                <input type="checkbox" value="lenguaje" name="area">Lenguaje<br>
                                         </label>
                                     </aside>   
                                 </div>
@@ -101,7 +130,7 @@
                                     <aside id="right" class="marcos">   
                                         <em>Observaciones</em> 
                                         <section>
-                                            <input type="text" id="observaciones">
+                                            <textarea id="observaciones" ></textarea>
                                         </section>
                                         <br>
                                         
@@ -115,7 +144,7 @@
                     </section>
                     <div id="botones">
                         <button class="cancelar">CANCELAR</button>
-                        <button class="aceptar">ENVIAR</button>
+                        <button id="submit">ENVIAR</button>
                     </div>
             </section>
     </form>    

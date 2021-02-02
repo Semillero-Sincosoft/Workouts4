@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Simonetta&display=swap");
+      body {
+        margin: 0;
+        background: linear-gradient(
+          180deg,
+          #57d2e6 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        display: flex;
+        background-size: cover;
+        font-family: Roboto;
+        color: #0c112c;
+      }
+      #imgDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 24%;
+        height: auto;
+      }
+      #title {
+        position: absolute;
+        font-family: Simonetta;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      main {
+        width: 100%;
+        text-align: center;
+      }
+      #description {font-size: 30px;}
+      hr{
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+      .divNew {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+      }
+
+      #one {
+        width: 35%;
+        margin-left: 5%;
+      }
+      #two {
+        margin-right: 5%;
+        width: 35%;
+      }
+      form section div {
+        margin-top: 10%;
+      }
+      form section div input {
+        border: none;
+        height: 20px;
+        width: 100%;
+      }
+      select {
+        border: none;
+        height: 20px;
+        width: 100%;
+      }
+      .check {margin-top: 0;}
+      .check input {width: 10%;}
+      .check label {display: flex;}
+      .text{
+          margin: 5%;
+          text-align: left;
+      }
+      textarea{
+          width: 100%;
+          border: none;
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+      }
+      .botones{
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;
+      }
+      #submit{
+        background: #01BEDC;
+        border: none;
+        color: white;
+        width: 20%;
+        font-size: 20px;
+        padding: 1%;
+        cursor: pointer;
+      }
+      #reset{
+        background: #0C112C;
+        border: none;
+        color: white;
+        width: 20%;
+        font-size: 20px;
+        padding: 1%;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="imgDiv">
+      <img src="Image.png" alt="" />
+      <h1 id="title">Dashboard Home</h1>
+    </div>
+    <main>
+      <p id="description">Formulario De Registro</p>
+      <hr>
+      <form action="" id="survey-form">
+        <div class="divNew">
+            <section id="one">
+            <div class="nombres">
+                <label for="name" id="name-label">Nombre: </label><br />
+                <input type="text" name="nombre" id="name" placeholder="Ingrese nombre" required/>
+            </div>
+            <div class="id">
+                <label for="number" id="number-label">Identificación: </label><br />
+                <input type="number" name="Identificacion" id="number" placeholder="Ingrese identificación" required
+                min="1" max="9999999999"/>
+            </div>
+            <div class="mail">
+                <label for="email" id="email-label">E-mail: </label><br />
+                <input type="email" name="email" id="email" placeholder="Ingrese Email" required/>
+            </div>
+            </section>
+            <section id="two">
+            <div class="select">
+                <label for="dropdown">Parentesco: </label>
+                <select name="parentesco" id="dropdown">
+                <option value="0">- - seleccione</option>
+                <option value="0">- - Hijo(a)</option>
+                <option value="0">- - Padre</option>
+                <option value="0">- - Hermano(a)</option>
+                <option value="0">- - Madre</option>
+                </select>
+            </div>
+            <div class="titlecheck">
+                <label for="check">Genero: </label>
+                <div class="check">
+                <label>
+                    <input type="radio" name="genero" id="hombre" value="hombre" />
+                    Hombre
+                    <input type="radio" name="genero" id="hombre" value="mujer" />
+                    Mujer
+                    <input type="radio" name="genero" id="hombre" value="otro" />
+                    Otro
+                </label>
+                </div>
+            </div>
+            <div class="titleRadio">
+                <label for="check">Habitaciones: </label>
+                <div class="check">
+                <label>
+                    <input type="checkbox" id="hombre" name="" value="cuarto" /> Cuarto
+                    <input type="checkbox" id="mujer" name="" value="baño" /> Baño
+                    <input type="checkbox" id="otro" name="" value="sala" /> Sala
+                </label>
+                </div>
+            </div>
+            </section>
+        </div>
+        <div class="text">
+            <label>Descripción: </label>
+            <textarea name="" id="coment" cols="30" rows="6"></textarea>
+        </div>
+        <div class="botones">
+            <input type="reset" id="reset" value="Vaciar Formulario">
+            <input type="submit" id="submit">
+        </div>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

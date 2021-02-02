@@ -48,14 +48,15 @@ input#lastName{
     height: auto;
 }
 
-em{
+label{
     padding: 10px;
     font-weight: 700;
 }
 
 input{
         border-radius: 5px;
-        border: 2px solid #E1E8EE ;
+        border: 2px solid #E1E8EE;
+        padding: 0 10px;
 }
 
 .espacio{
@@ -67,21 +68,34 @@ input{
     margin: .4rem 0;
 }
 
+#email{
+    width: 60%;
+}
+
+#direccion{
+    width: 80%;
+}
+#barrio{
+        width: 31%;
+}
+
+#localidad{
+    width: 31%;
+}
+
 .areas{
     display: flex;
     justify-content: space-between;
-    
     margin-top: 20px;
     padding: 10px;
     background-color: #E1E8EE;
-    
 }
 
 #left{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         width: 20%;
         height: auto;
-        padding: 10px;
 }
 
 .izquierda{
@@ -122,7 +136,7 @@ button{
 .cancelar{
     background-color: rgb(221, 64, 64);
 }
-.aceptar{
+#submit{
     background-color: rgb(64, 196, 64);
 }
 

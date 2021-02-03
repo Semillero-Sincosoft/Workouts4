@@ -5,27 +5,157 @@ body{
     justify-content: center;
 }
 
-#formulario{
+#survey-form{
     background-color:  #E1E8EE;
     border: #474F54 1px solid;
     width: 577px;
-    height: 827px;
+    height: auto;
+    padding: 40px;
 }
 
 #title{
-    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 
 #description{
+    font-weight: 700;
     font-size: 18px;
-
+    text-align: center;
+    padding: 10px;
 }
 
-#calendario {
-    display: block;
-    font: 1rem ;
+div.marcos{
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div{
+        background-color: #ffffff;
+        width: 570px;
+        border-radius: 10px;
+}
+
+input#name{
+    width: 80%;
+    height: auto;
+}
+
+input#lastName{
+    width: 80%;
+    height: auto;
+}
+
+label{
+    padding: 10px;
+    font-weight: 700;
+}
+
+input{
+        border-radius: 5px;
+        border: 2px solid #E1E8EE;
+        padding: 0 10px;
+}
+
+.espacio{
+    display: flex;
+    justify-content: space-around;
 }
 
 #fechaNacimiento {
     margin: .4rem 0;
 }
+
+#fec-naci-gener{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.uno{
+        width: 60%;
+}
+
+.dos{
+        width: 30%;
+        text-align: justify;
+}
+
+#email{
+    width: 60%;
+}
+
+#direccion{
+    width: 80%;
+}
+#barrio{
+        width: 31%;
+}
+
+#localidad{
+    width: 31%;
+}
+
+.areas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #E1E8EE;
+}
+
+#number{
+    width: 40%;
+}
+
+#left{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        height: auto;
+}
+
+.izquierda{
+        width: 30%;
+        height: auto;
+}
+
+.derecha{
+    width: 60%;
+    height: auto;
+}
+
+#right{
+        padding: 20px;
+        width: 60%;
+        height: auto;
+}
+
+#observaciones{
+    width: 140%;
+    min-height: 200px;
+    justify-content: center;
+}
+
+#botones{
+    float: right;
+    height: auto;
+    width: auto;
+    background-color: #E1E8EE;
+}
+
+button{
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.cancelar{
+    background-color: #FF7A7A;
+}
+#submit{
+    background-color: #85E889;
+}
+

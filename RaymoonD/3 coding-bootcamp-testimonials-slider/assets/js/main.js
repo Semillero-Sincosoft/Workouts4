@@ -14,24 +14,24 @@ let info = [
 
 let funcionclick = function (n){
     cont = cont +n;
-    console.log("const"+cont)
     if (cont==info.length) {
         cont=0;
     }
     if(cont>=0){
         imagen.src = info[cont].imagen;
-        parrafo.innerHTML = info[cont].texto;
-        autor.innerHTML = info[cont].autor;
-        cargo.innerHTML = info[cont].cargo;
-        console.log(cont);
+        mostrardatos();
         
     }else if (cont<0){
         cont=info.length-1;
-        imagen.src = info[cont].imagen;
-        parrafo.innerHTML = info[cont].texto;
-        autor.innerHTML = info[cont].autor;
-        cargo.innerHTML = info[cont].cargo;
+        mostrardatos();
     }
 }
+function mostrardatos(){
+    imagen.src = info[cont].imagen;
+    parrafo.innerHTML = info[cont].texto;
+    autor.innerHTML = info[cont].autor;
+    cargo.innerHTML = info[cont].cargo;
+}
+
 derecha.addEventListener('click' , function(){funcionclick(1)})
 izquierda.addEventListener('click' , function(){funcionclick(-1)})

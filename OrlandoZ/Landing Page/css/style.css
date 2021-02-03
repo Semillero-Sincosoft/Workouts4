@@ -1,0 +1,96 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#header{
+    box-sizing: border-box;
+    position: sticky;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    background-color: #577A15;
+    align-items: center;
+}
+
+#header-img{
+    
+    width: 60%;
+    height: auto;;
+}
+
+#nav-bar{
+        float: right;
+        white-space: 20px;
+        width: 35%;
+        height: auto;
+}
+
+.menu{
+        margin: 10px;
+        font-weight: 400px;
+        font-size: 25px;
+        color: #B0FA2B;
+}
+
+main{}
+
+
+#primera{
+        display: flex;
+        justify-content: space-between;
+        background: #99D02B;
+}
+
+#texto>p{
+        margin: 30px 100px;
+        width: 70%;
+        height: auto;
+        color: #445523;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        z-index: 9;
+}
+
+#divLogo{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100px 0 0;
+    width: 200%;
+    height: auto;
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+    
+}
+
+fondoCodorniz{
+    z-index: 999;
+    width: 408px;
+    height: 407px;
+}
+
+imagenFondoTexto{
+    width: 30%;
+    height: auto;
+}
+
+#segunda{
+    background-color: #94ED8F;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#video{
+        width: 100px;
+        height: auto;
+        border: black 1px solid;
+}
+
+
+
+

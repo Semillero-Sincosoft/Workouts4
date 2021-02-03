@@ -1,0 +1,113 @@
+body{
+    background-color: #f4f4f4;
+    font-family: 'Rationale';
+    margin: 0 0 0 0;
+}
+
+header h1{
+    background: #232121;
+    color:  #9F8989;
+    margin: 0 0 0 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 42px;
+}
+
+#image{
+    display: block;
+    width: 388px;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+figcaption{
+    font-size: 20px;
+}
+
+.introduction{
+    width: 60%;
+    margin-left: 5%;
+}
+
+.initial-info{
+    background: #232121;
+    color:  #9F8989;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    font-size: 32px;
+    padding-bottom: 10px ;
+}
+
+#tribute-info{
+    color: #232121;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#dream{
+    align-self: center;
+    background: #232121;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 5% 0 5% 0;
+    display: flex;
+    color: #9F8989 ;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+}
+
+#dream-img{
+    width: 626px;
+    max-width: 60%;
+    height: auto;
+    display: block;
+    border-radius: 0px 25px 25px 0px;
+    
+}
+
+#cite{
+    margin: 0 5% 0 5% ;
+}
+
+ul{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    padding: 15px;
+}
+
+@media screen and (max-width: 700px){
+
+    .initial-info{
+        flex-direction: column-reverse;
+    }
+
+    #dream{
+        flex-direction: column-reverse;
+        font-size: 2.7vw;
+    }
+
+    #dream-img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 25px 25px 0px 0px;
+        
+    }
+}

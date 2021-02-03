@@ -1,0 +1,61 @@
+@font-face{
+    font-family:Lexend;
+    src:url(lexend-deca-regular.ttf);
+    color: #FFFF00;
+  }
+body{
+    justify-content: center;
+    font-family:Lexend;
+    background: url(img/Background.jpg);
+    background-size:cover;
+}
+h1#title {
+    text-align:center;
+    color:#FFFF00;
+}
+.img-div{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img#image{
+    height: 347px;
+    width: 347px;
+}
+
+.background-img{
+    position: absolute;
+    z-index: -1;
+    height: 347px;
+    width: 546px;
+}
+p{
+ color:#FFFF00;
+ flex-wrap: initial;
+}
+span#img-caption{
+    color:#FFFF00;
+    font-size: 12px;
+}
+.tribute-info{
+    position: relative;
+    left: 350px;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5px 0 0 0;
+    height: auto;
+    width: 700px;
+}
+.tribute-info>p{
+    height: auto;
+    width: 250px;
+}
+a{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFFF00; 
+    margin: 10px;
+}

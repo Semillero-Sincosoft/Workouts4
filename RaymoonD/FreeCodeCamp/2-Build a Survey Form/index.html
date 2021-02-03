@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//db.onlinewebfonts.com/c/1ba82d324736a8a9d4327d482c4627c4?family=Ebrima" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Survey Form</title>
 </head>
@@ -14,7 +16,7 @@
         <section class="main-form">
             <h1 id="title">Contáctenos</h1>
             <p id="description">Para brindarle un mejor servicio</p>
-            <form id="survey-form" action="">
+            <form id="survey-form" onsubmit="return validar();" action="">
                 <div class="form-items">
                     <label id="name-label" for="name">Nombre</label>
                     <input  class="form-element" id="name" type="text" required placeholder="Ej. Juan"> 
@@ -71,7 +73,8 @@
         </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
    

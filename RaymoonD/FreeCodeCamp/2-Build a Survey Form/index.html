@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/1ba82d324736a8a9d4327d482c4627c4?family=Ebrima" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <section class="travel">           
+        </section>
+        <section class="main-form">
+            <h1 id="title">Contáctenos</h1>
+            <p id="description">Para brindarle un mejor servicio</p>
+            <form id="survey-form" onsubmit="return validar();" action="">
+                <div class="form-items">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input  class="form-element" id="name" type="text" required placeholder="Ej. Juan"> 
+                </div>
+                <div class="form-items">
+                    <label for="lastname">Apellido</label>
+                    <input class="form-element" id="lastname" placeholder="Ej. Rodríguez" type="text" required>
+                </div>
+                <div class="form-items">
+                    <label  id="email-label" for="email">Correo</label>
+                    <input class="form-element" id="email" type="email" required placeholder="Ej. Mario@hotmail.com">
+                </div>
+                <div class="form-items">
+                    <label id="number-label" for="number">Teléfono</label>
+                    <input class="form-element" id="number" type="number" required minlength="1" maxlength="20" min="1" max="99" placeholder="Ej. 319 555 5555">
+                </div>
+                <div class="form-items">
+                    <label>Calidad del servicio</label>
+                    <select id="dropdown" name="" class="form-element" id="">
+                        <option value="">Seleccione...</option>
+                        <option value="">Excelente</option>
+                        <option value="">Buena</option>
+                        <option value="">Media</option>
+                        <option value="">Mala</option>
+                        <option value="">Muy mala</option>
+                    </select>
+                </div>
+
+                <div class="form-items">
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <label for=""><input type="radio" value="Masculino" name="sexo">Masculino</label>
+                        <label for=""><input type="radio" value="Femenino" name="sexo">Femenino</label>
+                        <label for=""><input type="radio" value="Otro" name="sexo">Otro</label>
+                    </fieldset>
+                </div>
+                <div class="form-items">
+                    <fieldset class="travel-reasons">
+                        <legend>Razones Principales para viajar</legend>
+                        <label for=""><input type="checkbox" value="Masculino" name="sexo">Turismo</label>
+                        <label for=""><input type="checkbox" value="Femenino" name="sexo">Asuntos familiares</label>
+                        <label for=""><input type="checkbox" value="Otro" name="sexo">Trabajo</label>
+                        <label for=""><input type="checkbox" value="Otro" name="sexo">Hobbie</label>
+                    </fieldset>
+                </div>
+                <div class="form-items comments">
+                    <label for="">Comentarios adicionales</label>
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="button">
+                    <input id="submit" type="submit" value="ENVIAR">
+                </div>               
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+   

@@ -1,0 +1,83 @@
+{
+    "aboutMe": {
+        "aboutMe": " I love Software Development <br> I aspire to continue learning it for the rest of my Life; Not as a job, and more than just a Career but as a <br> <b>passion!</b>",
+        "h2": "What I'm Learning",
+        "firstH3": "Web Architecture",
+        "firstSpan": "Designing to meet specific technical, aesthetic and functional pre-determined requirements.",
+        "firstImg": "./src/imgs1/webArch.png",
+        "secondH3": "Clean Code",
+        "secondSpan": "Maintaning the simplisity, coherency, reusability of minimalistic clean code.",
+        "secondImg ": "./src/imgs1/code.png",
+        "thirdH3": "App Development",
+        "thirdSpan": "Developing fully functional apps that run on any platform.",
+        "thirdImg": "./src/imgs1/appDev.png",
+        "fourthH3": "Responsive Design",
+        "fourthSpan": "Creating dynamic websites that adapt to the screen size and orientation of the device being used.",
+        "fourthImg": "./src/imgs1/responsive.png"
+    },
+    "basicInfo": {
+        "resumePic": "./src/imgs2/resumePic.jpg",
+        "name": "James Chaves",
+        "title": "Software Developer",
+        "contactImg": "./src/imgs2/contact.svg",
+        "phoneImg": "./src/imgs2/phone.svg",
+        "number": "312-376-4013",
+        "emailImg": "./src/imgs2/email.svg",
+        "emailAdd": "james.chaves@sinco.com.co",
+        "homeImg": "./src/imgs2/home.svg",
+        "homeAdd": "Calle 37 bis # 68B 74 Sur <br> Alqueria la Fragua <br> Bogota D.C Colombia"
+    },
+    "education": [
+        {
+            "year": "2008",
+            "credential": "8th Grade Diploma",
+            "entity": "Cicero School Distric #99 - U.S.A"
+        },
+        {
+            "year": "2017",
+            "credential": "High School Equivilancy Certificate",
+            "entity": "Illinois Community College Board - U.S.A"
+        },
+        {
+            "year": "2017",
+            "credential": "Hospice & Palliative care Course",
+            "entity": "Lake Land Community College - U.S.A"
+        },
+        {
+            "year": "2017",
+            "credential": "Fundamentals of Drawing realism",
+            "entity": " Lake Land community College - U.S.A"
+        },
+        {
+            "year": "2017",
+            "credential": "Career Tech Course",
+            "entity": " Lake Land community College - U.S.A"
+        },
+        {
+            "year": "2019",
+            "credential": "Service Export",
+            "entity": " Bogota Chamber of Commerce - Colombia"
+        },
+        {
+            "year": "2020",
+            "credential": "Technical in Software Programming",
+            "entity": " SENA - Colombia "
+        },
+        {
+            "year": "2020",
+            "credential": "Full-Stack Web Development Bootcamp",
+            "entity": "UDEMY - Angela Yu"
+        }
+    ],
+    "personalBio" : {
+        "img" : "./src/imgs2/bio.svg",
+        "bio" : "being raised by immigrant parents in the Chicago area I was taught through example that you must work hard and give 110% at anything you do. <br><br>I began working when I was only  8, I would help my mom clean houses and she would pay me depending on how dificult the job was. <br><br> I’ve been working odd jobs ever since. Everything from Car washing, Construction, Land Scaping, Snow removal, Remodeling, Demolishion, cement & wood flooring,  to Hospice care for the Elderly, tele marketing, tutoring and Bilingual translating. <br><br> ...Until I was presented with a beautiful opportunity to study Software Development in Colombia. <br><br> The rest is History because I will apply the same work ethic and passion to grow professionally in this carrer"
+    },
+    "proExp" : {
+        "img" : "./src/imgs2/emp.svg",
+        "softEmpl" : "SOFTWARE EMPLOYMENT EXPERIENCE",
+        "time" : "1 Year+ Professional Work <br> ",
+        "position" : "Auxiliary Software Developer <br>",
+        "company" : "SINCOSOFT COMMUNICATIONS"
+    }
+}

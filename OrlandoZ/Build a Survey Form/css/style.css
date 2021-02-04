@@ -68,6 +68,21 @@ input{
     margin: .4rem 0;
 }
 
+#fec-naci-gener{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.uno{
+        width: 60%;
+}
+
+.dos{
+        width: 30%;
+        text-align: justify;
+}
+
 #email{
     width: 60%;
 }
@@ -89,6 +104,10 @@ input{
     margin-top: 20px;
     padding: 10px;
     background-color: #E1E8EE;
+}
+
+#number{
+    width: 40%;
 }
 
 #left{
@@ -134,9 +153,9 @@ button{
 }
 
 .cancelar{
-    background-color: rgb(221, 64, 64);
+    background-color: #FF7A7A;
 }
 #submit{
-    background-color: rgb(64, 196, 64);
+    background-color: #85E889;
 }
 

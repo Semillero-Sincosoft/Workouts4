@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body{
+            margin: 0;
+            font-family: Roboto;
+        }
+        #header{
+            position: fixed;
+            top: 0;
+            background-color: #78BFB2;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #header-img{
+            margin-left: 5%
+        }
+        #nav-bar{
+            margin-right: 5%;   
+            margin-top: 2%;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+        }
+        li a{
+            text-decoration: none;
+            color:#2C3E40;
+            font-size: 2vw;
+            font-weight: bold;
+            margin-left:44px;
+        }
+        #description{
+            background-color: #2C3E40;
+            display: flex;
+            width: 100%;
+            height: 0%;
+            margin-bottom: 5%;
+            margin-top: 100px;
+        }
+        article{
+            margin: 5%;
+            font-size: 2vw;
+            text-align: justify;
+            color: #78BFB2;
+            margin-right: 0;
+        }
+        #title{
+            margin-top: 0;
+        }
+        #shoe{
+            margin:5%;
+        }
+        video{
+            display: block;
+            margin: auto;
+            width: 40%;
+            height: auto;
+        }
+        footer{
+            margin-top: 5%;
+            width: 100%;
+            height: 120px;
+            background-color: #78BFB2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #2C3E40;
+        }
+        #Titlecontact{
+            margin-left: 5%;
+        }
+        form{
+            margin-right: 5%;
+           display: flex;
+        }
+        #labelEmail{
+            font-size: 2vw;
+            margin: 0 30px;
+        }
+        #email{
+            border-radius: 5px;
+            border: none;
+            padding: 2%;
+        }
+        #submit{
+            margin-left:30px;
+            background-color: #2C3E40;
+            color:white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5vw;
+            cursor: pointer;
+        }
+        @media screen and (max-width:600px){}
+        
+        
+    </style>
+</head>
+<body>
+    
+    <header id="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Running_shoe_icon.png" alt="dasd" id="header-img">
+        <nav id="nav-bar">
+        <ul>
+            <li><a href="#description" class="nav-link">Descripción</a></li>
+            <li><a href="#video"  class="nav-link">Video</a></li>
+            <li><a href="#footer"  class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+    <section id="description">
+        <article>
+            <h2 id="title">ZAPATILLAS RISE NEON</h2>
+            <p>Apunta a lo más alto con un par de zapatillas inspiradas tanto en el mundo de la moda como en el mundo del running. Fíjate en la silueta fina, de alto diseño y las líneas suaves y abundantes. ¿Cómodas? Por supuesto. Increíblemente cómodas. Con una base de malla de color neón en toda la extensión, también son muy elegantes.</p>
+        </article>
+        <img id="shoe" src="img description.png" alt="">
+    </section>
+    <video src="https://videos.puma.net/videos/372444/01/vid01/fnd/CHL/" controls id="video"></video>
+    <footer id="footer">
+        <h1 id="Titlecontact">Contactanos!</h1>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+           <label for="email" id="labelEmail">E-mail:</label>
+           <input type="email" id="email" placeholder="Ingrese su correo electronico" size="30" name="email">
+           <input type="submit" id="submit">
+        </form>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

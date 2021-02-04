@@ -1,0 +1,133 @@
+@import url(//db.onlinewebfonts.com/c/1ba82d324736a8a9d4327d482c4627c4?family=Ebrima);
+
+@font-face {
+    font-family: "Ebrima"; 
+    src: url("//db.onlinewebfonts.com/t/1ba82d324736a8a9d4327d482c4627c4.eot");
+    src: url("//db.onlinewebfonts.com/t/1ba82d324736a8a9d4327d482c4627c4.eot?#iefix") format("embedded-opentype"),
+     url("//db.onlinewebfonts.com/t/1ba82d324736a8a9d4327d482c4627c4.woff2") format("woff2"), 
+     url("//db.onlinewebfonts.com/t/1ba82d324736a8a9d4327d482c4627c4.woff") format("woff"), 
+     url("//db.onlinewebfonts.com/t/1ba82d324736a8a9d4327d482c4627c4.ttf") format("truetype"), 
+     url("//db.onlinewebfonts.com/t/1ba82d324736a8a9d4327d482c4627c4.svg#Ebrima") format("svg"); }
+
+
+body{
+    background-color: #ffffff;
+    font-family: 'Ebrima';
+    margin: 0 0 0 0;
+    display: flex;
+    height: 100vh;
+}
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.2vw;
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.travel{
+   height: 100%;
+   background-image: url('../images/5139.jpg');
+   background-size: cover;
+   background-position: center;
+   width: 30%;
+}
+
+.img-travel{
+    width: 100%;
+    height: auto;
+}
+
+.main-form{
+    width: 70%;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label{
+    display: block;
+    padding-bottom: 2%;
+}
+
+.form-element{
+    width:356px;
+    height: 32px;
+    background-color: #e4e4e4;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+fieldset label{
+    display: inline;
+}
+
+.form-element:focus{
+    outline: 0;
+}
+
+.form-items{
+    margin: 0.5% 5% 0.5% 5%;
+}
+input {
+ box-sizing: border-box;
+ padding: 10px;
+}
+
+fieldset{
+    padding-top: 5%;
+    width: 325px;
+    border: none;
+}
+
+.travel-reasons{
+    width: auto;
+}
+
+.comments{
+    align-self: center;
+    justify-self: flex-end;
+    min-width: 90%;
+}
+
+.comments textarea{
+    margin-top: 0;
+    width: 100%;
+    outline:0;
+    height: 120px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: #e4e4e4;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#submit{
+    width: 354px;
+    height: 60px;
+    background: #339ED4;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    border: none;align-self: flex-start;
+    font-weight: bold;
+}

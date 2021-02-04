@@ -1,0 +1,208 @@
+@keyframes movingThroughSpace {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+body{
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+  text-align: center;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#welcome-section{
+  height: 100vh;
+}
+.project{
+  font-family: 'Six Caps', sans-serif;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 10px;
+  position: relative;
+  top: 20px;
+  right: -180px;
+  font-size: 25px;
+}
+.project:hover{
+  font-size: 30px;
+}
+#navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  z-index: 1;
+}
+.links{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  
+}
+#projects{
+  bottom: -10%;
+}
+#profile{
+  bottom: -20%;
+}
+/* re- used code */
+
+section.previewContainer{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #dbe2eb, #10335d);
+  background-size: cover;
+  background-position: cover;
+}
+.nameSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height:max-content;
+  border-radius: 20px;
+  position: relative;
+  top: 140px;
+  left: 5%;
+  background-image: url(./imgs1/galaxy1.jpg);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: movingThroughSpace 100s linear infinite;
+  z-index: 0;
+}
+.nameSection img {
+  width: 50%;
+  height: auto;
+  z-index: 2;
+  margin-top: 5%;
+}
+.nameSection h1 {
+  color: white;
+  font-size: 30px;
+  font-family: "Spectral SC", serif;
+  font-weight: bolder;
+  margin-top: 5%;
+
+}
+.nameSection span {
+  margin-top: 5%;
+  color: white;
+  font-size: 30px;
+  font-family: "Spectral SC", serif;
+  font-weight: bolder;
+}
+.infoSection {
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  top: 105px;
+  left: 10%;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.infoSection header {
+  font-family: "Six Caps", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+.infoSection p {
+  position: relative;
+  top: -25px;
+  text-align: center;
+  width: 685px;
+  font-size: 25px;
+  font-family: "Reenie Beanie", cursive;
+  margin-top: 5%;
+}
+.infoSection p b {
+  letter-spacing: 10px;
+  font-size: 27px;
+}
+
+.infoSection aside {
+  position: relative;
+  top: -25px;
+  left: 17px;
+  bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border-radius: 30px;
+  height: 350px;
+  background-color: #042a4d59; /*re use this color*/
+}
+.infoSection h2{
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.infoSection article{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 30px;
+    height: 140px;
+    width: 300px;
+}
+.infoSection img{
+    position: absolute;
+    height: 65px;
+    left: 15px;
+}
+.infoSection h3{
+    position: relative;
+    font-size: 25px;
+    font-family: "Six Caps", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    left: 30px;
+    top: 10px;
+}
+.infoSection span{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 150px;
+    height: 70px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 734px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+  }
+}

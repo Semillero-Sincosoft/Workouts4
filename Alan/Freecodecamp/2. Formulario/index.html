@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>Formularios</title>
+</head>
+<body> 
+	<div class="header">
+	<h1 id="title">Bienvenido a One Piece</h1>
+	<p id="description">"La plataforma de anime mas grande de Latam!!!"</p>
+    </div>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+			<form action="" id="survey-form" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input id="name" type="text" placeholder="Escribe tu nombre" required>
+						<label class="label" id="name-label" for="nombre">Nombre</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="email" placeholder="Escribe tu correo" required>
+						<label class="label" id="email-label" for="correo">Email</label>
+					</div>
+					<div class="input-group">
+						<input type="number" id="number" placeholder="Escribe tu numero de celular" required min="1" max="10">
+						<label class="label" id="number-label" for="pass">Celular</label>
+					</div>
+					<div class="input-group">
+						<input type="text" id="comment" placeholder="Escribe una recomendación" required>
+						<label class="label" id="comment-label" for="comment">Comentanos algo!!</label>
+					</div>
+					<div class="input-group">
+                        <select id="dropdown">
+						<option>Pariente</option>
+						<option>Amigo</option>
+						</select>
+					</div>
+					<div class="input-group radio">
+						<input type="radio" name="sexo" id="hombre" value="Hombre">
+						<label for="hombre">Hombre</label>
+						<input type="radio" name="sexo" id="mujer" value="Mujer">
+						<label for="mujer">Mujer</label>
+					</div>
+					<div class="input-group checkbox">
+						<input type="checkbox" name="terminos" id="terminos" value="true">
+						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					</div>
+					<div class="input-group checkbox">
+						<input type="checkbox" name="like" id="like" value="true">
+						<label for="like">Me gusta la pagina</label>
+					</div>
+					<textarea name="Comentarios" id="" cols="30" rows="10">Escribe un comentario aqui...</textarea>
+					<input type="submit" id="submit" value="Enviar">
+					
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img src="assets/svg/Logo.svg" alt="Logo Logitech" id="header-img" />
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#Features">Features</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#HowItWorks">How It Works</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Pricing">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="information">
+          <h1>G935 WIRELESS 7.1 SURROUND LIGHTSYNC GAMING HEADSET</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+            eveniet totam laborum sint quaerat? Temporibus voluptatum at vitae,
+            quod totam molestiae consectetur hic, quibusdam quas a voluptas
+            minima sit ullam.
+          </p>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address..."
+              />
+              <input type="submit" id="submit" value="GET STARTED" />
+            </div>
+          </form>
+        </div>
+        <div>
+          <img src="assets/svg/Illustration.svg" alt="Headphones" />
+        </div>
+      </section>
+      <section class="container features" id="Features">
+        <div class="card-container audio">
+          <img src="assets/svg/Audio.svg" alt="Audio" />
+          <p class="feature">AUDIO SENSITIVE</p>
+          <p class="info">93 +/-3 DB</p>
+        </div>
+        <div class="card-container micro">
+          <img src="assets/svg/Microphone.svg" alt="Microphone" />
+          <p class="feature">FLIP-TO-MUTE</p>
+          <p class="info">MIC+ 6mm</p>
+        </div>
+        <div class="card-container wireless">
+          <img src="assets/svg/Wireless.svg" alt="Wireless" />
+          <p class="feature">INDOOR WIRELESS RANGE</p>
+          <p class="info">15 METERS</p>
+        </div>
+      </section>
+      <section class="container video" id="HowItWorks">
+        <iframe id="video" src="https://www.youtube.com/embed/ILtr3gXKMZo">
+        </iframe>
+      </section>
+      <section class="container price" id="Pricing">
+        <div class="price-card">
+          <h2>PRICE</h2>
+          <p>This item ships to Colombia. Arrives: Tuesday, Feb 16</p>
+          <h3>$161.28 USD</h3>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

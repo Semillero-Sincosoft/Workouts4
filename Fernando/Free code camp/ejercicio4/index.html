@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="sidebar">
+        <header class="header-nav" >ANGULAR</header>
+        <a href="#introduction" class=" nav-link" >
+          <span class="header-link">Introduction</span>
+        </a>
+        <a href="#getting" class="nav-link">
+          <span class="header-link">Getting started</span>
+        </a>
+        <a href="#adding" class="nav-link">
+          <span class="header-link">Adding navigation</span>
+        </a>
+        <a href="#managing" class="nav-link">
+          <span class="header-link">Managing data</span>
+        </a>
+        <a href="#user" class="nav-link">
+          <span class="header-link">Using forms </span>
+        </a>
+        
+       
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header class="main-header" id="angular_introduction">
+          Introduction
+        </header>
+        <p>
+          Angular is an application design framework and development platform
+          for building efficient and sophisticated single page applications.
+        </p>
+        <p>
+          These Angular docs help you learn and use the Angular development
+          framework and platform, from your first app to optimizing complex
+          single page business apps. The tutorials and guides include
+          downloadable examples to speed up your projects.
+        </p>
+      </section>
+      <hr />
+      <section id="getting" class="main-section">
+        <header class="main-header" id="angular_Getting_started_with_Angular">
+          Getting started with Angular
+        </header>
+        <p>
+          This tutorial introduces you to the essentials of Angular by walking
+          you through building an e-commerce site with a catalog, shopping cart,
+          and check-out form.
+        </p>
+        <p>
+          To help you get started right away, this tutorial uses a ready-made
+          application that you can examine and modify interactively on
+          Stackblitz—without having to set up a local work environment.
+          StackBlitz is a browser-based development environment where you can
+          create, save, and share projects using a variety of technologies.
+        </p>
+        <h2>Prerequisites</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <hr />
+      <section id="adding" class="main-section">
+        <header class="main-header" id="angular_Adding_navigation">
+          Adding navigation
+        </header>
+        <p>
+          This guide builds on the first step of the Getting Started tutorial,
+          Get started with a basic Angular app.
+        </p>
+        <p>
+          At this stage of development, the online store application has a basic
+          product catalog.
+        </p>
+        <p>
+          In the following sections, you'll add the following features to the
+          application:
+        </p>
+        <ul>
+          <li>
+            Type a URL in the address bar to navigate to a corresponding product
+            page.
+          </li>
+          <li>
+            Click links on the page to navigate within your single-page
+            application.
+          </li>
+          <li>
+            Click the browser's back and forward buttons to navigate the browser
+            history intuitively.
+          </li>
+        </ul>
+        <code>
+          @NgModule({ imports: [ BrowserModule, ReactiveFormsModule,
+          RouterModule.forRoot([ { path: '', component: ProductListComponent },
+          { path: 'products/:productId', component: ProductDetailsComponent },
+          ]) ],
+        </code>
+      </section>
+      <section id="managing" class="main-section">
+        <header class="main-header" id="angular_Managing_data">
+          Managing data
+        </header>
+        <p>
+          This guide builds on the second step of the Getting started with a
+          basic Angular application tutorial, Adding navigation. At this stage
+          of development, the store application has a product catalog with two
+          views: a product list and product details. Users can click on a
+          product name from the list to see details in a new view, with a
+          distinct URL, or route.
+        </p>
+        <ul>
+          <li>
+            To generate a cart service, right click on the app folder, choose
+            Angular Generator, and choose Service. Name the new service cart.
+          </li>
+          <code
+            >import { Injectable } from '@angular/core'; @Injectable({
+            providedIn: 'root' }) export class CartService { constructor() {}
+            }</code
+          >
+          <li>
+            In the CartService class, define an items property to store the
+            array of the current products in the cart.
+          </li>
+          <code>export class CartService { items = []; }</code>
+        </ul>
+      </section>
+      <section id="user" class="main-section">
+        <header class="main-header" id=" Using_forms_for_user_input">
+          Using forms for user input
+        </header>
+        <p>
+          This guide builds on the Managing Data step of the Getting Started
+          tutorial, Get started with a basic Angular app.
+        </p>
+        <p>
+          This section walks you through adding a form-based checkout feature to
+          collect user information as part of checkout.
+        </p>
+        <h2>Define the checkout form model</h2>
+        <li>
+          Import the FormBuilder service from the @angular/forms package. This
+          service provides convenient methods for generating controls.
+        </li>
+        <code
+          >import { Component } from '@angular/core'; import { FormBuilder }
+          from '@angular/forms'; import { CartService } from
+          '../cart.service';</code
+        >
+        <li>
+          Inject the FormBuilder service in the CartComponent constructor().
+          This service is part of the ReactiveFormsModule module, which you've
+          already imported.
+        </li>
+        <code>
+          export class CartComponent { constructor( private cartService:
+          CartService, private formBuilder: FormBuilder, ) {} }
+        </code>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

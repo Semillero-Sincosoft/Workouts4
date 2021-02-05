@@ -1,0 +1,247 @@
+@import url('http://fonts.cdnfonts.com/css/gadugi');
+
+html,main{
+    height: 100%; 
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    height: 100%;                                            
+}
+
+#header-img{
+    width: 220px;
+    height: auto;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav-bar{
+    display: flex;
+    background-color: white;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 25px;
+    align-self: center;
+    margin-left: auto;
+    font-weight: bold;
+  }
+
+li {
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  a{
+      color: black;
+      text-decoration: none;
+  }
+
+  .btn-principal{
+    height: 44px;
+    width: 170px;
+    background: #30B286;
+    border-radius: 7px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+    color: white;
+  }
+
+  .banner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('../images/feria.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+
+
+  .text-banner{
+      color: white;
+      width: 75%;
+      text-align: center;
+      font-size: 45px;
+  }
+
+  h1{
+      text-align: center;
+      font-size: 50px;
+  }
+
+  #about{
+      margin-top: 5%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .description{
+      justify-self: flex-end;
+      width: 40%;
+      margin-left: 3%;
+  }
+
+  #plans{
+      width: 100%;
+      background: #30B286;
+  }
+
+  .group-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card{
+    width: 384px;
+    height: 449px;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+  }
+
+  ul{
+      list-style: none;
+      padding: 0;
+  }
+
+  .card li{
+      margin: 5% 0 5% 0;
+      text-align: center;
+  }
+
+  .card-header{
+    background: #C4C4C4;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 20%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .card button{
+     margin-top: 10%;
+  }
+
+#contact{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('../images/justin-6LO03psPJnE-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    width: 50%;
+    color: white;
+}
+
+form{
+    height: 402px;
+    width: 373px;
+    background: rgba(48, 178, 134, 0.8);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 2%;
+}
+
+input{
+    height: 35px;
+    width: 310px;
+    border-radius: 7px;
+    border: none;
+}
+
+.btn-secondary{
+    height: 54px;
+    width: 170px;
+    border-radius: 7px;
+    color: #30B286;;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 13%;
+}
+
+.form-elements{
+    margin: 5% 7% 0.5% 7%;
+}
+
+
+footer{
+    width: 100%;
+    background: black;
+    height: 15%;
+}
+
+footer ul{
+    display: flex;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer span{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+}
+
+footer a,span{
+    color: white;
+}
+
+@media screen and (max-width: 700px){
+
+    #nav-bar ul {
+        flex-direction: column;  
+      }
+
+    li{
+        margin-top: 12px;
+    }
+    .group-cards,#contact,#about{
+        flex-direction: column;
+        align-items: center;
+    }
+}

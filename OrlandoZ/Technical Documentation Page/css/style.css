@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+#navbar{
+        position: fixed;
+        width: 25%;
+        height: auto;
+        display: flex;
+        border: 5px solid #DB8C8C;
+}
+
+#header-img{
+    position: absolute;
+    width: 190px;
+    height: 189px;
+    border:  green 1px solid;
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    width: 431px;
+    height: 83px;
+    left: 0px;
+    top: 202px;
+    background: #8C2848;
+    border: 5px solid #DB8C8C;
+    box-sizing: border-box;
+}
+
+#header{
+    position: absolute;
+    color: #fff;
+    background: #8C2848;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#navbar ul {
+    position: relative;
+    justify-content: center;
+    top: 200px;
+    height: 50%;
+}
+  
+  #navbar li {
+      
+    list-style: none;
+    position: relative;
+    width: 100%;
+    top: 50%;
+  }
+  
+  #navbar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+#main-doc{
+    position: absolute;
+    left: 450px;
+    width: 65%;
+    height: auto;
+    border: black 1px solid;
+    color: #8C2848;
+    background-color: white;
+}
+
+.marcoTitulo{
+    width: 100%px;
+    height: 95px;
+    background: #8C2848;
+    
+}
+
+header{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+article{
+    box-sizing: content-box;
+    padding: 30px;
+    text-align: justify;
+}
+
+p{
+    box-sizing: content-box;
+    padding: 10px;
+}
+
+.main-section li{
+        margin-left: 50px;
+}
+
+.img-componentes{
+    width: 50%;
+    min-width: 30%;
+    height: auto;
+    margin-left: 25%;
+}
+
+
+
+
+

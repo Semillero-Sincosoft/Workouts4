@@ -1,0 +1,98 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background: #f4f4f4;
+}
+
+#navbar{
+    position: fixed;
+    height: 100%;
+    background: #3298DA;
+    color: white;
+    width: 25%;
+}
+
+button{
+    height: 57px;
+    width: 100%;
+    background: #98CBEC;
+    border: 2px solid #3298DA;
+    
+}
+
+header{
+    text-align: center;
+    font-size: 34px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+main{
+    margin-left: 25%;
+    padding: 15px;
+}
+
+#logo{
+    width: 95%;
+    height: auto;
+    margin-top: 5%;
+}
+
+
+
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    background: #C4C4C4;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+.toggle{
+    display: block;
+}
+
+@media screen and (max-width: 700px){
+    #navbar {
+        width: 100%;
+        height: auto;
+        display: block;
+        z-index: 1;
+  }
+
+  .toggle{
+    width:100%;
+    color: #fff;
+    display: none;
+  }
+  .mobile{
+    display: block;
+    }
+
+  #logo{
+     width: 15%;
+    }
+
+  main{
+      margin-top: 20%;
+      margin-left: 0;
+}
+
+}

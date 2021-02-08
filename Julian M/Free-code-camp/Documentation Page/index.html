@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            min-width: 290px;
+            color: #262626;
+            background-color: #F2F2F2;
+            font-family: Roboto;
+            display: flex;
+        }
+        #navbar{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 30%;
+            height: 100%;
+            border-right: solid 2px #262626;
+            text-align: center;
+            
+        }
+        #navbar ul{
+            padding: 40px;
+        }
+
+        #navbar li {
+            color: #595959;
+            border: 1px solid;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            background-color: #EEEEEE;
+        }
+        #navbar a {
+            font-size: 2.3vw;
+            display: block;
+            padding: 5%;
+            color: #595959;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #main-doc{
+            position: absolute;
+            margin-left:32%;
+            margin-right: 2%;
+        }
+        p{
+            text-align: justify;
+        }
+        code{
+            background-color: #DEDEDE;
+            display: block;
+            white-space: pre-line;
+            position: relative;
+            padding: 2%;
+            border-radius: 5px;
+        }
+        li code{
+            margin:2% 0;
+        }
+        article li{
+            text-align: justify;
+        }
+        #salida{
+            margin-bottom: 3%;
+        }
+        @media screen and (max-width:600px){
+            #navbar{
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                border: none;
+                z-index: 1;
+                border-bottom: 2px solid black;
+                height: auto;
+            }
+            #main-doc{
+                position: relative;
+                margin-left: 0;
+                margin-top: 100%;
+            }
+            #navbar ul{
+            padding: 0px;
+        }
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>DOCUMENTACIÓN JAVA</h1>
+        </header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introducción">Introducción</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Historia_de_Java">Historia de Java</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Herramientas">Herramientas</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Hola_mundo">Hola mundo</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Sintaxis_básica">Sintaxis básica</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Comentarios">Comentarios</a>
+            </li>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introducción">
+            <header>
+                <h1>Introducción</h1>
+            </header>
+            <article>
+                <p>Java es un lenguaje de programación de alto nivel desarrollado originalmente por Sun Microsystems y lanzado en 1995. Java se ejecuta en una variedad de plataformas, como Windows, Mac OS y las distintas versiones de UNIX.</p>
+                <p>Java es imprescindible para que los estudiantes y los profesionales en activo se conviertan en un gran ingeniero de software, especialmente cuando están trabajando en el dominio de desarrollo de software.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Historia_de_Java">
+            <header>
+                <h1>Historia de Java</h1>
+            </header>
+            <article>
+                <p>James Gosling inició el proyecto de lenguaje Java en junio de 1991 para usarlo en uno de sus muchos proyectos de decodificadores. El lenguaje, inicialmente llamado 'Oak' en honor a un roble que estaba fuera de la oficina de Gosling, también pasó por el nombre 'Green' y terminó siendo renombrado más tarde como Java, de una lista de palabras al azar.</p>
+                <p>El 13 de noviembre de 2006, Sun lanzó gran parte de Java como software libre y de código abierto bajo los términos de la Licencia Pública General GNU (GPL).</p>
+                <p>El 8 de mayo de 2007, Sun finalizó el proceso, haciendo que todo el código central de Java fuera gratuito y de código abierto, además de una pequeña parte del código del que Sun no tenía los derechos de autor.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Herramientas">
+            <header>
+                <h1>Herramientas</h1>
+            </header>
+            <article>
+                <p>Para realizar los ejemplos dados en este documento, necesitará una computadora Pentium a 200 MHz con un mínimo de 64 MB de RAM (se recomiendan 128 MB de RAM).</p>
+                <p>También necesitará los siguientes softwares:</p>
+                <ul>
+                    <li>
+                        Sistema operativo Linux 7.1 o Windows xp / 7/8 o superiores
+                    </li>
+                    <li>
+                         Java JDK 8
+                    </li>
+                    <li>
+                        Netbeans u otro Depurador de codigo. 
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Hola_mundo">
+            <header>
+                <h1>Hola mundo</h1>
+            </header>
+            <article>
+                <p>Veamos un código simple que imprimirá las palabras Hola mundo.</p>
+                <code>public class MyFirstJavaProgram{
+                        public static void main(String []args) {
+                              System.out.println("Hello World"); // prints Hello World
+                           }
+                        }                        
+                </code>
+                <p>Salida:</p>
+                <code>
+                    Hello World
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Sintaxis_básica">
+            <header>
+                <h1>Sintaxis básica</h1>
+            </header>
+            <article>
+                <p>Cuando consideramos un programa Java, se puede definir como una colección de objetos que se comunican invocando los métodos de los demás. Veamos ahora brevemente qué significan clases, objetos, métodos y variables de instancia.</p>
+                <ul>
+                    <li>Variable:
+                        Una variable nos proporciona un almacenamiento con nombre que nuestros programas pueden manipular. Cada variable en Java tiene un tipo específico
+                        <code>data type variable [ = value][, variable [ = value] ...] ;</code>
+                    </li>
+                    <li>Objeto:
+                         los objetos tienen estados y comportamientos. Ejemplo: un perro tiene estados: color, nombre, raza, así como comportamientos como mover la cola, ladrar, comer. Un objeto es una instancia de una clase.
+                    </li><br>
+                    <li>Clase:
+                         una clase se puede definir como una plantilla / plano que describe el comportamiento / estado que admite el objeto de su tipo.
+                    </li><br>
+                    <li>Métodos: 
+                    un método es básicamente un comportamiento. Una clase puede contener muchos métodos. Es en los métodos donde se escriben las lógicas, se manipulan los datos y se ejecutan todas las acciones.
+                    </li><br>
+                    <li>Variables de instancia:
+                        cada objeto tiene su conjunto único de variables de instancia. El estado de un objeto se crea mediante los valores asignados a estas variables de instancia.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Comentarios">
+            <header>
+                <h1>Comentarios</h1>
+            </header>
+            <article>
+                <p>Java admite comentarios de una sola línea y de varias líneas muy similares a C y C ++. Todos los caracteres disponibles dentro de cualquier comentario son ignorados por el compilador de Java.</p>
+                <code>public class MyFirstJavaProgram {
+                    /* This is my first java program.
+                     * This will print 'Hello World' as the output
+                     * This is an example of multi-line comments.
+                     */
+                    public static void main(String []args) {
+                       // This is an example of single line comment
+                       /* This is also an example of single line comment. */
+                       System.out.println("Hello World");
+                    }
+                 }                  
+                </code>
+                <p>Salida:</p>
+                <code id="salida">
+                    Hello World
+                </code>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

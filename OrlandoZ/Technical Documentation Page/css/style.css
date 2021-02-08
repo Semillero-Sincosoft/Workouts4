@@ -57,13 +57,14 @@ body{
     line-height: 28px;
     width: 100%;
     left: auto;
+    height: auto;
 }
 
 #header-img{
     position: absolute;
     width: 150px;
     height: auto;
-    top: 50px;
+    top: 60px;
     left: 30%;
 }
 

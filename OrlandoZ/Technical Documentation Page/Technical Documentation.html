@@ -12,17 +12,20 @@
         
 
             <nav id="navbar">
+                
+                <img src="img/SQL.png" alt="icon-sql" id="header-img">
                 <header id="header">DOCUMENTACIÓN SQL</header>
-                    <img src="img/SQL.png" alt="" id="header-img">
                 <ul>
-                    <li><a href="#INTRODUCCIÓN" class="nav-link">INTRODUCCIÓN</a></li>
+                    <li><a href="#INTRODUCCION" class="nav-link">INTRODUCCION</a></li>
                     <li><a href="#DDL" class="nav-link">DDL</a></li>
                     <li><a href="#DML" class="nav-link">DML</a></li>
                     <li><a href="#DCL" class="nav-link">DCL</a></li>
                     <li><a href="#PCL" class="nav-link">PCL</a></li>
-                    <li><a href="#CompSintacticos" class="nav-link">COMPONENTES SINTACTICOS</a></li>
-                    <li><a href="PLSQL" class="nav-link">PLSQL</a></li>
+                    <li><a href="#PLSQL" class="nav-link">PLSQL</a></li>
+                    <li><a href="#COMPONENTES_SINTACTICOS" class="nav-link">COMPONENTES SINTACTICOS</a></li>
+                    
                 </ul>
+            
             </nav>
 
         
@@ -30,8 +33,8 @@
         
         <main id="main-doc">
 
-                <section id="INTRODUCCIÓN" class="main-section">
-                        <div class="marcoTitulo"><header>INTRODUCCIÓN</header></div>
+                <section id="INTRODUCCION" class="main-section">
+                        <header>INTRODUCCION</header>
                             <article>
                                     <p>Structured Query Language que no es mas que un lenguaje estándar de comunicación con bases de datos. Hablamos por tanto de un lenguaje normalizado que nos permite trabajar con cualquier tipo de lenguaje (ASP o PHP) en combinación con cualquier tipo de base de datos (MS Access, SQL Server, MySQL...).</p>
                                     <p>Aparte de esta universalidad, el SQL posee otras dos características muy apreciadas. Por una parte, presenta una potencia y versatilidad notables que contrasta, por otra, con su accesibilidad de aprendizaje.</p>
@@ -42,16 +45,44 @@
                 </section>
 
                 <section id="DDL" class="main-section">
-                        <div class="marcoTitulo"><header>DDL</header></div>
+                        <header>DDL</header>
                             <article>
                             
                                 <p><b>DDL (Data Definition Language):</b></p>
                                 <p>Permite crear y modificar la estructura de una base de datos.</p>
                                 <ul>
                                     <li><b>CREATE:</b>  Utilizado para crear nuevas tablas, campos e índices.</li>
+                                    
+                                    <div class="code"><code >CREATE TABLE nombre_tabla (nombre_columna tipo_columna [ cláusula_defecto ] [ vínculos_de_columna ]
+                                        [ , nombre_columna tipo_columna [ cláusula_defecto ] [ vínculos_de_columna ] … ]
+                                        [ , [ vínculo_de tabla] … ] ) </code>
+                                    </div>
                                     <li><b>ALTER:</b> ALTER: Utilizado para modificar las tablas agregando campos o cambiando la definición de los campos.</li>
+                                    <div class="code">
+                                            <code>
+                                                Para agregar: <br>
+                                                ‘’ ALTER TABLE nombre_tabla; ADD column_name tipo_datos; ‘’ <br>
+                                                -Para borrar: <br>
+                                                ‘’ ALTER TABLE nombre_tabla;DROP COLUMN nombre_columna; ‘’br
+                                            </code>
+
+                                    </div>
                                     <li><b>DROP:</b> Empleado para eliminar tablas e índices</li>
+                                    <div class="code">
+                                        <code>
+                                            <div class="code">
+                                                <code>
+                                                    ‘’ DROP objeto_eliminar; ‘’
+                                                </code>
+                                        </div> 
+                                        </code>
+                                    </div>
                                     <li><b>TRUNCATE:</b> Empleado para eliminar todos los registros de una tabla.</li>
+                                    <div class="code">
+                                            <code>
+                                                ‘’ TRUNCATE TABLE Nombre_Tabla; ‘’
+                                            </code>
+                                    </div>
                                     <li><b>COMMENT:</b> Utilizado para agregar comentarios al diccionario de datos.</li>
                                     <li><b>RENAME:</b> Tal como su nombre lo indica es utilizado para renombrar objetos.</li>
                                 </ul>
@@ -59,33 +90,59 @@
                 </section>
 
                 <section id="DML" class="main-section">
-                            <div class="marcoTitulo"><header>DML</header></div>
+                            <header>DML</header>
                                 <article>
                                     <p><b>DML (Data Manipulation Language):</b> </p>
                                     <p>Permite recuperar, almacenar, modificar, eliminar, insertar y actualizar datos de una base de datos.</p>
                                     <ul>
-                                        <li><b> SELECT:</b> Utilizado para consultar registros de la base de datos que satisfagan un criterio determinado.</li>
+                                        <li><b>SELECT:</b> Utilizado para consultar registros de la base de datos que satisfagan un criterio determinado.</li>
+                                        <div class="code">
+                                            <code>
+                                                SELECT [ ALL | DISTINCT ] lista_elementos_selección <br>
+                                                        FROM lista_referencias_tabla <br>
+                                                        [ WHERE expresión_condicional ] <br>
+                                                        [ GROUP BY lista_columnas ] <br>
+                                                        [ HAVING expresión_condicional ] <br>
+                                                        [ ORDER BY lista_columnas ]
+                                            </code>
+
+                                        </div>
                                         <li><b>INSERT:</b> Utilizado para cargar de datos en la base de datos en una única operación.</li>
+                                        <div class="code">
+                                            <code>
+                                                ‘’ INSERT INTO ''tabla'' (''columna1'', [''columna2,... '']) VALUES (''valor1'', [''valor2,...'']) ‘’
+                                            </code>
+                                        </div>
                                         <li><b>UPDATE:</b> Utilizado para modificar los valores de los campos y registros especificados</li>
+                                        <div class="code">
+                                            <code>
+                                                ‘’ UPDATE mi_tabla SET campo1 = 'nuevo valor campo1' WHERE campo2 = 'N';‘’
+                                            </code>
+                                        </div>
                                         <li><b>DELETE:</b> Utilizado para eliminar registros de una tabla de una base de datos.</li>
+                                        <div class="code">
+                                            <code>
+                                                ‘’ DELETE FROM 'tabla' WHERE 'columna1' = 'valor1'‘’
+                                            </code>
+                                        </div>
                                     </ul>
                                 </article>
                 </section>
 
                 <section id="DCL" class="main-section">
-                            <div class="marcoTitulo"><header>DCL</header></div>
+                            <header>DCL</header>
                                 <article>
                                     <p><b>DCL (Data Control Language):</b></p>
                                     <p>Permite crear roles, permisos e integridad referencial, así como el control al acceso a la base de datos.</p>
                                     <ul>
-                                        <li><b>GRANT</b>Usado para otorgar privilegios de acceso de usuario a la base de datos.</li>
+                                        <li><b>GRANT: </b>Usado para otorgar privilegios de acceso de usuario a la base de datos.</li>
                                         <li><b>REVOKE:</b> Utilizado para retirar privilegios de acceso otorgados con el comando GRANT.</li>
                                     </ul>
                                 </article>
                 </section>
 
-                <section id="TCL" class="main-section">
-                    <div class="marcoTitulo"><header>TCL</header></div>
+                <section id="PCL" class="main-section">
+                    <header>PCL</header>
                         <article>
                             <p><b>TCL (Transactional Control Language):</b></p>
                             <p>Permite administrar diferentes transacciones que ocurren dentro de una base de datos.</p>
@@ -97,7 +154,7 @@
                 </section> 
 
                 <section id="PLSQL" class="main-section">
-                            <div class="marcoTitulo"><header>PLSQL</header></div>
+                            <header>PLSQL</header>
                                 <article>
                                     <p><b>SQL Programático</b></p>
                                     <p></p>
@@ -110,8 +167,8 @@
                                 </article>
                 </section>  
                 
-                <section id="CompSintacticos" class="main-section">
-                    <div class="marcoTitulo"><header>COMPONENTES SINTACTICOS</header></div>
+                <section id="COMPONENTES_SINTACTICOS" class="main-section">
+                    <header>COMPONENTES SINTACTICOS</header>
                             
                     <P>La mayoría de sentencias SQL tienen la misma estructura.
                                 Todas comienzan por un verbo (select, insert, update, create), a continuación le sigue una o más clausulas que nos dicen los datos con los que vamos a operar (from, where), algunas de estas son opcionales y otras obligatorias como es el caso del from.</P>

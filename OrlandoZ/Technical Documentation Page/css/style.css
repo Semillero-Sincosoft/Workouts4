@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 5;
 }
 
 body{
@@ -8,60 +8,16 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-#navbar{
-        position: fixed;
-        width: 25%;
-        height: auto;
-        display: flex;
-        border: 5px solid #DB8C8C;
-}
-
-#header-img{
-    position: absolute;
-    width: 190px;
-    height: 189px;
-    border:  green 1px solid;
-}
-
-.nav-link{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #fff;
-    width: 431px;
-    height: 83px;
-    left: 0px;
-    top: 202px;
-    background: #8C2848;
-    border: 5px solid #DB8C8C;
-    box-sizing: border-box;
-}
-
-#header{
-    position: absolute;
-    color: #fff;
-    background: #8C2848;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-}
-
 #navbar ul {
     position: relative;
-    justify-content: center;
-    top: 200px;
-    height: 50%;
+    top: 220px;
+    left: -42px;
 }
-  
+
   #navbar li {
-      
     list-style: none;
-    position: relative;
-    width: 100%;
-    top: 50%;
-  }
-  
+}
+   
   #navbar a {
     display: block;
     color: #fff;
@@ -69,7 +25,47 @@ body{
     cursor: pointer;
   }
 
+ 
+.nav-link{
+    padding: 21px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    border: 5px solid #DB8C8C;
+    box-sizing: content-box;
+}
 
+#navbar{
+        position: fixed;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        border: 4px solid #DB8C8C;
+        background-color: #8C2848;
+        box-sizing: border-box;
+}
+
+#header{
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    width: 100%;
+    left: auto;
+}
+
+#header-img{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 50px;
+    left: 30%;
+}
 
 #main-doc{
     position: absolute;
@@ -94,6 +90,9 @@ header{
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
+    width: 100%px;
+    height: 95px;
+    background: #8C2848;
 }
 
 article{
@@ -116,6 +115,22 @@ p{
     min-width: 30%;
     height: auto;
     margin-left: 25%;
+}
+
+.code{
+    width: 88%;
+    height: auto;
+    padding: 10px;
+    box-sizing: content-box;
+    margin-left: 50px;
+}
+
+
+@media(max-width: 600px){
+        body{
+            flex-direction: column;
+        }
+
 }
 
 

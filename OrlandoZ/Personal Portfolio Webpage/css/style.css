@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+header{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(180deg, #000000 0%, #13276E 100%);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: content-box;
+        z-index: 9999999999;
+}
+
+nav{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+#navbar{
+    position: relative;
+    width: 50%;
+    right: 50px;
+    top: 30%;
+}
+
+#Logo-OZ{
+    position: relative;
+    left: 40px;
+    height: auto;
+    box-sizing: content-box;
+    padding: 20px 0;
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+li{
+    box-sizing: content-box;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.img-welcome-section{
+    top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 10%;
+    top: 25%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+p{
+    position: absolute;
+    width: 447px;
+    height: 187px;
+    left: 12%;
+    top: 40%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+#projects{
+    position: relative;
+    top: -5px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #000000 17.65%, #13276E 44.95%, rgba(19, 39, 110, 0.74) 83.75%);
+}
+
+#enlaces{
+        position: relative;    
+        display: grid;
+        width: 50%;
+        grid-template-columns: 270px 270px ;
+        grid-template-rows: 200px 40px 200px 40px;
+        grid-gap: 0 70px;
+        left: 30%;
+        top: 20px;
+}
+
+h2{
+    margin-left: 50px;
+}
+
+#marco-enlaces{     
+    width: 275px;
+    height: 175px;
+    background: #FFFFFF;
+    border: 5px solid #033262;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 10px 5px #00C7FA;
+    justify-content: center;
+    display: flex;
+}
+
+#contact{
+    background: linear-gradient(180deg, #505F94 0%, rgba(87, 115, 213, 0) 100%);
+    position: relative;
+    top: -5px;
+}
+
+#ondas{
+    width: 100%;
+}
+
+#imagenes{
+        width: 80%;
+        height: auto;
+}
+
+.img-face{
+    position: relative;
+    left: 70px;
+    top: 20px;
+}
+
+.img-instagram
+{
+    position: relative;
+    left: 100px;
+    top: 80px;
+}
+
+.img-twitter{
+    position: relative;
+    left: 150px;
+    top: 145px;
+}
+
+
+
+
+

@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --vBlue: hsl(210, 100%, 33%);
+  --greyText: hsl(0, 0%, 35%);
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+header {
+  font-family: "Salsa", cursive;
+  background: var(--vBlue);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+nav.navBar {
+  background-color: white;
+  width: 100%;
+  height: 180px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  font-family: "Salsa", cursive;
+  z-index: 2;
+}
+nav.navBar img {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+nav.navBar ul {
+  list-style-type: none;
+  display: inline;
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+nav.navBar ul :hover {
+  text-decoration: underline;
+}
+nav.navBar ul :nth-child(1) {
+  position: absolute;
+  top: 60px;
+  left: 550px;
+}
+nav.navBar ul :nth-child(2) {
+  position: absolute;
+  top: 60px;
+  left: 670px;
+}
+nav.navBar ul :nth-child(3) {
+  position: absolute;
+  top: 60px;
+  left: 790px;
+}
+nav.navBar ul :nth-child(4) {
+  position: absolute;
+  top: 60px;
+  left: 1050px;
+}
+nav.navBar ul :nth-child(5) {
+  position: absolute;
+  top: 60px;
+  left: 1170px;
+}
+div.intro img.intro {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  max-height: 510px;
+  z-index: -1;
+}
+.intro h2 {
+  position: relative;
+  top: 300px;
+  left: -200px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Sahitya", serif;
+  color: white;
+  z-index: 1;
+}
+h2.pace B {
+  font-family: "Mogra", cursive;
+}
+.darkenImg {
+  background-color: rgba(0, 0, 0, 0.424);
+  position: absolute;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  height: 510px;
+  z-index: 0;
+}
+.blue {
+  background-color: var(--vBlue);
+  position: absolute;
+  top: 680px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+}
+section.comm {
+  position: absolute;
+  top: 780px;
+  font-family: "Sahitya", serif;
+}
+section.comm span {
+  text-align: center;
+  position: relative;
+  color: var(--greyText);
+  font-size: 50px;
+  left: 550px;
+}
+section.comm p {
+  position: relative;
+  text-align: center;
+  left: 30%;
+  width: 890px;
+}
+section.reasons img {
+  height: 120px;
+}
+section.reasons span {
+  margin-top: 20px;
+  width: 200px;
+  font-weight: bold;
+}
+section.reasons div.graph {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 700px;
+  left: 300px;
+  width: 100px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.reasons div.plane {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 500px;
+  left: 685px;
+  width: 100px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.reasons div.world {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 330px;
+  left: 1050px;
+  width: 100px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+button.signUp {
+  background-color: var(--vBlue);
+  width: 400px;
+  height: 80px;
+  border-radius: 35px;
+  color: white;
+  font-family: "Salsa", cursive;
+  font-size: 25px;
+  position: relative;
+  top: 420px;
+  left: 540px;
+  border: none;
+}
+section button.submitValidate {
+  background-color: var(--vBlue);
+  width: 380px;
+  height: 60px;
+  border-radius: 35px;
+  color: white;
+  font-family: "Salsa", cursive;
+  font-size: 25px;
+  position: absolute;
+  bottom: 45px;
+  left: 180px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 5px 7px 10px grey;
+}
+section.signUpForm {
+  display: none;
+  border: 2px solid var(--vBlue);
+  box-shadow: 5px 7px 10px var(--greyText);
+  position: relative;
+  width: 750px;
+  height: 1050px;
+  top: 450px;
+  left: 350px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), var(--vBlue) 55%);
+}
+
+section form span img{
+  position: relative;
+  left: -10px;
+  top: 7px;
+}
+select form span{
+  transition: ease-in 3s;
+}
+span#nameError {
+  position: relative;
+  left: 330px;
+  color: rgb(195, 84, 84);
+  font-weight: bold;
+  top: -45px;
+}
+span#emailError {
+  position: relative;
+  left: 325px;
+  color: rgb(195, 84, 84);
+  font-weight: bold;
+  top: -44px;
+}
+span#phoneError {
+  position: relative;
+  left: 245px;
+  color: rgb(195, 84, 84);
+  font-weight: bold;
+  top: -40px;
+}
+h3 {
+  font-family: "Salsa", cursive;
+  font-weight: 100;
+  position: absolute;
+  left: 200px;
+  top: -15px;
+  color: white;
+  font-size: 40px;
+}
+
+img.close {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  height: 40px;
+  width: 40px;
+}
+img.close:hover {
+  cursor: pointer;
+  box-shadow: 5px 7px 10px grey;
+}
+form.signUpForm {
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  margin: 120px 100px;
+}
+input {
+  height: 50px;
+}
+select {
+  height: 50px;
+}
+section.multipleChoice {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 90px;
+  border-radius: 15px;
+  position: relative;
+  top: -85px;
+}
+section h4 {
+  font-size: 20;
+  font-family: "mogra";
+  color: var(--greyText);
+  position: relative;
+  left: 80px;
+}
+.gender :nth-child(1) {
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
+.gender :nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+.gender :nth-child(3) {
+  position: relative;
+  top: 40px;
+}
+.gender :nth-child(4) {
+  position: relative;
+  top: 20px;
+}
+.gender :nth-child(8) {
+  position: relative;
+  top: -20px;
+}
+.level :nth-child(1) {
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
+.level :nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+.level :nth-child(3) {
+  position: relative;
+  top: 40px;
+}
+.level :nth-child(4) {
+  position: relative;
+  top: 20px;
+}
+.level :nth-child(8) {
+  position: relative;
+  top: -20px;
+}
+.level :nth-child(10) {
+  position: relative;
+  top: -20px;
+}
+.level :nth-child(11) {
+  position: relative;
+  top: -40px;
+}
+.language :nth-child(1) {
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
+.language :nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+.language :nth-child(3) {
+  position: relative;
+  top: 40px;
+}
+.language :nth-child(4) {
+  position: relative;
+  top: 20px;
+}
+.language :nth-child(8) {
+  position: relative;
+  top: -20px;
+}
+.language :nth-child(10) {
+  position: relative;
+  top: -20px;
+}
+.language :nth-child(11) {
+  position: relative;
+  top: -40px;
+}
+button.submitValidte {
+  position: absolute;
+  top: 900px;
+}
+footer {
+  position: relative;
+  top: 500px;
+}
+aside.smIcons img {
+  position: relative;
+  height: 20px;
+  float: right;
+  margin: 5px;
+  bottom: 40px;
+  right: 20px;
+}
+aside.smIcons img {
+  cursor: pointer;
+}
+div.blue2 {
+  height: 20px;
+  width: 100%;
+  background-color: var(--vBlue);
+}
+h2.pvt {
+  font-family: "mogra";
+  text-align: center;
+  color: var(--greyText);
+}
+h5 {
+  color: var(--greyText);
+}
+aside h6 :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+aside.ourCompany {
+  position: absolute;
+  left: 170px;
+  top: 250px;
+}
+aside.helpMe {
+  position: absolute;
+  left: 450px;
+  top: 250px;
+}
+aside.contact {
+  position: absolute;
+  left: 700px;
+  top: 250px;
+}
+aside.others {
+  position: absolute;
+  left: 950px;
+  top: 250px;
+}
+.hide{
+  display: none;
+}

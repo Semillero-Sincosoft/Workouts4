@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <title>Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar" >
+        <header onclick="mobile()"><img id="logo" src="assets/images/sql-logo.png" alt="">
+        <b>Documentation</b> </header>
+        <hr>
+        <div id="botones" class="toggle">
+            <button><a class="nav-link" href="#Introducción">Introducción</a></button>
+        <button><a class="nav-link" href="#Elementos">Elementos</a></button>
+        <button><a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a></button>
+        <button><a class="nav-link" href="#DDL">DDL</a></button>
+        <button><a class="nav-link" href="#DML">DML</a></button>
+        <button><a class="nav-link" href="#Cláusulas">Cláusulas</a></button>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section id="Introducción" class="main-section" id="Introducción">
+            <header>Introducción</header>
+            <p>El lenguaje de consulta estructurado o SQL (por sus siglas en inglés Structured Query Language) es un lenguaje declarativo de acceso a bases de datos relacionales que permite especificar diversos tipos de operaciones en ellas. Una de sus características es el manejo del álgebra y el cálculo relacional que permiten efectuar consultas con el fin de recuperar de forma sencilla información de interés de bases de datos, así como hacer cambios en ella.</p>
+            <p> El SQL es un lenguaje de acceso a bases de datos que explota la flexibilidad y potencia de los sistemas relacionales y permite así gran variedad de operaciones.</p>
+        </section>
+        <section id="Elementos" class="main-section">
+            <header>Elementos</header>
+            <p>El lenguaje SQL se basa en varios elementos. Para la comodidad de los desarrolladores de SQL todos los comandos del lenguaje necesarios en los correspondientes sistemas de gestión de bases se ejecutan a través de una interfaz específica de línea de comandos SQL (command-line interface o CLI).
+            </p>
+            <ul>
+                <li>Cláusulas: las cláusulas son componentes de los estados y las querys.
+                </li>
+                <li>Expresiones: las expresiones pueden producir valores escalares o tablas, que consisten en columnas y filas de datos.
+                </li>
+                <li>
+                    Predicados: que especifican las condiciones que se utilizan para limitar los efectos de los comandos y las consultas, o para cambiar el flujo del programa.</li>
+                <li>Querys: una query o consulta va a recuperar los datos, en base a un criterio dado.
+                </li>
+                <li>Comandos: con los comandos puedes controlar las operaciones, el flujo del programa, conexiones, sesiones, o diagnósticos. En los sistemas de bases de datos los comandos o sentencias SQL se utilizan para el envío de consultas desde un programa cliente a un servidor donde se almacenan las bases de datos. Como respuesta, el servidor procesa los comandos SQL y devuelve respuestas al programa cliente. Esto permite a los usuarios ejecutar una amplia gama de maravillosas y rápidas operaciones de manipulación de datos, desde simples entradas de datos</li>
+            </ul>
+        </section>
+        <section id="Tipos_de_datos" class="main-section">
+            <header>Tipos de datos</header>
+            <p>Algunos de los tipos de datos básicos de SQL's son:</p>
+            <ul>
+                <li>Varchar: Recibe cadena de palabras compuestas de letras, números y caracteres especiales.</li>
+                <li>Int es el principal tipo de datos de valores enteros de SQL Server. Con números enteros con o sin signo</li>
+                <li>Date: una fecha de calendario que contiene el año (de cuatro cifras), el mes y el día.
+                </li>
+                <li>Time: La hora del día en horas minutos segundos (el valor predeterminado es 0).</li>
+            </ul>
+        </section>
+        <section id="DDL" class="main-section">
+            <header>DDL</header>
+            <p>El lenguaje de definición de datos (en inglés Data Definition Language, o DDL), es el que se encarga de la modificación de la estructura de los objetos de la base de datos. Incluye órdenes para modificar, borrar o definir las tablas en las que se almacenan los datos de la base de datos. Existen cuatro operaciones básicas: CREATE, ALTER, DROP y TRUNCATE.</p>
+            <h1>CREATE(Crear)</h1>
+            Este comando permite crear objetos de datos, como nuevas bases de datos, tablas, vistas y procedimientos almacenados.
+            <code>CREATE TABLE clientes;</code>
+
+            <h1>ALTER(Alterar)</h1>
+            <p>Este comando permite modificar la estructura de una tabla u objeto. Se pueden agregar/quitar campos a una tabla, modificar el tipo de un campo, agregar/quitar índices a una tabla, modificar un trigger, etc.</p>
+            <code># ALTER TABLE 'NOMBRE_TABLA' ADD NUEVO_CAMPO INT;
+            # ALTER TABLE 'NOMBRE_TABLA' DROP COLUMN NOMBRE_COLUMNA;</code>
+
+            <h1>DROP(Eliminar)</h1>
+            <p>Este comando elimina un objeto de la base de datos. Puede ser una tabla, vista, índice, trigger, función, procedimiento o cualquier objeto que el motor de la base de datos soporte. Se puede combinar con la sentencia ALTER.</p>
+            <code># DROP TABLE 'NOMBRE_TABLA';
+                # DROP SCHEMA 'ESQUEMA;'
+                # DROP DATABASE 'BASEDATOS';</code>
+            <h1>TRUNCATE(Truncar)</h1>
+            <p>Este comando trunca todo el contenido de una tabla. La ventaja sobre el comando DROP, es que si se quiere borrar todo el contenido de la tabla, es mucho más rápido, especialmente si la tabla es muy grande. La desventaja es que TRUNCATE sólo sirve cuando se quiere eliminar absolutamente todos los registros</p>
+            <code># TRUNCATE TABLE 'NOMBRE_TABLA';</code>
+        </section>
+        <section id="DML" class="main-section">
+            <header>DML</header>
+            <p>Un lenguaje de manipulación de datos (Data Manipulation Language, o DML en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos, organizados por el modelo de datos adecuado. El lenguaje de manipulación de datos más popular hoy día es SQL, usado para recuperar y manipular datos en una base de datos relacional.</p>
+            <h1>INSERT(insertar)</h1>
+            <p>Una sentencia INSERT de SQL agrega uno o más registros a una (y sólo una) tabla en una base de datos relacional.</p>
+            <span>Forma básica:</span>
+            <code> INSERT INTO ''tabla'' (''columna1'', [''columna2,... '']) VALUES (''valor1'', [''valor2,...''])</code>
+            <p>Las cantidades de columnas y valores deben ser iguales. Si una columna no se especifica, le será asignado el valor por omisión. Los valores especificados (o implícitos) por la sentencia INSERT deberán satisfacer todas las restricciones aplicables. Si ocurre un error de sintaxis o si alguna de las restricciones es violada, no se agrega la fila y se devuelve un error. </p>
+            <code># INSERT INTO agenda_telefonica (nombre, numero) VALUES ('Roberto Jeldrez', 4886850);</code>
+            <span>Cuando se especifican todos los valores de una tabla, se puede utilizar la sentencia acortada:</span>
+            <code># INSERT INTO ''VALUES (''valor1'', [''valor2,...''])</code>
+            <span>Ejemplo (asumiendo que nombre y número son las únicas columnas de la tabla agenda_telefonica):</span>
+            <code># INSERT INTO agenda_telefonica VALUES ('Jhonny Aguiar', 080473968);</code>
+            <h1>UPDATE(Actualizar)</h1>
+            <p>Una sentencia UPDATE de SQL es utilizada para modificar los valores de un conjunto de registros existentes en una tabla.</p>
+            <code># UPDATE mi_tabla SET campo1 = 'nuevo valor campo1' WHERE campo2 = 'N';</code>
+            <h1>DELETE(Eliminar)</h1>
+            <p>Una sentencia DELETE de SQL borra uno o más registros existentes en una tabla.</p>
+            <code># DELETE FROM 'tabla' WHERE 'columna1' = 'valor1'</code>
+            <span>Ejemplo:</span>
+            <code># DELETE FROM My_table WHERE field2 = 'N';</code>
+        </section>
+        <section id="Cláusulas" class="main-section">
+            <header>Cláusulas</header>
+            <p>Las cláusulas son las condiciones que modifican nuestras consultas y son utilizadas para definir los datos que desea seleccionar o manipular.</p>
+            <ul>
+                <li>FROM Enuncia la procedencia de los datos, indicando la TABLA , la VISTA ó la SUBCONSULTA que se utilizará</li>
+                <li>WHERE Se emplea para especificar el filtro o condición que se desea utilizar y se debe cumplir
+                </li>
+                <li>GROUP Sirve para agrupar los registros de resultado y poder realizar funciones de agregado luego
+                </li>
+                <li>ORDER Otorga el orden a los resultados
+                </li>
+                <li>HAVING Se utiliza para dar la condición a cumplir por cada grupo si fue utilizado el GROUP</li>
+            </ul>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

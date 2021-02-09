@@ -1,0 +1,110 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto';
+    margin: 0;
+    color: #635D5D;
+  }
+  .fondo{
+   position: relative;
+  }
+  main{
+    position: absolute;
+    top: 0px;
+    width: 705PX;
+    left: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  #title{
+    font-size: 32px;
+    margin: 20px ;
+    color: #000000;
+    text-align: center;
+  }
+  #description{
+    margin-bottom: 0;
+    margin-top: 0%;
+    font-size: 20px;
+    color: #635D5D;
+    text-align: center;
+  }
+  
+  
+  form{
+    width: 84%;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+  input{
+   
+   margin-top: 5px;
+   width: 254px;
+   padding: 10px;
+   border: 1px solid #C4C4C4;
+   border-radius: 6px;
+ }
+ select{
+  margin-top: 5px;
+  width: 274px;
+  padding: 10px;
+  border: 1px solid #C4C4C4;
+  color: #635D5D;
+ }
+ textarea{
+   margin-top: 5px;
+ }
+ label{
+    margin-top: 20px;
+    display: block;
+  }
+  
+  .derecha{
+    margin-left: 36px;
+  }
+  .derechaA{
+    margin-left: 62px;
+  }
+  input[type="email" ] {
+   width: 95.5%;
+ }
+  .center{
+    width: 100%;
+  }
+  input[type="radio" ] , input[type="checkbox" ]{
+    width: 5%;
+    margin-top: 10px;
+    
+  }
+  textarea:focus, input:focus, input[type]:focus {
+    border-color:#1E80DC;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #1E80DC;
+    outline: 0 none;
+}
+  button{
+    width: 98%;
+    background: linear-gradient(90deg,#1E80DC  .45%, #8CE6FD);
+
+    height: 40px;
+    border-radius: 18px;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+  }
+  button:hover{
+    background: linear-gradient(90deg,  #8CE6FD,#1E80DC );
+
+  }
+  
+  
+ 

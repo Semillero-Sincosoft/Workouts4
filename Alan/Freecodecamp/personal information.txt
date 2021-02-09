@@ -1,0 +1,8 @@
+Sección de bienvenida con id="welcome-section".
+Sección de bienvenida debe tener un h1.
+Otra sección de proyectos con id="projects".
+Sección de proyectos debe tener un h1 con la clase de project-title.
+La sección de proyectos debe contener un enlace a un proyecto.
+Debe tener una barra de navegación
+
+

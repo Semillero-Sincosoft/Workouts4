@@ -1,1 +1,1 @@
-diseño web 80%. pdte por pruebas FCC
+diseño web 80%. pruebas 100% FCC

@@ -70,3 +70,5 @@ submitBtn.addEventListener("click", (e) => {
 if(genderArr.some(radio => radio.checked == true)){
   alert("Works!!")
 }
+
+document.getElementById("icon-face").onclick=

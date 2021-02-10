@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #FAFAFA;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info>h1 {
+    position: absolute;
+    left: 8.32%;
+    right: 10.85%;
+    top: 9.13%;
+    bottom: 43.48%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35.5px;
+    line-height: 53px;
+    text-align: center;
+
+    color: #A3A5AE;
+}
+
+.info>h2 {
+
+    position: absolute;
+    left: 8.32%;
+    right: 10.85%;
+    top: 16%;
+    bottom: 43.48%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36.5px;
+    line-height: 55px;
+    text-align: center;
+
+    color: #4C4E61;
+}
+
+.info>p {
+    position: absolute;
+    left: 29%;
+    top: 30%;
+    bottom: 17.39%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #A3A5AE;
+    width: 40%;
+}
+
+.tarjeta {
+
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 36.5%;
+    top: 50%;
+    bottom: 0%;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}
+
+.barra {
+    position: absolute;
+    left: 0.28%;
+    right: 0.43%;
+    top: 0%;
+    bottom: 98.01%;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid #EB5453;
+}

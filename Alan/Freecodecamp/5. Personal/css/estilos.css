@@ -12,6 +12,23 @@ body {
 	background-attachment: fixed;
 	font-family:'Open Sans',Sans-serif, Arial, Helvetica;
 }
+nav{
+	height:100vh;
+	position: fixed;
+	z-index: 1000;
+	top:0;
+	display: none;	
+}
+img#contacto{
+	display:none;
+}
+section#welcome-section{
+	height:100vh;
+	position: fixed;
+	z-index: 1000;
+	top:0;
+	display:none;
+}
 a {	text-decoration: none; }
 
 .contenedor {
@@ -207,3 +224,6 @@ a {	text-decoration: none; }
 .redes-sociales .behance { background: #1769ff; }
 .redes-sociales .facebook { background: #3b5998; }
 .redes-sociales .twitter { background: #55acee; }
+@media screen and (max-width:600px){
+
+}

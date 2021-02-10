@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10px">
+    <title>Portfolio Web Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body{
+            margin: 0;
+            font-family: Lato;
+        }
+        #navbar{
+            top: 0;
+            position: fixed;
+            background-color: #A50505;
+            margin-top:0px;
+            display: flex;
+            justify-content: flex-end;
+            width:100%;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin-right: 10%;
+            padding:1%;
+        }
+        li{
+           display: inline-block;
+        }
+        li a{
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+            margin-left:100px;
+            font-size: 20px;
+        }
+        #welcome-section{
+            background: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0.76) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 2.5vmax;
+            color:white;
+            font-weight: bold;
+            top:100;
+        }
+        #projects{
+            text-align: center;
+            background-color:#737373 ;
+            display: flex;
+            flex-direction: column;
+        }
+        .proyect-order{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-gap: 10%;
+            margin:10%;
+            margin-top: 0;
+        }
+        a p{
+            background-color: #262626;
+            margin: 0;
+            color: #737373;
+            padding: 10px;
+            font-size: 4vmin;
+        }
+        section a{
+            text-decoration: none;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: -10px;
+        }
+        #profile-link{
+            background-color:#A50505;
+            width: 30%;
+            margin: auto;
+            font-size: 2.2vw;
+            padding: 1%;
+            border-radius: 100px;
+            color: white;
+            margin-bottom: 2%;
+        }
+        .project-tile{
+            color: white;
+            font-size: 4vmax;
+        }
+        #contacto{
+            background-color:#262626;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10%;
+        }
+        .iconsfooter{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .iconsfooter svg{
+            margin-left: 10%;
+        }
+        .title{
+            font-size: 2vw;
+        }
+        .title h3{
+            color: white;
+        }
+        .title p{
+            color: #737373;
+        }
+        @media screen and (max-width:600px){
+
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section" class="nav-link">SOBRE MÍ</a></li>
+            <li><a href="#projects"  class="nav-link">PROYECTOS</a></li>
+            <li><a href="#contacto"  class="nav-link">CONTÁCTAME</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>BIENVENIDO A MI PORTAFOLIO</h1>
+        <h2>Soy Julian, Desarrollador</h2>
+    </section>
+    <section id="projects">
+        <h2 class="project-tile">Algunos de mis proyectos</h2>
+        <div class="proyect-order">
+            <a href="https://codepen.io/julianmoreno0113/pen/jOVPPJB">
+                <img src="Rectangle 6.png" alt="">
+                <p>Tribute Page</p>
+            </a>
+            <a href="https://codepen.io/julianmoreno0113/pen/bGBdzmd"  target="_blank">
+                <img src="Rectangle 7.png" alt="">
+                <p>Survey Form</p>
+            </a>
+            <a href="https://codepen.io/julianmoreno0113/pen/GRNojBv"  target="_blank">
+                <img src="Rectangle 8.png" alt="">
+                <p>Product Landing Page</p>
+            </a>
+            <a href="https://codepen.io/julianmoreno0113/pen/JjbGQOZ"  target="_blank">
+                <img src="Rectangle 9.png" alt="">
+                <p>Documentation Page</p>
+            </a>
+
+        </div>
+        <a href="https://codepen.io/julianmoreno0113" target="_blank" id="profile-link">Mirar Más</a>
+    </section>
+    <section id="contacto">
+        <div class="title">
+            <h3>Contáctame</h3>
+            <p>jdmoreno2308@misena.edu.co</p>
+        </div>
+        <div class="iconsfooter">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.9965 0.582886C12.537 0.582886 0 13.1689 0 28.6949C0 41.1129 8.022 51.6479 19.152 55.3684C20.552 55.6274 21.063 54.7594 21.063 54.0139C21.063 53.3454 21.0385 51.5779 21.0245 49.2329C13.237 50.9304 11.592 45.4634 11.592 45.4634C10.3215 42.2154 8.484 41.3509 8.484 41.3509C5.9395 39.6079 8.673 39.6429 8.673 39.6429C11.4835 39.8424 12.9605 42.5409 12.9605 42.5409C15.4595 46.8354 19.516 45.5964 21.112 44.8754C21.364 43.0589 22.0885 41.8199 22.89 41.1164C16.674 40.4059 10.136 37.9944 10.136 27.2249C10.136 24.1554 11.228 21.6459 13.02 19.6789C12.7295 18.9684 11.7705 16.1089 13.293 12.2414C13.293 12.2414 15.645 11.4854 20.993 15.1219C23.226 14.4989 25.62 14.1874 28.0035 14.1769C30.38 14.1909 32.7775 14.4989 35.014 15.1254C40.3585 11.4889 42.707 12.2449 42.707 12.2449C44.233 16.1159 43.274 18.9719 42.987 19.6824C44.7825 21.6494 45.864 24.1589 45.864 27.2284C45.864 38.0259 39.319 40.4024 33.082 41.0989C34.0865 41.9669 34.9825 43.6819 34.9825 46.3034C34.9825 50.0624 34.9475 53.0934 34.9475 54.0139C34.9475 54.7664 35.4515 55.6414 36.8725 55.3649C47.985 51.6409 56 41.1094 56 28.6949C56 13.1689 43.463 0.582886 27.9965 0.582886Z" fill="#737373"/>
+                </svg>
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28 5.0456C35.476 5.0456 36.3636 5.0736 39.3176 5.2108C46.9056 5.5552 50.4476 9.156 50.7948 16.688C50.9292 19.6392 50.9544 20.524 50.9544 28C50.9544 35.4816 50.9264 36.3664 50.7948 39.3176C50.4476 46.8412 46.9112 50.4476 39.3148 50.7948C36.3636 50.9292 35.4788 50.9572 28 50.9572C20.524 50.9572 19.6364 50.9292 16.688 50.7948C9.0804 50.4476 5.5524 46.83 5.208 39.3148C5.0736 36.3636 5.0456 35.4788 5.0456 28C5.0456 20.524 5.0736 19.6392 5.208 16.688C5.5552 9.156 9.0916 5.5524 16.688 5.208C19.6392 5.0736 20.524 5.0456 28 5.0456ZM28 0C20.3952 0 19.4432 0.0336 16.4584 0.168C6.2888 0.6356 0.6384 6.2776 0.168 16.4556C0.028 19.4432 0 20.3952 0 28C0 35.6048 0.0336 36.5596 0.168 39.5444C0.6356 49.714 6.2776 55.3644 16.4556 55.832C19.4432 55.9664 20.3952 56 28 56C35.6048 56 36.5596 55.9664 39.5444 55.832C49.7056 55.3644 55.37 49.7224 55.8292 39.5444C55.9692 36.5596 56 35.6048 56 28C56 20.3952 55.9664 19.4432 55.832 16.4584C55.3756 6.2972 49.728 0.6384 39.5472 0.168C36.5596 0.028 35.6048 0 28 0ZM28 13.622C24.1867 13.622 20.5296 15.1368 17.8332 17.8332C15.1368 20.5296 13.622 24.1867 13.622 28C13.622 31.8133 15.1368 35.4704 17.8332 38.1668C20.5296 40.8632 24.1867 42.378 28 42.378C31.8133 42.378 35.4704 40.8632 38.1668 38.1668C40.8632 35.4704 42.378 31.8133 42.378 28C42.378 24.1867 40.8632 20.5296 38.1668 17.8332C35.4704 15.1368 31.8133 13.622 28 13.622ZM28 37.3324C25.5249 37.3324 23.1512 36.3492 21.401 34.599C19.6508 32.8488 18.6676 30.4751 18.6676 28C18.6676 25.5249 19.6508 23.1512 21.401 21.401C23.1512 19.6508 25.5249 18.6676 28 18.6676C30.4751 18.6676 32.8488 19.6508 34.599 21.401C36.3492 23.1512 37.3324 25.5249 37.3324 28C37.3324 30.4751 36.3492 32.8488 34.599 34.599C32.8488 36.3492 30.4751 37.3324 28 37.3324ZM42.9464 9.6964C42.0553 9.6964 41.2006 10.0504 40.5705 10.6805C39.9404 11.3106 39.5864 12.1653 39.5864 13.0564C39.5864 13.9475 39.9404 14.8022 40.5705 15.4323C41.2006 16.0624 42.0553 16.4164 42.9464 16.4164C43.8375 16.4164 44.6922 16.0624 45.3223 15.4323C45.9524 14.8022 46.3064 13.9475 46.3064 13.0564C46.3064 12.1653 45.9524 11.3106 45.3223 10.6805C44.6922 10.0504 43.8375 9.6964 42.9464 9.6964Z" fill="#737373"/>
+                    </svg>
+                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M66 6.33789C63.5285 7.43146 60.9066 8.14877 58.2219 8.46589C61.0517 6.77865 63.1691 4.12049 64.1784 0.988247C61.52 2.56304 58.6115 3.67267 55.5786 4.26919C54.3122 2.91948 52.7814 1.84404 51.0812 1.10963C49.381 0.375229 47.5477 -0.00246153 45.6951 1.2072e-05C36.9501 1.2072e-05 30.5283 8.14307 32.5017 16.5925C27.1185 16.3244 21.8519 14.9291 17.0439 12.4974C12.2359 10.0656 7.99402 6.65166 4.5936 2.47719C2.86355 5.45334 2.33394 8.97549 3.11245 12.3275C3.89095 15.6795 5.91913 18.6097 8.7846 20.5224C6.63504 20.4552 4.53275 19.8758 2.6532 18.8325C2.508 25.088 7.0026 30.9482 13.5135 32.2494C11.5194 32.7899 9.42791 32.8688 7.3986 32.48C8.26325 35.1657 9.94747 37.5142 12.2155 39.1971C14.4836 40.8799 17.222 41.8127 20.0475 41.865C14.3725 46.3101 7.16226 48.3254 0 47.4682C6.19173 51.439 13.3976 53.5466 20.757 53.5393C45.8964 53.5393 60.0996 32.345 59.2449 13.3346C61.8945 11.4208 64.1819 9.05164 66 6.33789Z" fill="#737373"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="66" height="56" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M52.9114 0H3.09135C1.38327 0 0 1.3832 0 3.0912V52.9116C0 54.6168 1.38327 56 3.09135 56H29.9167V34.314H22.6139V25.8636H29.9111V19.628C29.9111 12.3956 34.3297 8.456 40.784 8.456C43.8754 8.456 46.5299 8.6856 47.3056 8.7892V16.3492H42.8309C39.3196 16.3492 38.6419 18.0208 38.6419 20.4652V25.8636H47.0115L45.9195 34.314H38.6391V56H52.9142C54.6167 56 56 54.6168 56 52.9088V3.0912C56.0028 1.3832 54.6195 0 52.9114 0Z" fill="#737373"/>
+                            </svg>
+                                                                                        
+        </div>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

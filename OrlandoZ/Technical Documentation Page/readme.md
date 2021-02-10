@@ -1,1 +1,1 @@
-Segundo avance. proyecto en 50%
+Pruebas al 100% en Free Code Camp. proyecto en 80 %

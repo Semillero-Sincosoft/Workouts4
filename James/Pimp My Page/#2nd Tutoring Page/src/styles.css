@@ -1,4 +1,5 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
   box-sizing: border-box;
 }
 :root {
@@ -21,7 +22,7 @@ header {
   height: 50px;
   width: 100%;
   color: white;
-  font-size: 30px;
+  font-size: 2vw;
   text-align: center;
 }
 nav.navBar {
@@ -43,7 +44,7 @@ nav.navBar ul {
   list-style-type: none;
   display: inline;
   float: right;
-  font-size: 30px;
+  font-size: 2vw;
   cursor: pointer;
   font-weight: bold;
 }
@@ -86,7 +87,6 @@ div.intro img.intro {
 .intro h2 {
   position: relative;
   top: 300px;
-  left: -200px;
   text-align: center;
   font-size: 60px;
   font-family: "Sahitya", serif;
@@ -115,8 +115,9 @@ h2.pace B {
 }
 section.comm {
   position: absolute;
+  left: 0%;
   top: 780px;
-  font-family: "Sahitya", serif;
+  font-family: 'Lato';
 }
 section.comm span {
   text-align: center;
@@ -138,6 +139,7 @@ section.reasons span {
   margin-top: 20px;
   width: 200px;
   font-weight: bold;
+  font-family: 'Lato';
 }
 section.reasons div.graph {
   position: relative;
@@ -181,7 +183,7 @@ button.signUp {
   height: 80px;
   border-radius: 35px;
   color: white;
-  font-family: "Salsa", cursive;
+  font-family: "Lato";
   font-size: 25px;
   position: relative;
   top: 420px;
@@ -268,6 +270,12 @@ img.close:hover {
   cursor: pointer;
   box-shadow: 5px 7px 10px grey;
 }
+
+label{
+  color:white;
+  font-size: 24px;
+}
+
 form.signUpForm {
   text-decoration: none;
   outline: none;
@@ -401,12 +409,16 @@ div.blue2 {
   background-color: var(--vBlue);
 }
 h2.pvt {
-  font-family: "mogra";
+  font-family: "Lato";
   text-align: center;
   color: var(--greyText);
 }
 h5 {
   color: var(--greyText);
+  font-family: 'Lato';
+}
+aside h6{
+  font-family: 'Lato';
 }
 aside h6 :hover {
   text-decoration: underline;
@@ -435,3 +447,18 @@ aside.others {
 .hide{
   display: none;
 }
+@media (max-width: 900px) {
+    body{
+    display: flex;
+    flex-direction: column;
+    }
+    nav.navBar img{
+     height: 200px;
+    }
+
+    nav.navBar{
+      display: flex;
+      flex-direction: column;
+      clear:right;
+    }
+  }

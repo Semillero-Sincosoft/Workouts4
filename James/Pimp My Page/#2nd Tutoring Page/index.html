@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Sahitya:wght@400;700&family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Sahitya:wght@400;700&family=Salsa&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles.css">
-    <title>PVT Landing  Page</title>
+    <title>PVT Landing Page</title>
 </head>
-<body>
+
+<>
     <header>
         <span class="covid">Tutoring sessions are 100% Online as a health response to Covid-19 Pandemic</span>
     </header>
@@ -31,8 +36,8 @@
     <section class="comm">
         <span> Our Community </span>
         <p>PVT is a private non profit organization with no third part colaborators,
-        this means we operate soley on student tuition and contribution. Our goal & mission is 
-        to revolutionize the way people are learning english and make a lasting diference, one student at a time</p>
+            this means we operate soley on student tuition and contribution. Our goal & mission is
+            to revolutionize the way people are learning english and make a lasting diference, one student at a time</p>
     </section>
     <section class="reasons">
         <div class="graph">
@@ -44,95 +49,104 @@
         <div class="plane">
             <img src="./img/airplane.png" alt="">
             <span>
-                Travel Comfortably:<br>When traveling English willhelp you stay informed and communicate with locals and officials
+                Travel Comfortably:<br>When traveling English willhelp you stay informed and communicate with locals and
+                officials
             </span>
         </div>
         <div class="world">
             <img src="./img/world.png" alt="">
             <span>
-                Be more Computer savvy:<br>English is the standard language for tech and nearly 60% of web contentis originally made in English
+                Be more Computer savvy:<br>English is the standard language for tech and nearly 60% of web contentis
+                originally made in English
             </span>
         </div>
     </section>
     <button class="signUp">
         Sign Up For Free Today
     </button>
-    <section  class="signUpForm">
+    <section class="signUpForm">
         <h3>PVT Registry Form</h3>
         <img src="./img/icon-close.svg" class="close" alt="">
         <form id="form1" class="signUpForm">
+            <label for="name">Name</label>
             <input type="text" id="name" placeholder="Full Name ...">
             <span class="hide" id="nameError"><img src="./img/error.svg" alt="">Please Enter a valid NAME</span>
             <br>
+            <label for="dob">Date</label>
             <input type="date" id="dob">
             <br>
+            <label for="email">Email</label>
             <input type="email" id="email" placeholder="Email Address ...">
             <span class="hide" id="emailError"><img src="./img/error.svg" alt="">Please Enter a valid EMAIL</span>
             <br>
+            <label for="address">Address</label>
             <input type="text" id="address" placeholder="Home Address ...">
             <br>
+            <label for="Occupation">Occupation</label>
             <input type="text" id="Occupation" placeholder="Occupation ...">
             <br>
+            <label for="phone">Phone Number</label>
             <input type="tel" maxlength="13" minlength="8" id="phone" placeholder="Phone number ...">
-            <span class="hide" id="phoneError"><img src="./img/error.svg" alt="">Please Enter a valid PHONE NUMBER</span>
+            <span class="hide" id="phoneError"><img src="./img/error.svg" alt="">Please Enter a valid PHONE
+                NUMBER</span>
             <br>
+            <label for="education">Education</label>
             <select name="education" id="education" placeholder="Education ...">
                 <option value="Primera">Primera</option>
                 <option value="Secundaria">Secundaria</option>
                 <option value="Tecnico">Tecnico</option>
                 <option value="Technologo">Technologo</option>
                 <option value="Universitario">Universitario</option>
-                <option value="Carrera Professional">Carrera Professional</option>            
+                <option value="Carrera Professional">Carrera Professional</option>
             </select>
+            <section class="multipleChoice">
+                <h4>Gender</h4>
+                <div class="gender">
+                    <input type="radio" name="gender" value="Male"><label>Male</label>
+                    <br>
+                    <input type="radio" name="gender" value="Female"><label>Female</label>
+                    <br>
+                    <input type="radio" name="gender" value="LGBT"><label>LGBT</label>
+                </div>
+                <h4>English Level</h4>
+                <br>
+                <div class="level">
+                    <input type="radio" name="level" value="Beginner"><label>Beginner</label>
+                    <br>
+                    <input type="radio" name="level" value="Intermidiate"><label>Intermidiate</label>
+                    <br>
+                    <input type="radio" name="level" value="Fluent"><label>Fluent</label>
+                    <br>
+                    <input type="radio" name="level" value="Advanced"><label>Advanced</label>
+                </div>
+                <h4>Primary Language</h4>
+                <br>
+                <br>
+                <div class="language">
+                    <input type="radio" name="lang" value="Spanish"><label>Spanish</label>
+                    <br>
+                    <input type="radio" name="lang" value="Creol"><label>Creol</label>
+                    <br>
+                    <input type="radio" name="lang" value="Patua"><label>Patua</label>
+                    <br>
+                    <input type="radio" name="lang" value="Dutch"><label>Dutch</label>
+                </div>
+            </section>
+            <button id="submitBtn" class="submitValidate">
+                Sign Me Up!
+            </button>
         </form>
-
-        <section class="multipleChoice">
-        <h4>Gender</h4>
-        <form id="form2" class="gender" >
-            <input type="radio" name="gender" value="Male"><label>Male</label>  
-            <br>              
-            <input type="radio" name="gender" value="Female"><label>Female</label>
-            <br>
-            <input type="radio" name="gender" value="LGBT"><label>LGBT</label>
-          </form>
-          <h4>English Level</h4>
-          <br>
-        <form id="form3" class="level">
-            <input type="radio" name="level" value="Beginner"><label>Beginner</label>  
-            <br>              
-            <input type="radio" name="level" value="Intermidiate"><label>Intermidiate</label>
-            <br>
-            <input type="radio" name="level" value="Fluent"><label>Fluent</label>
-            <br>
-            <input type="radio" name="level" value="Advansed"><label>Advansed</label>
-          </form>
-          <h4>Primary Language</h4>
-          <br>
-          <br>
-        <form id="form4" class="language">
-            <input type="radio" name="lang" value="Spanish"><label>Spanish</label>  
-            <br>              
-            <input type="radio" name="lang" value="Creol"><label>Creol</label>
-            <br>
-            <input type="radio" name="lang" value="Patua"><label>Patua</label>
-            <br>
-            <input type="radio" name="lang" value="Dutch"><label>Dutch</label>
-          </form>
-        </section>
-        <button id="submitBtn"  class="submitValidate" >
-            Sign Me Up!
-        </button>
     </section>
     <footer>
         <img src="./img/logo.svg" alt="">
-    <aside class="smIcons">
-        <img src="./img/fb.png" alt="">
-        <img src="./img/tw.png" alt="">
-        <img src="./img/ig.png" alt="">
-    </aside>
-    <div class="blue2"></div>
-    <h2 class="pvt">Personalized Virtual Tutoring</h2>
-        
+        <aside class="smIcons">
+            <img src="./img/icon-facebook.svg" alt="facebook" id="icon-face" >
+            <img src="./img/icon-twitter.svg href=" alt="twitter" id="icon-twitter">
+            <img src="./img/ig.png" alt="" id="icon-ig">
+        </aside>
+        <div class="blue2"></div>
+        <h2 class="pvt">Personalized Virtual Tutoring</h2>
+
         <aside class="ourCompany">
             <h5>OUR COMPANY</h5>
             <h6>HOW WE WORK</h6>
@@ -161,6 +175,9 @@
             <h6>LICENSES </h6>
         </aside>
     </footer>
+</body>
+</html>
     <script src="./src/script.js"></script>
 </body>
+
 </html>

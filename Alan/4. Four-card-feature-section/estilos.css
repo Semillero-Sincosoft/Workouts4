@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Poppins normal";
+    src: url("Poppins/Poppins-Light.ttf");
+  }
+  @font-face {
+    font-family: "Poppins bold";
+    src: url("Poppins/Poppins-Bold.ttf");
+  }
+body{
+    background-color: #FAFAFA;
+}
+h1#first{
+    margin-left: 35%;
+    font-family: Poppins normal;
+}
+h1#second{
+    margin-left: 35%;
+font-family: Poppins bold;
+}
+p#first{
+display: flex;
+align-items: center;
+justify-content:center ;
+font-family: Poppins normal;
+font-size: 15px;
+color: #9B9B9B;
+}
+.arriba{
+position:relative;
+background-color: #FFFFFF;
+width: 347px;
+height: 270px;
+box-shadow: 0px 0px 15px black;
+margin-left: 35%;
+}
+.derecha{
+    margin-left: 73%;
+    position:relative;
+    background-color: #FFFFFF;
+    width: 347px;
+    height: 270px;
+    box-shadow: 0px 0px 15px black;
+}
+.abajo{
+    position:relative;
+    background-color: #FFFFFF;
+    width: 347px;
+    height: 270px;
+    box-shadow: 0px 0px 15px black;
+    margin-left: 35%;
+}
+.izquierda{
+    position:relative;
+    background-color: #FFFFFF;
+    width: 347px;
+    height: 270px;
+    box-shadow: 0px 0px 15px black;
+    margin-top: -43.5%;
+}
+p#parrafos{
+    color: #9B9B9B;
+    font-family: Poppins normal;
+    margin-left: 10%;
+}
+h1#titulos{
+    position: relative;
+    top: 5%;
+    font-family: Poppins bold;
+    margin-left: 10%;  
+}
+img{
+    margin-top: 10%;
+    margin-left: 70%;
+}

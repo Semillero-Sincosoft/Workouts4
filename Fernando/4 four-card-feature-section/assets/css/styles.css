@@ -33,14 +33,19 @@ body {
   main{
     margin-top: 15px;
     
-
   }
+  
   section{
       background-color: #ffffff;
       width: 23%;
     height: 180px;
       border-radius: 3px 3px 5px 5px;
       box-shadow: 10px 27px 20px -11px #DDDDF8;
+      transition: 0.5s ease;
+cursor: pointer;
+  }
+  section:hover{
+      transform: scale(1.1);
   }
  
   .teamBuilder{

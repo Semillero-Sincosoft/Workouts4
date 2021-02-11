@@ -1,1 +1,1 @@
-Estoy terminando el diseño de la pagina, solo faltan los otros cuadros y el mobile 
+Diseño terminado al 100% responsiven y mobile, no estuvo complicado y le agrege un transform para que se viera mejor 

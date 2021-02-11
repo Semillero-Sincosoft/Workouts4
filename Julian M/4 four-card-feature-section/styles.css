@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    background-color: hsl(0, 0%, 98%);
+    font-family: Poppins;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 1.2vmax;
+}
+header h1{
+    margin:0;
+}
+.tittle{
+    text-align: center;
+    margin-top: 90px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+.subtittle{
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+}
+.description{
+    text-align: center;
+    Width:505px;
+    Height:46px;
+    color:  hsl(229, 6%, 66%);
+    margin: auto;
+}
+.container{
+    background-color: #FFFFFF;
+    max-width: 25%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
+    filter:drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    margin-bottom: 3%;
+    transition: 0.5s ease;
+}
+
+.container:hover{
+    transform: scale(1.1);
+}
+.container :after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right :0%;
+    width: 97%;
+    height: 0px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent ;
+    border-bottom: 5px solid hsl(0, 78%, 62%);
+}
+.abajo ::after{
+    border-bottom: 5px solid hsl(34, 97%, 64%);
+}
+.izquierda ::after{
+    border-bottom: 5px solid hsl(180, 62%, 55%);
+}
+.derecha ::after{
+    border-bottom: 5px solid hsl(212, 86%, 64%);
+
+}
+#p{
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+#descriptionCont{
+    color:hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.tittlecont{
+    margin-top: 0;
+    text-align: left;
+}
+.ya{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top:65%;
+    z-index: 1;
+}
+.ya div{
+    margin:4%;
+}
+@media screen and (max-width:600px){
+    .container{
+        max-width: 100%;
+        margin: 5%;
+    }
+    .ya{
+        display: block;
+        position: static;
+        margin: auto;
+    }
+    .ya div{
+        max-width: 100%;
+        margin: 5%;
+    }
+
+    main{
+        margin: 0;
+        display: block;
+    }
+    .description{
+        width: 100%;
+    }
+    header{
+        font-size: 3vmin;
+    }
+}

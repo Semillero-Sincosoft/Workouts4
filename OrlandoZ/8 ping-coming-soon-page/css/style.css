@@ -1,0 +1,41 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+
+#logo{
+    position: relative;
+    width: 86px;
+    height: 26px;
+}
+
+#email{
+    position: absolute;
+    background: #FFFFFF;
+    box-sizing: content-box;
+    border-radius: 25px;
+    padding: 15px;
+    height: 20px;
+}
+
+#submit{
+    position: absolute;
+    height: 20px;
+    background: #C2D3FF;
+    border: 1px solid #4F7DF3;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+#graph{
+    position: relative;
+    width: 814px;
+    height: 409px;
+    margin: ;
+}
+

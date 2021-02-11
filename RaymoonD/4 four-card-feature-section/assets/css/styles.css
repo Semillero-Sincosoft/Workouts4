@@ -41,14 +41,19 @@ main{
 }
 
 .card{
-
     height: 251px;
     width: 351px;   
     background: #FFFFFF;
     box-shadow: 0 40px 0 -33px var(--Blue) inset,
-    2px 4px 4px rgba(0, 0, 0, 0.25);
+    2px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: 14px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 .card-content{

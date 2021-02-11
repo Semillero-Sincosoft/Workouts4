@@ -40,18 +40,9 @@ body {
       width: 23%;
     height: 180px;
       border-radius: 3px 3px 5px 5px;
+      box-shadow: 10px 27px 20px -11px #DDDDF8;
   }
-  .mitad{
-     
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      top: -80px;
-      margin-bottom: 0;
-
-  }
+ 
   .teamBuilder{
     border-top: 5px solid #EA5453;
     
@@ -59,10 +50,17 @@ body {
   }
   .supervisor{
     border-top: 5px solid #45D3D3;
-      margin-right: 30%;
+      position: relative;
+      left: 12%;
+      top: -80px;
+
   }
   .calculator{
-    border-top: 5px solid #549EF2;  
+    border-top: 5px solid #549EF2; 
+    float: right; 
+    position: relative;
+    right: 12%;
+      top: -265px;
   }
   .karma{
     border-top: 5px solid #FCAF4A;
@@ -86,3 +84,62 @@ body {
       width: 18%;
       margin-top: 10px;
   }
+  @media screen and (max-width: 600px){
+      
+      h1{
+          font-size: 1.5em;
+      }
+      .span-header{
+        margin-top: 70px;
+          font-size: 1.4em;
+      }
+      .p-header{
+          width: 90%;
+      }
+      .mitad{
+          display: block;
+          order: 2;
+      }
+      main{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+         
+
+      }
+   
+    
+    .teamBuilder{
+        order: 2;
+        margin: 0%;
+    }
+    .supervisor{
+        
+        order: 1;
+       top: 0;
+       left: 0;
+    }
+    .calculator{
+        order: 4;
+        top: 0;
+        right: 0%;
+        float: none;
+    }
+   
+    .karma{
+        order: 3;
+     top: 0px;
+     order: 3;
+    }
+    section{
+      
+        width: 80%;
+      height: 180px;
+       
+    }
+    .margin{
+        margin: 20px;
+    }
+}

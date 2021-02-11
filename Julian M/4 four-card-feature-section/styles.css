@@ -8,16 +8,19 @@ header{
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    font-size: 1.2vmax;
 }
 header h1{
     margin:0;
 }
 .tittle{
+    text-align: center;
     margin-top: 90px;
     font-weight: 200;
     color: hsl(234, 12%, 34%);
 }
 .subtittle{
+    text-align: center;
     color: hsl(234, 12%, 34%);
 }
 .description{
@@ -25,6 +28,7 @@ header h1{
     Width:505px;
     Height:46px;
     color:  hsl(229, 6%, 66%);
+    margin: auto;
 }
 .container{
     background-color: #FFFFFF;
@@ -34,6 +38,11 @@ header h1{
     border-radius: 0px 0px 10px 10px;
     filter:drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
     margin-bottom: 3%;
+    transition: 0.5s ease;
+}
+
+.container:hover{
+    transform: scale(1.1);
 }
 .container :after{
     content: "";
@@ -68,6 +77,7 @@ header h1{
 
 .tittlecont{
     margin-top: 0;
+    text-align: left;
 }
 .ya{
     display: flex;
@@ -75,13 +85,15 @@ header h1{
     justify-content: space-between;
     width: 100%;
     top:65%;
+    z-index: 1;
 }
 .ya div{
     margin:4%;
 }
 @media screen and (max-width:600px){
     .container{
-        max-width: 90%;
+        max-width: 100%;
+        margin: 5%;
     }
     .ya{
         display: block;
@@ -89,6 +101,18 @@ header h1{
         margin: auto;
     }
     .ya div{
-        margin: auto;
+        max-width: 100%;
+        margin: 5%;
+    }
+
+    main{
+        margin: 0;
+        display: block;
+    }
+    .description{
+        width: 100%;
+    }
+    header{
+        font-size: 3vmin;
     }
 }

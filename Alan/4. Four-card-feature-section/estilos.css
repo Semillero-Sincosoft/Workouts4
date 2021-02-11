@@ -30,32 +30,46 @@ position:relative;
 background-color: #FFFFFF;
 width: 347px;
 height: 270px;
-box-shadow: 0px 0px 15px black;
-margin-left: 35%;
+box-shadow: 0 40px 0 -33px hsl(0, 78%, 62%) inset,
+0px 0px 15px black;
+border-radius: 10px;
+margin: 20px;
+transition: 0.6s ease;
+}
+
+.efecto:hover{
+    transform: rotate(1.0turn);
 }
 .derecha{
-    margin-left: 73%;
     position:relative;
     background-color: #FFFFFF;
     width: 347px;
     height: 270px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0 40px 0 -33px hsl(212, 86%, 64%) inset,
+    0px 0px 15px black;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
 }
 .abajo{
-    position:relative;
     background-color: #FFFFFF;
     width: 347px;
     height: 270px;
-    box-shadow: 0px 0px 15px black;
-    margin-left: 35%;
+    box-shadow: 0 40px 0 -33px hsl(34, 97%, 64%) inset,
+    0px 0px 15px black;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
 }
 .izquierda{
-    position:relative;
     background-color: #FFFFFF;
     width: 347px;
     height: 270px;
-    box-shadow: 0px 0px 15px black;
-    margin-top: -43.5%;
+    box-shadow: 0 40px 0 -33px hsl(180, 62%, 55%) inset,
+    0px 0px 15px black;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
 }
 p#parrafos{
     color: #9B9B9B;
@@ -71,4 +85,9 @@ h1#titulos{
 img{
     margin-top: 10%;
     margin-left: 70%;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

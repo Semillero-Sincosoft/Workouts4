@@ -1,0 +1,1 @@
+Estoy terminando el diseño de la pagina, solo faltan los otros cuadros y el mobile 

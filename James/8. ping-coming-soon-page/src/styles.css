@@ -21,7 +21,7 @@
     width: 90%;
     height: 750px;
     position: relative;
-    top: -5%;
+    top: 10%;
     left: -3%;
     box-shadow: 3px 8px 15px grey;
   }
@@ -89,6 +89,10 @@
     color: white;
     background-color: var(--blue);
   }
+  button:hover{
+    background-color: rgb(157, 157, 248);
+    cursor: pointer;
+  }
   .bottom{
     position: relative;
   }
@@ -98,6 +102,10 @@
     left: 25%;
     height: 340px;
     width: 550px;
+    transition: 0.5s ease-in-out;
+  }
+  .dashBoard:hover{
+    transform: rotateY(360deg);
   }
   .iconContainer {
     position: absolute;
@@ -158,26 +166,27 @@
   }
   @media only screen and (max-width: 1000px) {
       body{
-        width: 375px;
+        width: 45%;
       }
       .container{
           left: 150px;
-          top: 100px;
+          top: 25%;
           height: 900px;
+          min-width: 372px;
       }
-      .top {
+      .topp{
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: center;
           position: relative;
         }
-        .top > img {
+        .topp> img {
           position: absolute;
           top: 80px;
           height: 20px;
         }
-        .top > h1 {
+        .topp> h1 {
           position: absolute;
           top: 140px;
           left: 55px;
@@ -185,7 +194,7 @@
           font-weight: 200;
           color: var(--gray);
         }
-        .top > b {
+        .topp> b {
           position: absolute;
           top: 157px;
           left: 244px;
@@ -194,14 +203,14 @@
           color: black;
   
         }
-        .top > span {
+        .topp> span {
           position: absolute;
           top: 200px;
           left: 100px;
           font-size: 15px;
           color: gray;
         }
-        .top > input {
+        .topp> input {
           position: absolute;
           top: 260px;
           left: 25px;
@@ -218,7 +227,7 @@
           font-size: 12px;
           color: var(--lightred);
         }    
-        .top > button {
+        .topp> button {
           position: absolute;
           top: 360px;
           left: 25px;
@@ -257,12 +266,12 @@
           margin-right: 30px;
           fill: white;
         }
-        .in {
+        .ig{
           height: 15px;
           width: 15px;
           color: white;
         }
-        footer {
+        footer{
           position: absolute;
           top: 830px;
           left: 90px;

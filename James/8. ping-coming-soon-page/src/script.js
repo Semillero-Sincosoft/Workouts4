@@ -19,7 +19,7 @@ container.classList.add('container');
 
 topp.classList.add('topp');
 logo.src = './img/logo.svg';
-launch.innerText = 'We are launching <b> soon!</b>';
+launch.innerHTML = 'We are launching <b> soon! </b>';
 subscribe.innerText = 'subscribe and get notified';
 email.id = 'email'
 email.placeholder = 'Your Email Address'
@@ -29,11 +29,15 @@ btn.innerText = ' Notify Me';
 
 bottom.classList.add('bottom');
 dashBoard.classList.add('dashBoard');
+dashBoard.src = "./img/illustration-dashboard.png"
 iconContainer.classList.add('iconContainer');
 fb.src = './img/facebookkkk.svg';
+fb.classList.add('fb');
 tw.src = './img/twitter.svg';
+tw.classList.add('tw');
 ig.src = './img/instagram.svg';
-footer.innerText = '&#169;Copyright All rights reserved'
+ig.classList.add('ig');
+footer.innerHTML = '&#169;Copyright All rights reserved'
 
 body.appendChild(container);
 

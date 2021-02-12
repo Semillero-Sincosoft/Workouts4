@@ -2,40 +2,83 @@ body{
     font-family: 'Libre Franklin', sans-serif;
 }
 
-header{
-    display: flex;
-    justify-content: center;
+#header{
+    position: relative;
+    text-align: center;
+    margin: 2%;
 }
 
+h1, h3{
+        font-weight: 400;
+}
 
 #logo{
     position: relative;
     width: 86px;
     height: 26px;
+    top: 20pxS;
+}
+
+.registro{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center ;
 }
 
 #email{
-    position: absolute;
     background: #FFFFFF;
     box-sizing: content-box;
     border-radius: 25px;
     padding: 15px;
-    height: 20px;
+    height: auto;
+    width: 40%;
+    outline: none;
 }
 
 #submit{
-    position: absolute;
-    height: 20px;
-    background: #C2D3FF;
-    border: 1px solid #4F7DF3;
+    height: auto;
+    width: 5%;
+    background: #0346f0;
+    border: 1px solid #0346f0;
     box-sizing: border-box;
     border-radius: 25px;
+    padding: 15px 40px;
+    box-sizing: content-box;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    outline: none;
 }
+
+
 
 #graph{
     position: relative;
-    width: 814px;
-    height: 409px;
-    margin: ;
+    width: 50%;
+    height: auto;
+    margin:30px 0;
+    left: 25%;
 }
 
+footer{
+    position: relative;
+    text-align: center;
+    
+}
+
+#redes{
+    position: relative;
+    left: 45%;
+    width: 10%;
+    height: auto;
+}
+
+.icon-face{
+    width: 18px;
+    height: 18px;
+}
+
+.icon-face:hover{
+    background: url(../images/);
+}

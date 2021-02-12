@@ -10,56 +10,58 @@
     box-sizing: border-box;
   }
   body {
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Libre Franklin", sans-serif;
   }
   .container {
-    width: 1100px;
+    width: 90%;
     height: 750px;
     position: relative;
+    top: -5%;
+    left: -3%;
     box-shadow: 3px 8px 15px grey;
   }
-  .top {
+  .topp{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-  .top > img {
+  .topp > img {
     position: absolute;
     top: 20px;
   }
-  .top > h1 {
+  .topp > h1 {
     position: absolute;
     top: 50px;
-    left: 320px;
+    left: 30%;
     font-size: 40px;
     font-weight: 200;
     color: var(--gray);
   }
-  .top > b {
+  .topp > b {
     position: absolute;
     top: 80px;
-    left: 650px;
+    left: 40%;
     font-weight: bolder;
     color: black;
     font-size: 40px;
   }
-  .top > span {
+  .topp > span {
     position: absolute;
     top: 140px;
-    left: 450px;
+    left: 40%;
     color: gray;
   }
-  .top > input {
+  .topp > input {
     position: absolute;
     top: 180px;
-    left: 270px;
+    left: 25%;
     width: 350px;
     height: 45px;
     border-radius: 25px;
@@ -75,10 +77,10 @@
     padding-left: 20px;
     color: var(--gray);
   }
-  .top > button {
+  .topp > button {
     position: absolute;
     top: 180px;
-    left: 630px;
+    left: 60%;
     width: 170px;
     height: 45px;
     border-radius: 25px;
@@ -87,45 +89,53 @@
     color: white;
     background-color: var(--blue);
   }
-  .bottom {
+  .bottom{
     position: relative;
   }
-  .dashBoard {
+  .dashBoard{
     position: absolute;
     top: 280px;
-    left: 250px;
+    left: 25%;
     height: 340px;
     width: 550px;
   }
   .iconContainer {
     position: absolute;
     top: 660px;
-    left: 480px;
+    left: 45%;
   }
-  .fb {
+  img.fb {
     height: 15px;
     width: 15px;
     margin-right: 15px;
   }
-  .fb:hover {
+  img.fb:hover {
     filter: white;
     background-color: var(--blue);
   }
-  .tw {
+  img.tw {
     height: 15px;
     width: 15px;
     margin-right: 15px;
     fill: white;
   }
-  .in {
+  img.tw:hover {
+      filter: white;
+      background-color: var(--blue);
+  }
+  img.ig{
     height: 15px;
     width: 15px;
     color: white;
   }
+  img.ig:hover {
+    filter: white;
+    background-color: var(--blue);
+  }
   footer {
     position: absolute;
     top: 700px;
-    left: 410px;
+    left: 38%;
     font-size: 15px;
     color: lightgray;
   }

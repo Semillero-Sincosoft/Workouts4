@@ -72,7 +72,7 @@ function emailValidation() {
     }else{
         const success = document.createElement('div');
         success.id = "success";
-        email.classList.remove('hide');
+        email.classList.remove('err');
         error.classList.add('hide');
     }
    }

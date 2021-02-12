@@ -24,7 +24,6 @@ subscribe.innerText = 'subscribe and get notified';
 email.id = 'email'
 email.placeholder = 'Your Email Address'
 email.type = 'text';
-btn.id = 'btn';
 btn.innerText = ' Notify Me';
 
 bottom.classList.add('bottom');
@@ -57,3 +56,23 @@ iconContainer.appendChild(ig);
 
 container.appendChild(footer);
 
+btn.addEventListener('click', ()=> {
+    emailValidation();
+})
+
+function emailValidation() {
+    const regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    console.log(email.value)
+    val = regEx.test(email.value);
+    if (val == false || email.value != '') {
+        const error = document.createElement('div')
+        error.id = "error";
+        error.innerText = "Please provide a valid email address";
+        email.classList.add('err');
+    }else{
+        const success = document.createElement('div');
+        success.id = "success";
+        email.classList.remove('hide');
+        error.classList.add('hide');
+    }
+   }

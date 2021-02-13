@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: "Josefins bold";
+    src: url("static/JosefinSans-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Josefins light";
+    src: url("static/JosefinSans-LightItalic.ttf");
+  }
+  body{
+    background: linear-gradient(294.44deg, #FFF5F5 62.64%, #FFFFFF 71.01%);
+  }
+  .background{
+      position: absolute;
+      z-index: -1;
+  }
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.derecha{
+    float:right;
+    width: 50%;
+    height: 100%;
+}
+.izquierda{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+    height: 100%;
+}
+.logo{
+    margin-bottom: 15%;
+}
+h1#we{
+    font-family: Josefins light;
+    color: hsl(0, 36%, 70%);
+    font-size: 50px;
+    font-weight: 100;
+}
+h1#comming{
+    width: 40%;
+    font-family: Josefins bold;
+    font-size: 50px; 
+}

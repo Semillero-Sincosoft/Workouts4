@@ -14,22 +14,38 @@
   </head>
   <body>
     <section class="fondo-body">
-        
-      <img class="img-womanDesktop" src="./assets/img/hero-desktop.jpg" alt="" />
+      <img
+        class="img-womanDesktop"
+        src="./assets/img/hero-desktop.jpg"
+        alt=""
+      />
       <img class="fondo" src="./assets/img/bg-pattern-desktop.svg" alt="" />
     </section>
     <main>
       <img class="logo" src="./assets/img/logo.svg" alt="" />
-      <img class="img-womanMobile" src="./assets/img/hero-mobile.jpg" alt="">
-      <span>WE‘RE</span>
+      <img class="img-womanMobile" src="./assets/img/hero-mobile.jpg" alt="" />
+      <span class="spanTitle">WE‘RE</span>
       <h1>COMING SOON</h1>
-      <p class="texto">Hello fellow shoppers! We’re currently building our new
-        fashion store. Add your email below to stay up-to-date with
-        announcements and our launch deals.</p>
-        <form action="">
-            <input class="email" type="email" placeholder="Email Address" required>
-            <button class="button"><img src="./assets/img/icon-arrow.svg" alt=""></button>
-        </form>
+      <p class="texto">
+        Hello fellow shoppers! We’re currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form action="" id="form">
+        <input class="email" placeholder="Email Address" />
+        <button type="submit" class="button ">
+          <img src="./assets/img/icon-arrow.svg" alt="" />
+        </button>
+
+        <div class="alert">
+          <img class="error" src="./assets/img/icon-error.svg" alt="" />
+          <p class="text-alert">Please provide a valid email</p>
+        </div>
+        <div class="success">
+          <span class="spanSuccess"> Email sent successfully!</span>
+        </div>
+      </form>
     </main>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

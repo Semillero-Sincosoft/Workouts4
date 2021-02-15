@@ -36,7 +36,7 @@ main {
   width: 155px;
   height: 33px;
 }
-span {
+.spanTitle{
   font-size: 4.6vw;
   letter-spacing: 10pt;
   font-weight: 200;
@@ -62,27 +62,56 @@ h1 {
   height: 20px;
   border-radius: 28px;
   padding: 10px 20px;
-
+color: #4F4647;
   margin-top: 10px;
   outline: none;
+}
+.false{
+    border: 2px solid #D17C7F; 
 }
 .button {
   width: 8%;
   height: 45px;
-  border-radius: 25px;
-  background: linear-gradient(
-    270deg,
-    rgba(237, 147, 146, 0.94) 98.99%,
-    rgba(237, 147, 146, 0) 99%
-  );
+  border-radius: 28px;
+  background:  linear-gradient(270deg, rgba(237, 147, 146, 0.94) 98.99%, rgba(237, 147, 146, 0) 99%);
   border: none;
   position: relative;
   left: -5%;
   top: 3px;
   filter: drop-shadow(0px 15px 4px rgba(200, 113, 115, 0.25));
+  outline: none;
 }
 ::-webkit-input-placeholder {
   color: #c4c4c4;
+}
+.text-alert{
+    font-size: 0.8em;
+    margin-left: 2%;
+  
+    color: #E2AAAB;
+
+}
+.alert{
+
+    display: none;
+}
+.error{
+    position: absolute;
+    left: 28%;
+    bottom: 9.5%;
+}
+.spanSuccess{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #22bb33;
+    padding: 10px;
+}
+.success{
+    margin: 3% 12%;
+    display: none;
+}
+.errorButton{
+    background: linear-gradient(268.95deg, #faa7a7 46.85%, rgba(255, 255, 255, 0) 99.32%), linear-gradient(269.97deg, #ffbfc0 31.01%, #FBD1D2 99.4%, rgba(251, 209, 210, 0) 99.98%, rgba(251, 209, 210, 0) 99.98%);
 }
 @media screen and (max-width: 600px) {
   body {
@@ -137,11 +166,26 @@ h1 {
   .button {
     width: 20%;
     height: 45px;
-   background: linear-gradient(270deg, #FBD7D7 98.99%, rgba(237, 147, 146, 0) 99%);;
+  
     position: relative;
     float: right;
     top: 0px;
     left: 75%;
 
   }
+  .alert{
+    margin-top: 10%;
+      
+      margin-left: -15%;
+      width: 100%;
+  }
+  .error{
+    position: absolute;
+    left: 65%;
+    bottom: 15%;
+}
+.success {
+  margin: 18% 7%;
+
+}
 }

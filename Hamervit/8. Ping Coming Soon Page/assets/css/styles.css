@@ -56,6 +56,7 @@ main .top-side {
   border-radius: 28px;
   border: 1px solid #ced6e3;
   padding: 18px 30px;
+  outline: none;
 }
 
 .top-side form input::placeholder {
@@ -109,7 +110,7 @@ main .top-side {
 }
 
 footer {
-  margin-top: 72px;
+  margin: 72px auto;
   justify-content: center;
   align-items: center;
   width: 300px;
@@ -118,7 +119,7 @@ footer {
 }
 
 footer p {
-  margin: 25px 0 45px 0;
+  margin: 25px 0 5px 0;
   font-size: 12px;
   color: #aeaeae;
 }
@@ -126,4 +127,12 @@ footer p {
 .d-none {
   display: none;
   animation: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.top-side form input.error-border {
+  border: 1px solid #e0606f;
+}
+
+@media (max-width: 750px) {
+
 }

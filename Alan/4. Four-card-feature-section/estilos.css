@@ -38,7 +38,7 @@ transition: 0.6s ease;
 }
 
 .efecto:hover{
-    transform: rotate(1.0turn);
+    transform: rotateX(1.0turn);
 }
 .derecha{
     position:relative;
@@ -90,4 +90,12 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and(max-width:600px){
+.contenedor{
+    flex-direction: column;
+}
+.derecha{
+    left: 70%;
+}
 }

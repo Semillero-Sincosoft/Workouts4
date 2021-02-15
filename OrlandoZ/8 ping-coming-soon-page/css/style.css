@@ -1,5 +1,7 @@
 body{
     font-family: 'Libre Franklin', sans-serif;
+
+    
 }
 
 #header{
@@ -19,66 +21,155 @@ h1, h3{
     top: 20pxS;
 }
 
-.registro{
-    position: relative;
+.divCorreo{
     display: flex;
     justify-content: center;
     justify-items: center ;
 }
 
+.registro{
+    position: relative;
+    border: inset;
+    border-radius: 25px;
+    width: 30%;
+    padding: 5px 15px;
+    box-sizing: content-box;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
 #email{
     background: #FFFFFF;
     box-sizing: content-box;
-    border-radius: 25px;
-    padding: 15px;
     height: auto;
-    width: 40%;
+    width: 90%;
+    border: inset;
     outline: none;
+    border: none;
 }
 
 #submit{
     height: auto;
-    width: 5%;
-    background: #0346f0;
-    border: 1px solid #0346f0;
-    box-sizing: border-box;
-    border-radius: 25px;
-    padding: 15px 40px;
+    width: 35%;
     box-sizing: content-box;
     text-align: center;
     font-weight: 800;
-    color: #fff;
-    outline: none;
+    padding: 5px 45px;
 }
 
+button{
+    color: #fff;
+    background: #0346f0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 20px;
+}
 
+button:hover{
+    background: #03adf0;
+}
+
+#errorEmail{
+    position: relative;
+    left: 28%;
+    width: 300px;
+    margin: 0;
+    color: red;
+
+}
+
+.oculto{
+    display: none;
+}
+
+main > img{
+left: 25%;
+}
 
 #graph{
     position: relative;
     width: 50%;
     height: auto;
-    margin:30px 0;
-    left: 25%;
+    margin: 20px 0;
 }
 
 footer{
     position: relative;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
 }
 
 #redes{
     position: relative;
-    left: 45%;
-    width: 10%;
-    height: auto;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.icon-face{
-    width: 18px;
-    height: 18px;
+.icon .icon2 .icon3{
+    position: relative;
+    cursor: pointer;
+    margin: 0 20px;
 }
 
-.icon-face:hover{
-    background: url(../images/);
+.icon img{
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.icon img.cambio:hover {
+    opacity: 0;
+}
+
+.icon2 img{
+    position: absolute; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.icon2 img.cambio:hover {
+    opacity: 0;
+}
+
+.icon3 img{
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.icon3 img.cambio:hover {
+    opacity: 0;
+}
+
+@media(max-width: 450px){
+
+    .divCorreo{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .registro{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #submit{
+        margin: 0;
+        width: 71%;
+    }
+
+    #graph{
+        width: 100%;
+        left: 0;
+    }
+
+    #redes{
+        width: 80%;
+    }
+
 }

@@ -73,11 +73,7 @@ color: #4F4647;
   width: 8%;
   height: 45px;
   border-radius: 28px;
-  background: linear-gradient(
-    270deg,
-    rgba(237, 147, 146, 0.94) 98.99%,
-    rgba(237, 147, 146, 0) 99%
-  );
+  background:  linear-gradient(270deg, rgba(237, 147, 146, 0.94) 98.99%, rgba(237, 147, 146, 0) 99%);
   border: none;
   position: relative;
   left: -5%;
@@ -115,7 +111,7 @@ color: #4F4647;
     display: none;
 }
 .errorButton{
-    background: linear-gradient(268.95deg, #F7C9C9 46.85%, rgba(255, 255, 255, 0) 99.32%), linear-gradient(269.97deg, #FBD1D2 31.01%, #FBD1D2 99.4%, rgba(251, 209, 210, 0) 99.98%, rgba(251, 209, 210, 0) 99.98%);
+    background: linear-gradient(268.95deg, #faa7a7 46.85%, rgba(255, 255, 255, 0) 99.32%), linear-gradient(269.97deg, #ffbfc0 31.01%, #FBD1D2 99.4%, rgba(251, 209, 210, 0) 99.98%, rgba(251, 209, 210, 0) 99.98%);
 }
 @media screen and (max-width: 600px) {
   body {
@@ -170,7 +166,7 @@ color: #4F4647;
   .button {
     width: 20%;
     height: 45px;
-   background: linear-gradient(270deg, #FBD7D7 98.99%, rgba(237, 147, 146, 0) 99%);;
+  
     position: relative;
     float: right;
     top: 0px;
@@ -178,7 +174,7 @@ color: #4F4647;
 
   }
   .alert{
-    margin-top: 5%;
+    margin-top: 10%;
       
       margin-left: -15%;
       width: 100%;
@@ -187,5 +183,9 @@ color: #4F4647;
     position: absolute;
     left: 65%;
     bottom: 15%;
+}
+.success {
+  margin: 18% 7%;
+
 }
 }

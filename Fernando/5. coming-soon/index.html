@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5. coming-soon</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="fondo-body">
+      <img
+        class="img-womanDesktop"
+        src="./assets/img/hero-desktop.jpg"
+        alt=""
+      />
+      <img class="fondo" src="./assets/img/bg-pattern-desktop.svg" alt="" />
+    </section>
+    <main>
+      <img class="logo" src="./assets/img/logo.svg" alt="" />
+      <img class="img-womanMobile" src="./assets/img/hero-mobile.jpg" alt="" />
+      <span class="spanTitle">WE‘RE</span>
+      <h1>COMING SOON</h1>
+      <p class="texto">
+        Hello fellow shoppers! We’re currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form action="" id="form">
+        <input class="email" placeholder="Email Address" />
+        <button type="submit" class="button ">
+          <img src="./assets/img/icon-arrow.svg" alt="" />
+        </button>
+
+        <div class="alert">
+          <img class="error" src="./assets/img/icon-error.svg" alt="" />
+          <p class="text-alert">Please provide a valid email</p>
+        </div>
+        <div class="success">
+          <span class="spanSuccess"> Email sent successfully!</span>
+        </div>
+      </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,191 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Josefin Sans";
+  position: absolute;
+  margin: 0;
+ background: linear-gradient(294.44deg, #FFF5F5 62.64%, #FFFFFF 71.01%);
+  z-index: 3;
+}
+.fondo-body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.img-womanDesktop {
+  width: 40%;
+  margin: 0;
+  height: 100%;
+  float: right;
+}
+.img-womanMobile {
+  display: none;
+}
+.fondo {
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+main {
+  position: absolute;
+  margin: 50px 130px;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 155px;
+  height: 33px;
+}
+.spanTitle{
+  font-size: 4.6vw;
+  letter-spacing: 10pt;
+  font-weight: 200;
+  margin-top: 80px;
+  color: #c59b9c;
+}
+h1 {
+  margin-top: 0;
+  font-size: 4.7vw;
+  letter-spacing: 10pt;
+  width: 50%;
+  margin-bottom: 30px;
+  color: #433a3b;
+}
+.texto {
+  width: 40%;
+  line-height: 20pt;
+  color: #bba0a5;
+}
+.email {
+  border: 2px solid #f0e5e7;
+  width: 32.5%;
+  height: 20px;
+  border-radius: 28px;
+  padding: 10px 20px;
+color: #4F4647;
+  margin-top: 10px;
+  outline: none;
+}
+.false{
+    border: 2px solid #D17C7F; 
+}
+.button {
+  width: 8%;
+  height: 45px;
+  border-radius: 28px;
+  background: linear-gradient(
+    270deg,
+    rgba(237, 147, 146, 0.94) 98.99%,
+    rgba(237, 147, 146, 0) 99%
+  );
+  border: none;
+  position: relative;
+  left: -5%;
+  top: 3px;
+  filter: drop-shadow(0px 15px 4px rgba(200, 113, 115, 0.25));
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+.text-alert{
+    font-size: 0.8em;
+    margin-left: 2%;
+  
+    color: #E2AAAB;
+
+}
+.alert{
+
+    display: none;
+}
+.error{
+    position: absolute;
+    left: 28%;
+    bottom: 9.5%;
+}
+.spanSuccess{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #22bb33;
+    padding: 10px;
+}
+.success{
+    margin: 3% 12%;
+    display: none;
+}
+.errorButton{
+    background: linear-gradient(268.95deg, #F7C9C9 46.85%, rgba(255, 255, 255, 0) 99.32%), linear-gradient(269.97deg, #FBD1D2 31.01%, #FBD1D2 99.4%, rgba(251, 209, 210, 0) 99.98%, rgba(251, 209, 210, 0) 99.98%);
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #fefaf9;
+  }
+  .img-womanMobile {
+    width: 100%;
+    display: block;
+  }
+  .img-womanDesktop {
+    display: none;
+  }
+  .fondo {
+    display: none;
+  }
+  main {
+    margin: 0;
+  }
+  .logo {
+    margin: 25px 20px;
+    width: 100px;
+    height: 23px;
+  }
+  span {
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 60px;
+    color: #c59b9c;
+  }
+  h1 {
+    font-size: 10vw;
+   text-align: center;
+    width: 100%; 
+  }
+  .texto {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .email {
+    position: absolute;
+    width: 75%;
+    height: 20px;
+    
+    padding: 10px 20px;
+   margin: 0% 5%;
+  }
+  form{
+    margin: 30px 0 80px;
+    display: flex;
+  }
+  .button {
+    width: 20%;
+    height: 45px;
+   background: linear-gradient(270deg, #FBD7D7 98.99%, rgba(237, 147, 146, 0) 99%);;
+    position: relative;
+    float: right;
+    top: 0px;
+    left: 75%;
+
+  }
+  .alert{
+    margin-top: 5%;
+      
+      margin-left: -15%;
+      width: 100%;
+  }
+  .error{
+    position: absolute;
+    left: 65%;
+    bottom: 15%;
+}
+}

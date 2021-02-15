@@ -1,0 +1,1 @@
+Diseño web completo, falta responsibe y mobile validacion tambien

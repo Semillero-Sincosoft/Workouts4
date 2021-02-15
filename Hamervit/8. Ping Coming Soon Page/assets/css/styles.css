@@ -1,14 +1,138 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Libre Franklin, sans-serif;
+  padding: 87px 386px 0 386px;
+}
+
+main .top-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-side img {
+  width: 86px;
+}
+
+.top-side h1 {
+  font-size: 50px;
+  margin: 45px 0 24px 0;
+  color: #959595;
+  font-weight: 300;
+}
+
+.top-side h1 > strong {
+  color: black;
+  font-weight: 700;
+}
+
+.top-side p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.top-side form {
+  margin: 39px 0 0 0;
+  display: flex;
+}
+
+.top-side form input {
+  width: 421px;
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid #ced6e3;
+  padding: 18px 30px;
+  outline: none;
+}
+
+.top-side form input::placeholder {
+  color: #d1d5e1;
+}
+
+.top-side form div p {
+  margin: 7px 0 0 30px;
+  color: #b6707a;
+  font-size: 13px;
+}
+
+.top-side form div:not(.input-group) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 56px;
+  background: #4d7bf3;
+  border-radius: 28px;
+  color: #ffffff;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.top-side .img {
+  margin: 64px 0 0 0;
+  width: 668px;
+}
+
+.network-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffdff;
+  border: 1px solid #ecedf1;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin-left: 13px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.network-container:hover {
+  background: #517df8;
+}
+
+.network-container:hover img {
+  filter: brightness(0) invert(1);
+}
+
+footer {
+  margin: 72px auto;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 25px 0 5px 0;
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+.d-none {
+  display: none;
+  animation: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.top-side form input.error-border {
+  border: 1px solid #e0606f;
+}
+
+@media (max-width: 750px) {
+
 }

@@ -8,26 +8,35 @@ body{
     font-family: Josefin Sans;
 }
 .photos{
+    position: absolute;
     display:flex;
     justify-content: space-between;
     max-width: 100%;
     height: auto;
     background:linear-gradient(125.04deg, #FFFFFF 17.72%, rgba(255, 255, 255, 0) 70.61%), linear-gradient(238.27deg, rgba(255, 255, 255, 0) 92.72%, #FFFFFF 95.85%), #FFF4F4;
+    z-index: -1;
 }
-.photos svg{
-    margin-right: 0px;
+.logo{
+    margin:12% 15%;
+}
+.heroImage{
+    width: 70%;
+    height: 800px;
 }
 .hero{
-   max-width: 70%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+ }
+.heroMobile{
+    display: none;
 }
 .content{
-    position: absolute;
-    top:15%;
-    left: 12%;
     color: var(--DesaturatedRed);
+    display: flex;
+    justify-content: space-around;
 }
 .tittle{
+    margin-left: 15%;
     font-size: 4vmax;
     margin-top: 10%;
     font-weight: 300;
@@ -39,14 +48,15 @@ body{
     color:var(--DarkGrayishRed);
 }
 .desc{
-    margin:5% 0%;
-    width: 40%;
+    margin:5% 15%;
     line-height: 26px;
     font-size: 1.2vw;
+    width: 60%;
 }
-form{
-    width: 40%;
+.form{
+    margin-left: 15%;
     display: flex;
+    width:60%;
 }
 input{
     padding: 4%;
@@ -62,10 +72,10 @@ input{
 #inputText::placeholder{
     color:var(--DesaturatedRed);
 }
-#submit{
+.submit{
     position: absolute;
     left: 35%;
-    padding:1.7% 2.5%;
+    padding:1.4% 1%;
     width: 8%;
     border:none;
     cursor: pointer;
@@ -76,4 +86,76 @@ input{
     background-position:center;
     outline: none;
 }
+.error{
+    background: linear-gradient(270.18deg, rgba(237, 139, 139, 0.35) 62.75%, rgba(255, 255, 255, 0) 161.64%), #ffd2d2;
+    background-image: url("images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#validar{
+    margin:1% 17%;
+}
+#icon-error{
+    position: absolute;
+    left: 30%;
+    margin: 14px;
+    display: none;
+}
+@media screen and (max-width:600px){
+    body{
+        background:linear-gradient(192.29deg, #FFFFFF 1.44%, rgba(255, 255, 255, 0) 71.62%), #FFF4F4;;
+    }
+    .photos svg{
+        display: none;
+    }
+    .heroImage{
+        display: none;
+    }
+    .heroMobile{
+        display: block;
+        margin: auto;
+    }
+    .content{
+        display: block;
+       position: static;
+    }
+    .logo{
+        margin: 32px;
+    }
+    header{
+        margin-top: 60px;
+        text-align: center;
+    }
+    .tittle{
+        margin: 0;
+    }
+    .desc{
+        text-align: center;
+        font-size: 14px;
+        width: 80%;
+        margin: 30px auto;
+    }
+    .tittle{
+        font-size: 37px;
+    }
+    .form{
+        width: 80%;
+        margin: auto;
+    }
+    input{
+        padding: 5%;
+    }
+    .submit{
+        left: 73%;
+        padding:4.3% 4%;
+        width: 17%;
+    }
+    #icon-error{
+        left: 60%;
+    }
+    #validar{
+        margin:1% 15%;
+    }
+}
+
     

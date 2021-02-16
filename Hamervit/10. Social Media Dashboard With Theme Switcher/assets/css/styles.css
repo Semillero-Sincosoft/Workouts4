@@ -16,9 +16,8 @@
   --profile-box-color: #9298b8;
   --card-color: #252b43;
   --overview-color: #969ec5;
-  --overview-title-color: #FFFFFF;
+  --overview-title-color: #ffffff;
   --transition: all 1250ms ease-in-out;
-  ;
 }
 
 *::before,
@@ -271,4 +270,58 @@ main h4 {
 
 .switched {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 1340px) {
+  body {
+    padding: 36px 24px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  header .about-app h1 {
+    font-size: 24px;
+  }
+
+  header .about-app h2 {
+    margin-top: 6px;
+  }
+
+  header .switcher {
+    margin: 44px 0 0 0;
+  }
+
+  .first-section {
+    flex-direction: column;
+  }
+
+  .card-container {
+    width: 100%;
+    margin: 24px 0 0 0;
+  }
+
+  .card-container::before {
+    width: 100%;
+  }
+
+  .second-section div {
+    flex-direction: column;
+  }
+
+  .overview-card {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+
+  .overview-card .top-side,
+  .overview-card .bottom-side {
+    flex-direction: row;
+  }
+
+  .overview-card .bottom-side > div {
+    flex-direction: row;
+  }
 }

@@ -93,8 +93,8 @@ input{
     position: relative;
     float: right;
     display:none;
-    margin-left: -28%;
-    margin-top: 2%;
+    margin-left: -34%;
+    margin-top: 4%;
 }
 
 
@@ -194,5 +194,11 @@ button:hover{
     }
     button{
         margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    button{
+        margin-left: -27%;
     }
 }

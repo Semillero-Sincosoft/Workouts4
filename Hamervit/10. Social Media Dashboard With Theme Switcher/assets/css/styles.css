@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+
+:root {
+  --main-color: #1d2029;
+  --hover-color: #333a56;
+  --titles-color: #ffffff;
+  --header-color: #949dbc;
+  --switch-color: linear-gradient(
+    268.43deg,
+    #3fcc97 10.17%,
+    #3db9b1 41.43%,
+    #4195ce 98.33%
+  );
+  --switch-circle-color: #262a45;
+  --profile-color: #8a94b7;
+  --profile-box-color: #9298b8;
+  --card-color: #252b43;
+  --overview-color: #969ec5;
+}
+
+*::before, *, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-color);
+  font-family: Inter, sans-serif;
+  padding: 36px 160px;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--header-color);
+}
+
+header .about-app h1 {
+  color: var(--titles-color);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+header .about-app h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header section p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header section .switch {
+  margin: 0 0 0 10px;
+  background: var(--switch-color);
+  border-radius: 12px;
+  width: 48px;
+  height: 24px;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+}
+
+header .switch .circle {
+  width: 18px;
+  height: 18px;
+  background: var(--switch-circle-color);
+  border-radius: 50%;
+}
+
+main {
+  width: 100%;
+  margin: 53px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  width: 255px;
+  height: 212px;
+  background: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+}
+
+.card-container div {
+  display: flex;
+  align-items: center;
+}
+
+.card-container .title {
+  color: var(--profile-color);
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 17px 0;
+}
+
+.title p {
+  margin: 0 0 0 8px;
+}
+
+.general-number p:not(.number) {
+  color: var(--profile-box-color);
+  font-weight: lighter;
+  font-size: 12px;
+  letter-spacing: 0.42em;
+}
+
+.general-number .number {
+  color: var(--titles-color);
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.card-container .general-number {
+  flex-direction: column;
+  margin: 0 0 28px 0;
+}
+
+.card-container .profit p {
+  color: #2c9382;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 0 4px;
+}
+
+.card-container .profit p.down {
+  color: #c15263;
+}
+
+.card-container::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 255px;
+  height: 4px;
+  background: #1892f7;
+  border-radius: 5px 5px 0px 0px;
+  bottom: 28px;
+}
+
+.card-container:hover {
+  background: var(--hover-color);
+  cursor: pointer;
+}
+
+.card-container.twitter::before {
+  background: #1ba2f4;
+}
+
+.card-container.instagram::before {
+  background: linear-gradient(
+    90deg,
+    #fbb66b 0%,
+    #f6a772 21.01%,
+    #f3a076 30.13%,
+    #ef877a 48.66%,
+    #ea7b82 58.59%,
+    #e76d86 70.78%,
+    #e15b90 85.67%,
+    #df4d94 100%
+  );
+}
+
+.card-container.youtube::before {
+  background: #c30328;
+}
+
+main h4 {
+  color: var(--titles-color);
+  font-weight: bold;
+  font-size: 24px;
+}

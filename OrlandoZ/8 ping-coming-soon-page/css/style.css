@@ -172,4 +172,8 @@ footer{
         width: 80%;
     }
 
+    #errorEmail{
+        left: 2%;
+    }
+
 }

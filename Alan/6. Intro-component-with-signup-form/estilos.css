@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Poppins normal";
+    src: url("Poppins/Poppins-Light.ttf");
+  }
+  @font-face {
+    font-family: "Poppins bold";
+    src: url("Poppins/Poppins-Bold.ttf");
+  }
+  body{
+    background: url(img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    margin:0;
+}
+.izquierda{
+    float: left;
+    width:50%;
+    height: 100%;
+}
+.derecha{
+    float: right;
+    width:50%;
+    height: 100%;
+}
+h1#titulo{
+    font-family: Poppins bold;
+    color: #fff;
+    margin-top: 35%;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+}
+p#parrafo{
+    font-family: Poppins normal;
+    font-size: 15px;
+    margin-left: 25%;
+    color: #fff;
+}
+.try{
+    background-color: hsl(248, 32%, 49%);
+    display: flex;
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 75%;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px grey;
+    transition: 0.6s ease;
+}
+button#try{
+    background: transparent;
+    border: none;
+    font-family: Poppins normal;
+    color: #fff;
+    font-size:13px;
+}
+.formulario{
+    border-radius: 5px;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+    background: #fff;
+    width: 75%;
+    height: 425px;
+}
+button#submit{
+    background: hsl(154, 59%, 51%);
+    outline:none;
+    border: none;
+    width: 84%;
+    height: 40px;
+    font-family: Poppins normal;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 9%;
+    transition: 0.6s ease;
+}
+.efecto:hover{
+    transform: scale(1.1);
+}
+::placeholder{
+    font-family: Poppins bold;
+    color: #625F5F;
+}
+input#input{
+    padding-left:20px;
+    outline-color:hsl(248, 32%, 49%);
+    width: 80%;
+    height: 40px;
+    margin-top: 7%;
+    margin-left: 9%;
+    border-radius: 5px;
+    border: 1px solid #e4e3e3;
+}
+p#terminos{
+    font-family: Poppins bold;
+    color: #b8b8b8;
+    font-size: 10px;
+    margin-left: 17%;
+}
+b#red{
+    color: #FF7A7A;
+}
+

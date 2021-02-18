@@ -1,7 +1,7 @@
 let boton = document.getElementById('btn-principal');
 let icono = document.getElementById('icono');
 
-let expr =  /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+let expr =  /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
 const campos = {email:false}
 

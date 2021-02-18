@@ -2,7 +2,7 @@
 const form = document.getElementById('form') 
 const input = document.querySelector('.email')
 const expressions = {
-	email: /^[-\w.%+]{​​​​1,64}​​​​@(?:[A-Z0-9-]{​​​​1,63}​​​​\.){​​​​1,125}​​​​[A-Z]{​​​​2,63}​​​​$/i
+	email: /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
 }
 const campos={
     email:false

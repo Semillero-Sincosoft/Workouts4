@@ -2,7 +2,7 @@
     --Desaturated_Red: hsl(0, 36%, 70%);
     --Soft_Red: hsl(0, 93%, 68%);
     --Dark_Grayish_Red: hsl(0, 6%, 24%);
-
+    --Green-Chill :#84eb21;
 }
 
 body{
@@ -22,6 +22,7 @@ header{
     width: 65%;
     height: 100%;
     background: url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,9 +36,12 @@ nav{
     position: absolute;
 }
 
+.img{
+    float: right;
+}
 .img-banner{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100vh;
 }
 
 .img-banner-mobile{
@@ -61,12 +65,12 @@ b{
 
 p{
     line-height: 30px;
+    margin-bottom: 10%;
 }
 
 input{
-    margin-top: 10%;
     height: 62px;
-    width: 450px;
+    width: 100%;
     background: transparent;
     border: 0.5px solid var(--Desaturated_Red);
     box-sizing: border-box;
@@ -74,12 +78,25 @@ input{
     font-size: 20px;
     color: var(--Desaturated_Red);
     outline: 0;
+    padding-left: 7%;
 }
 
 .error{
     border: 2px solid var(--Soft_Red);
-    
 }
+
+.success{
+    border: 2px solid var(--Green-Chill);
+}
+
+#icono{
+    position: relative;
+    float: right;
+    display:none;
+    margin-left: -34%;
+    margin-top: 4%;
+}
+
 
 .msj{
     display: none;
@@ -96,27 +113,27 @@ input{
     color: var(--Desaturated_Red);
 }
 
-form{
+.form-group{
     display: flex;
-    flex-wrap: wrap-reverse;
 }
 
 button{
-    margin-left: 22.5%;
-    position: absolute;
+    position: relative;
     height: 62px;
     width: 100px;
     background: linear-gradient(90deg, #F8BFBF 0%, #EE8C8C 100%);
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
     border: transparent;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     cursor: pointer;
     outline: 0;
+    margin-left: -20%;
 }
 
 button:hover{
     transform: scale(1.05);
+    background:#FBD9D8;
 }
 
 
@@ -140,6 +157,15 @@ button:hover{
         
     }
 
+    p{
+        padding:6%;
+        text-align: center;
+    }
+
+    i{
+        top:129%;
+        left:65%;
+    }
     h1{
         font-size: 41px;
         letter-spacing: 10px;
@@ -167,6 +193,12 @@ button:hover{
         padding:20px 0 20px 0;
     }
     button{
-        margin-left: 74%;
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    button{
+        margin-left: -27%;
     }
 }

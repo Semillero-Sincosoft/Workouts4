@@ -1,0 +1,72 @@
+body{
+    background-color: hsl(232, 19%, 15%) ;
+}
+
+h1{
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+} 
+
+h4{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8A8FB6;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.mode{
+    position: absolute;
+    height: 30px;
+    width: 70px;
+    left: 61.2%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(270deg, #40D190 0%, #4795CF 100%);
+    border-radius: 20px;
+}
+
+.elipse{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 62.3%;
+    right: 22.4%;
+    top: 6.67%;
+    bottom: 6.67%;
+    background: #333B56;
+    border:  #fff 1px solid;
+    border-radius: 30px;
+
+}
+
+.marco1{
+    width: 273px;
+    height: 233px;
+    background-color: hsl(228, 28%, 20%);
+}
+
+.marco2{
+    width: 273px;
+    height: 110px;
+    background-color: hsl(228, 28%, 20%);
+}
+
+.followers{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.youtube .instagram .twitter .facebook{
+    display: flex;
+    justify-content: space-around;
+}

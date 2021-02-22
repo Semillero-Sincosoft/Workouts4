@@ -7,15 +7,15 @@ submit.addEventListener('click', function validar(){
             console.log("good")
             mensaje.innerText ="Good";
             submit.classList.remove('error');
-            input.style.border ="1px solid var(--DesaturatedRed)"
-            document.getElementById("icon-error").style.display ="none"
+            input.style.border ="1px solid var(--DesaturatedRed)";
+            document.getElementById("icon-error").style.display ="none";
 
         }else{
             console.log("bad")
             mensaje.innerText ="Please provide a valid email";
             submit.classList.add('error');
-            input.style.border ="1px solid var(--SoftRed)"
-            document.getElementById("icon-error").style.display ="block"
+            input.style.border ="1px solid var(--SoftRed)";
+            document.getElementById("icon-error").style.display ="block";
         }
 } );
 

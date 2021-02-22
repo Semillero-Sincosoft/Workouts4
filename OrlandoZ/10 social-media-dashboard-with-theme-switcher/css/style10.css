@@ -1,5 +1,6 @@
 body{
     background-color: hsl(232, 19%, 15%) ;
+    transition: ease-in-out 1500ms;
     padding: 0 20px;
     margin: 0;
     color: white;
@@ -7,12 +8,24 @@ body{
 
 #subt{
     position: relative;
-    left: 1100px;
-    margin-top: -50px;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
+    width: 150px;
+    left: 150px;
     color: #FFFFFF;
+
+
+}
+
+.mode{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    height: auto;
+    width: 200px;
+    left: 70%; 
+    right: 5%;
+    top: -80px;
 }
 
 h1{
@@ -33,22 +46,34 @@ h3{
     margin: 10px 0 0 0;
 }
 
+h4 > #cant{
+    position: relative;
+    margin-top: 10px;
+}
+
 h4{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 17px;
     color: #8A8FB6;
 }
 
+.h4M2{
+        position: relative;
+        top: 10px;
+        left: 10px;
+}
+
 .marco1{
     width: 23%;
-    min-height: 230px;
+    
     height: auto;
     background-color: hsl(228, 28%, 20%);
-    margin: 0;
+    margin: 20px 0;
     border-radius: 10px;
     color: white;
     text-align: center;
+    transition: ease-in-out 1500ms;
 }
 
 .lineaF{
@@ -90,6 +115,15 @@ img{
     border-radius: 10px;
     padding: 10px 30px;
     box-sizing: inherit;
+    transition: ease-in-out 1500ms;
+}
+
+.marco1:hover{
+    background-color:  hsl(229, 24%, 35%); 
+}
+
+.marco2:hover{
+    background-color:  hsl(229, 24%, 35%); 
 }
 
 .marco2 > span{
@@ -106,8 +140,6 @@ img{
 }
 
 .marco2 > h4{
-    position: relative;
-    top: 20px 0 0 0 ;
     font-weight: bold;
     font-size: 35px;
 
@@ -137,14 +169,19 @@ span{
     left: 10px;
 }
 
+
+
+
+
 /* Toggle */
 .switch {
   position: relative;
-  display: inline-block;
-  width: 60px;
+  width: 80%;
   height: 25px;
-  left: 1250px;
-  top: -23px;
+  left: 80%;
+
+  padding: 2px;
+  box-sizing: content-box;
 }
 
 .switch input { 
@@ -160,9 +197,12 @@ span{
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(270deg, #40D190 0%, #4795CF 100%);
+  background: linear-gradient(270deg, #bcd0d8 0%, #34709e 100%);
   -webkit-transition: .4s;
   transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
 }
 
 .slider:before {
@@ -172,9 +212,12 @@ span{
   width: 20px;
   left: 4px;
   bottom: 4px;
-  background-color: #333B56;;
-  -webkit-transition: .4s;
+  background-color: #333B56;
+  -webkit-transition:;
   transition: .4s;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 
 input:checked + .slider {
@@ -189,14 +232,134 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  -o-transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
     border-radius: 34px;
-  }
+}
   
   .slider.round:before {
     border-radius: 50%;
-  }
 
+}
+
+/* MODO CLARO */
+  
+.lightmode{
+    background-color:#fff;
+    transition: ease-in-out 1500ms;
+    color: hsl(228, 12%, 44%);
+    -webkit-transition: ease-in-out 1500ms;
+    -moz-transition: ease-in-out 1500ms;
+    -ms-transition: ease-in-out 1500ms;
+    -o-transition: ease-in-out 1500ms;
+}
+
+.lightmode #subt{
+    color:  hsl(228, 12%, 44%);
+}
+
+.lightmode .marco1{
+        background-color: hsl(227, 47%, 96%);
+        color: hsl(228, 12%, 44%);
+        transition: ease-in-out 1500ms;
+}
+
+.lightmode .marco2{
+    background-color: hsl(227, 47%, 96%);
+    transition: ease-in-out 1500ms;
+}
+
+.lightmode .toggle.active{
+        background: hsl(230, 22%, 74%);
+}
+
+.lightmode .circle{
+    background: hsl(230, 22%, 74%);
+}
+
+@media(max-width: 710px){
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 0 0 40px 0;
+    }
+
+    #mode{
+        width: 100%;
+        margin-top: 200px;
+        margin-left: 5%;
+        top: 140px;
+
+    }
+
+    #subt{
+        top: 30px;;
+    }
+    
+}
+
+@media(max-width: 375px){
+
+    h2{
+        font-size: 60px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .followers{
+
+        flex-direction: column;
+    }
+
+    .marco1{
+        width: 90%;
+        margin: 10px;
+    }
+    .marco2{
+        width: 75%;
+    }
+
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .facebook, .youtube, .twitter, .instagram{
+        flex-direction: column;
+    }
+
+    header{
+        height: 130px;
+    }
+
+    .mode{
+        width: 200px;
+        margin-left: 5px; 
+        right: 0;
+        top: -80px;
+    }
+}

@@ -1,10 +1,13 @@
 document.getElementById("title").innerHTML = "Social Media Dashboard";
 document.getElementById("subt").innerHTML = "Dark Mode";
 document.getElementById("Cant").innerHTML = "Total Followers: 23.004";
+const lightMode = document.querySelector('.lightmode');
+const bod = document.querySelector('body'); 
 
-const lmode = document.querySelector('.switch round')
-lmode.addEventListener('click',e =>{
-    console.log('modo Claro')
-    body.classList.toogle('lightmode')
 
+lightMode.addEventListener('click',e=>{
+    bod.classList.toggle('lightmode');
+
+    
 });
+

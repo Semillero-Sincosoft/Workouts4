@@ -115,7 +115,7 @@ option1.innerText = "HOW WE WORK";
 option2.classList.add("option2");
 option2.innerText = "BLOG";
 option3.classList.add("option3");
-options.innerText = "ACCOUNT";
+option3.innerText = "ACCOUNT";
 planBtn1.classList.add("viewPlan1");
 planBtn1.innerText = "VIEW PLANS";
 menu.classList.add("closed");
@@ -147,13 +147,13 @@ snappyP.innerText =
   "our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms";
 
 affordable.classList.add("affordable");
-affordableImg.src = "./images/icon-affordable-process.svg";
+affordableImg.src = "./images/icon-affordable-prices.svg";
 affordableH3.innerText = "affordable Prices";
 affordableP.innerText =
   "We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>";
 
 pplFirst.classList.add("pplFirst");
-pplFirstImg.src = "./images/icon-pplFirst-process.svg";
+pplFirstImg.src = "./images/icon-people-first.svg";
 pplFirstH3.innerText = "People First";
 pplFirstP.innerText =
   "Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it";

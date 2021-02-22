@@ -1,0 +1,656 @@
+:root {
+    --violet: hsl(256, 26%, 20%);
+    --grayBlue: hsl(216, 30%, 68%);
+    --darkViolet: hsl(270, 9%, 17%);
+    --grayViolet: hsl(273, 4%, 51%);
+    --lightGray: hsl(0, 0%, 98%);
+    --text: rgba(255, 255, 255, 0.712);
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    width: 100%;
+    height: 2400px;
+  }
+  main.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Karla", sans-serif;
+  }
+  header.navBar {
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+  }
+  header > img.logo{
+    position: absolute;
+    left: 10%;
+  }
+  header li:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  ul{
+    list-style-type: none;
+  }
+  li.option1 {
+    position: absolute;
+    right: 35%;
+    top: 40px;
+    color: var(--grayBlue);
+  }
+  li.option2 {
+    position: absolute;
+    right: 30%;
+    top: 40px;
+    color: var(--grayBlue);
+  }
+  li.option3 {
+    position: absolute;
+    right: 22%;
+    top: 40px;
+    color: var(--grayBlue);
+  }
+  button.viewPlan1 {
+    position: absolute;
+    right: 5%;
+    width: 140px;
+    height: 35px;
+    background-color: white;
+    border: 2px solid var(--violet);
+    font-weight: bold;
+  }
+  button.viewPlan1:hover {
+    background-color: var(--violet);
+    color: white;
+    cursor: pointer;
+  }
+  section.intro {
+    position: relative;
+    position: absolute;
+    background-color: var(--violet);
+    top:3%;
+    width: 100%;
+    height: 630px;
+    z-index: 0;
+  }
+  img.patLeft {
+    position: relative;
+    top: 200px;
+  }
+  img.patRight {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    z-index: 1;
+  }
+  img.fam {
+    position: relative;
+    top: 120px;
+    left: 575px;
+    z-index: -1;
+    height: 650px;
+    width: 500px;
+  }
+  hr {
+    height: 1px;
+    background-color: var(--grayViolet);
+    border: none;
+  }
+  hr.grayBar1 {
+    position: absolute;
+    width: 160px;
+    top: 130px;
+    left: 170px;
+  }
+  .intro > h1 {
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    font-family: "DM Serif Display", serif;
+    font-size: 70px;
+    top: 110px;
+    left: 170px;
+    width: 500px;
+  }
+  .intro > p {
+    position: absolute;
+    color: var(--text);
+    font-size: 17px;
+    top: 360px;
+    left: 170px;
+    width: 585px;
+    height: 100px;
+    line-height: 30px;
+  }
+  button {
+    border: 1px solid white;
+  }
+  button.viewPlan2 {
+    position: absolute;
+    height: 45px;
+    width: 150px;
+    top: 500px;
+    left: 170px;
+    background-color: var(--violet);
+    color: var(--text);
+  }
+  button.viewPlan2:hover {
+    background-color: white;
+    color: var(--violet);
+    cursor: pointer;
+  }
+  hr.grayBar2 {
+    position: absolute;
+    width: 160px;
+    top: 280px;
+    left: 170px;
+  }
+  section.pitch {
+    position: relative;
+    top: 700px;
+  }
+  h2 {
+    position: absolute;
+    top: 250px;
+    left: 170px;
+    font-weight: 300;
+    font-family: "DM Serif Display", serif;
+    font-size: 75px;
+  }
+  h3 {
+    font-weight: 100px;
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+  }
+  .snappy {
+    position: absolute;
+    top: 480px;
+    left: 170px;
+  }
+  .snappy > p {
+    width: 350px;
+    color: var(--grayBlue);
+    line-height: 25px;
+  }
+  .affordable {
+    position: absolute;
+    top: 480px;
+    left: 550px;
+  }
+  .affordable > p {
+    width: 350px;
+    color: var(--grayBlue);
+    line-height: 25px;
+  }
+  .pplFirst {
+    position: absolute;
+    top: 480px;
+    left: 950px;
+  }
+  .pplFirst > p {
+    width: 340px;
+    color: var(--grayBlue);
+    line-height: 25px;
+  }
+  aside.howWeWork {
+    position: relative;
+    background-color: var(--violet);
+    top: 850px;
+    left: 170px;
+    width: 1140px;
+    height: 240px;
+    color: white;
+  }
+  img.patAside {
+    position: absolute;
+    height: 240px;
+    right: 0px;
+    z-index: 0;
+  }
+  aside.howWeWork > span {
+    font-family: "DM Serif Display", serif;
+    position: absolute;
+    width: 460px;
+    font-size: 50px;
+    top: 50px;
+    left: 100px;
+  }
+  aside.howWeWork > button {
+    position: absolute;
+    top: 100px;
+    right: 85px;
+    height: 38px;
+    width: 150px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    z-index: 1;
+  }
+  aside.howWeWork > button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--violet);
+    font-weight: bold;
+  }
+  footer {
+    position: relative;
+    bottom: -1730px;
+    background-color: var(--lightGray);
+  }
+  img.footPat {
+    position: absolute;
+    top: 0px;
+    height: 250px;
+  }
+  .footLogo {
+    position: absolute;
+    top: 50px;
+    left: 170px;
+  }
+  .icons {
+    position: absolute;
+    top: 50px;
+    right: 130px;
+  }
+  .inIcon {
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .pnIcon {
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .twIcon {
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .fbIcon {
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .grayBar3 {
+    position: absolute;
+    width: 1150px;
+    top: 95px;
+    left: 170px;
+    border: 1px solid rgba(231, 231, 231, 0.431);
+  }
+  aside.ourCompany {
+    position: absolute;
+    left: 170px;
+    top: 150px;
+  }
+  aside.helpMe {
+    position: absolute;
+    left: 450px;
+    top: 150px;
+  }
+  aside.contact {
+    position: absolute;
+    left: 700px;
+    top: 150px;
+  }
+  aside.others {
+    position: absolute;
+    left: 950px;
+    top: 150px;
+  }
+  h4 {
+    color: gray;
+    font-weight: 200;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  h5:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  img#menu {
+    display: none;
+  }
+  img.patRightM {
+    display: none;
+  }
+  img.patLeftM {
+    display: none;
+  }
+  img.famM {
+    display: none;
+  }
+  img.patAsideM {
+    display: none;
+  }
+  img.footPatM {
+    display: none;
+  }
+  @media only screen and (min-width: 1px) and (max-width: 660px) {
+    body {
+      width: 375px;
+      height: 330vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    main.container {
+      left: 50px;
+      position: relative;
+    }
+    img.logo {
+      position: absolute;
+      left: 15px;
+    }
+    header.navBar {
+      height: 60px;
+    }
+    header > img#menu {
+      display: block;
+      position: absolute;
+      left: 320px;
+      height: 30px;
+    }
+    header > img#menu:hover {
+      cursor: pointer;
+      filter: invert(80%);
+    }
+    img.famM {
+      position: absolute;
+      top: 60px;
+      display: block;
+    }
+    section.intro {
+      position: absolute;
+      top: 510px;
+      height: 515px;
+    }
+    section.intro > h1 {
+      position: absolute;
+      text-align: center;
+      font-size: 45px;
+      left: 20px;
+      width: 340px;
+      top: 45px;
+    }
+    section.intro > p {
+      position: absolute;
+      text-align: center;
+      top: 200px;
+      left: 17px;
+      width: 345px;
+    }
+    img.patLeftM {
+      display: block;
+      left: 0px;
+      height: 170px;
+    }
+    img.patRightM {
+      position: absolute;
+      right: -3px;
+      top: 360px;
+      display: block;
+      height: 330px;
+      margin: none;
+    }
+    button.viewPlan2 {
+      position: absolute;
+      top: 385px;
+      left: 110px;
+      height: 40px;
+      color: white;
+      font-weight: bold;
+    }
+    section.pitch {
+      position: absolute;
+      top: 1000px;
+      height: max-content;
+    }
+    hr.grayBar2 {
+      display: block;
+      position: absolute;
+      left: 110px;
+      top: 150px;
+      line-height: 1px;
+    }
+    h2 {
+      position: absolute;
+      font-size: 50px;
+      top: 150px;
+      left: 25px;
+      width: 360px;
+    }
+    h3 {
+      font-weight: normal;
+    }
+    .snappy {
+      position: absolute;
+      text-align: center;
+      width: 400px;
+      top: 350px;
+      left: -10px;
+    }
+    .snappy > p {
+      position: absolute;
+      top: 160px;
+      width: 320px;
+      left: 35px;
+    }
+    .affordable {
+      position: absolute;
+      text-align: center;
+      width: 400px;
+      top: 670px;
+      left: -10px;
+    }
+    .affordable > p {
+      position: absolute;
+      top: 160px;
+      width: 320px;
+      left: 35px;
+    }
+    .pplFirst {
+      position: absolute;
+      text-align: center;
+      width: 400px;
+      top: 960px;
+      left: -10px;
+    }
+    .pplFirst > p {
+      position: absolute;
+      top: 160px;
+      width: 320px;
+      left: 35px;
+    }
+    aside.howWeWork {
+      position: absolute;
+      top: 1300px;
+      left: 15px;
+      width: 340px;
+      height: 350px;
+    }
+    aside.howWeWork > span {
+      position: absolute;
+      text-align: center;
+      width: 320px;
+      font-size: 45px;
+      top: 65px;
+      left: 15px;
+      z-index: 1;
+    }
+    aside.howWeWork > button {
+      position: absolute;
+      top: 275px;
+      left: 95px;
+      font-size: 8px;
+    }
+    img.patAsideM {
+      display: block;
+      position: absolute;
+      right: 0px;
+      z-index: 0;
+    }
+    img.footPatM {
+      display: block;
+      position: absolute;
+      top: 1050px;
+      left: 0px;
+    }
+    img.footLogo {
+      position: absolute;
+      top: 1150px;
+      left: 130px;
+      width: 100px;
+    }
+    footer > aside.icons {
+      position: absolute;
+      top: 1200px;
+      left: 90px;
+      right: unset;
+    }
+    hr.grayBar3 {
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 1250px;
+      width: 320px;
+      border: 1px solid lightgray;
+    }
+    aside.ourCompany {
+      position: absolute;
+      top: 1300px;
+      left: 135px;
+      text-align: center;
+    }
+    aside.helpMe {
+      position: absolute;
+      top: 1540px;
+      left: 135px;
+      text-align: center;
+    }
+    aside.contact {
+      position: absolute;
+      top: 1790px;
+      left: 155px;
+      text-align: center;
+    }
+    aside.others {
+      position: absolute;
+      top: 2000px;
+      left: 155px;
+      text-align: center;
+    }
+    h4 {
+      font-size: 15px;
+    }
+    button.viewPlan1 {
+      display: none;
+    }
+    img.menu {
+      display: none;
+    }
+    img.patRight {
+      display: none;
+    }
+    img.patLeft {
+      display: none;
+    }
+    img.fam {
+      display: none;
+    }
+    img.patAside {
+      display: none;
+    }
+    img.footPat {
+      display: none;
+    }
+    img.fam {
+      position: absolute;
+      top: 10px;
+      left: 0px;
+    }
+    #options {
+      display: none;
+    }
+    .hide{
+      display: none;
+      transition: all 5s;
+    }
+    nav#popUpMenu {
+      position: fixed;
+      position: absolute;
+      width: 100%;
+      height: 550px;
+      background-color: var(--violet);
+      color: white;
+      background-image: url(../images/bg-pattern-mobile-nav.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      transition: all 1s;
+    }
+    span.h {
+      color: white;
+      font-family: "Karla", sans-serif;
+      text-align: center;
+      margin-top: 35px;
+      position: absolute;
+      top: 100px;
+      left: 95px;
+      font-size: 30px;
+    }
+    span.b {
+      color: white;
+      font-size: 18px;
+      font-family: "Karla", sans-serif;
+      text-align: center;
+      margin-top: 35px;
+      position: absolute;
+      top: 200px;
+      left: 155px;
+      font-size: 30px;
+    }
+    span.a {
+      color: white;
+      font-size: 18px;
+      font-family: "Karla", sans-serif;
+      text-align: center;
+      margin-top: 35px;
+      position: absolute;
+      top: 300px;
+      left: 125px;
+      font-size: 30px;
+    }
+    #popUpMenu button {
+      width: 90%;
+      height: 56px;
+      background-color: transparent;
+      border: 2px solid white;
+      outline: none;
+      color: white;
+      font-size: 18px;
+      font-family: "Karla", sans-serif;
+      text-align: center;
+      transition: 0.5s;
+      position: absolute;
+      top: 400px;
+      left: 20px;
+    }
+  
+    #popUpMenu button:hover {
+      cursor: pointer;
+      color: #2b282f;
+      background-color: white;
+      font-weight: 700;
+  
+    }
+  }
+  

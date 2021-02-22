@@ -35,12 +35,17 @@ body{
 }
 .content-form{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    outline: none;
 }
 .button-try{
     display: flex;
-    margin-top: 10%;
     width: 100%;
-    font-size: 1.2vmax;
+    font-size: 3vmin;
     font-weight: 700;
     padding: 3%;
     border-radius: 10px;
@@ -51,8 +56,12 @@ body{
     cursor: pointer;
     justify-content: center;
 }
+.button-try:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
 .button-try p{
-    margin: 0 1%;
+    margin: 0 2px;
 }
 .money{
     font-weight: 400;
@@ -65,8 +74,9 @@ body{
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 26px;
 }
-.form input{
+ input{
     margin-bottom: 20px;
     padding: 3%;
     border-radius: 5px;
@@ -86,16 +96,74 @@ body{
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+    
+}
+.submit:hover{
+    transform: scale(0.8);
+    transition: 0.4s;
 }
 .terms-services{
     display: flex;
     margin: auto;
 }
 .terms{
-    font-size: 11px;
+    font-size: 0.8vmax;
 }
 .services{
     color: var(--Red);
     font-weight: 700;
     margin-left: 5px;
+}
+.error{
+    font-size: 11px;
+    text-align: end;
+    margin: -20px 0 20px;
+    color: var(--Red);
+    font-style: italic;
+    font-weight: 500;
+}
+.firstName{
+    display: none;
+}
+.lastName{
+    display: none;
+}
+.email{
+    display: none;
+}
+.pass{
+    display: none;
+}
+.icon-error{
+    background-image: url("images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.input-error{
+    border: 1px solid var(--Red);
+    outline-color: var(--Red);
+    color:var(--Red);
+}
+@media screen and (max-width:600px){
+    body{
+        background-image: url("images/bg-intro-mobile.png");
+    }
+    .content{
+        flex-direction: column;
+    }
+    .header{
+        width: auto;
+        text-align: center;
+        margin:0 auto;
+        margin-top: 100px;
+    }
+    .content-form{
+        width: auto;
+    }
+    .terms{
+        font-size: 2vw;
+    }
+    .descripcion{
+        font-size: 16px;
+    }
 }

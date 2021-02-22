@@ -1,0 +1,52 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very_Pale_Cyan: hsl(193, 100%, 96%);
+    --Very_Dark_Cyan: hsl(192, 100%, 9%);
+    --Grayish_Blue: hsl(208, 11%, 55%);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    margin: 25px 0 0 25px;
+}
+
+.banner{
+    height: 100vh;
+    width: auto;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color:var(--Very_Pale_Cyan) ;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+}
+
+.btn-primary{
+    height: 48px;
+    width: 210px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin: 10px 30px 0 auto;
+}

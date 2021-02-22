@@ -50,7 +50,6 @@ form.addEventListener('submit',(e)=>{
     }
 
 
-
 /*function ValidarCorreo (e){
 
     if (expr.test(e.target.value)){

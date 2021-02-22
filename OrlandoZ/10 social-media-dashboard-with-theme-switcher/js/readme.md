@@ -1,2 +1,3 @@
-2 avance. modo dark casi completo
-Pendiente modo light por realizar
+3 avance. modo dark completo
+ Modo Light completo
+ PDTE Resposive el cuale esta al 80%

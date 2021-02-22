@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title>6 Exercise</title>
 </head>
 <body>
+    <div class="contenido">
     <div class="izquierda">
         <h1 id="titulo">Learn to code by
             watching others
@@ -19,20 +20,29 @@
         </p>
     </div>
 <div class="derecha">
-<div class="try">
-    <p id="try"><b>Try it free 7 days </b> then $20/mo. thereafter</p>
+<div class="try efecto">
+    <button type="submit" id="try"><b>Try it free 7 days </b> then $20/mo. thereafter</button>
 </div>
 <div class="formulario">
-    <form>
-        <input id="input" placeholder="First Name" type="text">
-        <input id="input" placeholder="Last Name" type="text">
-        <input id="input" placeholder="Email Address" type="text">
-        <input id="input" placeholder="Password" type="password">
-        <button id="submit" type="submit">CLAIM YOUR FREE TRIAL</button>
+    <form id="form">
+        <input id="primero" class="input error success" placeholder="First Name" type="text">
+        <svg class="icono name primero" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <span class="name primero">First Name cannot be empty</span>
+        <input id="segundo" class="input error success" placeholder="Last Name" type="text">
+        <svg class="icono Last segundo" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <span class="Last segundo">Last Name cannot be empty</span>
+        <input id="tercero" class="input error success" placeholder="Email Address" type="text">
+        <svg class="icono email tercero" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <span class="email tercero">Email cannot be empty</span>
+        <input id="cuarto" class="input error success" placeholder="Password" type="password">
+        <svg class="icono password cuarto" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <span class="password cuarto">Password cannot be empty</span>
+        <button id="submit" class="efecto" type="submit">CLAIM YOUR FREE TRIAL</button>
         <p id="terminos">By clicking the button, you are greeing to our <b id="red">Terms and Services</b></p>   
     </form>
 </div>
 </div>
-
+</div>
+<script src="main.js"></script>
 </body>
 </html>

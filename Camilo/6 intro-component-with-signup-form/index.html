@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Intro-component-with-signup-form</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <main class="Container">
+        <section class="text">
+            <div class="info">
+                <h1>Learn to code by <br> watching others</h1>
+                <p>See how experienced developers solve problems in real-time Watching scripted tutorials is great, but
+                    understanding how developers think is invaluable. </p>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="promotion">
+                <p>
+                    <strong>
+                        Try it free 7 days
+                    </strong>
+                    then $20/mo. thereafter
+                </p>
+            </div>
+            <form>
+                <div class="controls">
+                    <div class="input-group">
+                        <input type="text" placeholder="First Name" id="firstName" onfocusout="FirstName()">
+                        <p id="messageErrorFirst" class="d-none"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Last Name" id="lastName" onfocusout="LastName()">
+                        <p id="messageErrorLast" class="d-none"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Email Address" id="emailAddress" onfocusout="Email()">
+                        <p id="messageErrorEmail" class="d-none"></p>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" id="pass" onfocusout="Pass()">
+                        <p id="messageErrorPass" class="d-none"></p>
+                    </div>
+                    <div class="footer-form">
+                        <div id="btnSubmit">CLAIM YOUR FREE TRIAL</div>
+                        <p>
+                            By clicking the button, you are agreeing to our
+                            <strong> Terms and Services </strong>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>

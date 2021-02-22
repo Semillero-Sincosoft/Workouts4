@@ -41,12 +41,16 @@ p#parrafo{
     margin-top: 15%;
     margin-left: 15%;
     width: 75%;
+    height: 50px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 5px 5px grey;
+    transition: 0.6s ease;
 }
-p#try{
+button#try{
+    background: transparent;
+    border: none;
     font-family: Poppins normal;
     color: #fff;
     font-size:13px;
@@ -58,7 +62,7 @@ p#try{
     margin-top: 5%;
     background: #fff;
     width: 75%;
-    height: 425px;
+    height: auto;
 }
 button#submit{
     background: hsl(154, 59%, 51%);
@@ -73,14 +77,31 @@ button#submit{
     margin-left: 9%;
     transition: 0.6s ease;
 }
-#submit:hover{
+.error{
+border-color:hsl(0, 100%, 74%);
+}
+.success{
+border-color: yellowgreen;
+}
+svg{
+    margin-bottom: -5px;
+    margin-left: -40px;
+    display: none;
+}
+span{
+    font-family:Poppins normal;
+    color:#FF7A7A;
+    float: right;
+    display:none;
+}
+.efecto:hover{
     transform: scale(1.1);
 }
 ::placeholder{
     font-family: Poppins bold;
     color: #625F5F;
 }
-input#input{
+.input{
     padding-left:20px;
     outline-color:hsl(248, 32%, 49%);
     width: 80%;

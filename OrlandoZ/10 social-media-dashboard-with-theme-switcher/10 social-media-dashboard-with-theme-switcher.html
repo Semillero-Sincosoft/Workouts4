@@ -7,67 +7,122 @@
     <link rel="stylesheet" href="css/style10.css">
     <title>10 social-media-dashboard-with-theme-switcher</title>
 </head>
-<body>
+<body class="lightmode">
         <header>
-            <h1>Social Media Dashboard</h1>
-            <h3>Dark Mode</h3>
-            <div class="mode">   
-                <div class="elipse"></div>
-            </div>
-            <h4>Total Followers: 23.004</h4>
+            
+                <h1 id="title"></h1>
+                <h3 id="subt"></h3>
+            
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            
+            <h4 id="Cant" ></h4>
 
         </header>
     
     
         <section class="followers">
-                <div class="marco1"></div>
-                <div class="marco1"></div>
-                <div class="marco1"></div>
-                <div class="marco1"></div>
+                <div class="marco1 ">
+
+                    <div class="lineaF"></div>
+                    <img src="img/logo-facebook.svg" alt="logo-facebook">
+                    <span>@nathanf</span>
+                    <h2>1987</h2>
+                    <h3>FOLLOWERS</h3>
+                </div>
+                <div class="marco1">
+                    <div class="lineaT"></div>
+                    <img src="img/logo-twitter.svg" alt="logo-twitter">
+                    <span>@nathanf</span>
+                    <h2>1044</h2>
+                    <h3>FOLLOWERS</h3>
+                </div>
+                <div class="marco1">
+                    <div class="lineaI"></div>
+                    <img src="img/logo-instagram.svg" alt="logo-instagram">
+                    <span>@realnathanf</span>
+                    <h2>11K</h2>
+                    <h3>FOLLOWERS</h3>
+                </div>
+                <div class="marco1">
+                    <div class="lineaY"></div>
+                    <img src="img/logo-youtube.svg" alt="logo-twitter">
+                    <span>Nathan F.</span>
+                    <h2>8239</h2>
+                    <h3>FOLLOWERS</h3>
+                </div>
         </section>  
 
-        <section class="facebook">
+        <h1>Overview - Today</h1>
+    <main> 
+        
+        
+        <section class="facebook ">
                 <div class="marco2">
-
+                        <span>Page Views</span>
+                        <img src="img/logo-facebook.svg" alt="logo-facebook">
+                    
+                    
+                    <h4>87</h4>
                 </div>
 
                 <div class="marco2">
-
+                    <span>Likes</span>
+                    <img src="img/logo-facebook.svg" alt="logo-facebook">
+                    <h4>52</h4>
                 </div>
 
         </section>
 
         <section class="twitter">
                 <div class="marco2">
+                        <span>Page Views</span>
+                        <img src="img/logo-twitter.svg" alt="logo-twitter">
 
+                   
+                    <h4>117</h4>
                 </div>
             
                 <div class="marco2">
-
+                    <span>Likes</span>
+                    <img src="img/logo-twitter.svg" alt="logo-twitter">
+                    <h4>507</h4>
                 </div>
         </section>
 
         <section class="instagram">
+     
                 <div class="marco2">
-
+                    <span>Likes</span>
+                    <img src="img/logo-instagram.svg" alt="logo-instagram">
+                    <h4>5462</h4>
                 </div>
 
                 <div class="marco2">
-
+                    <span>Likes</span>
+                    <img src="img/logo-instagram.svg" alt="logo-instagram">
+                    <h4>52k</h4>
                 </div>
             
         </section>
-
+    
         <section class="youtube">
                 <div class="marco2">
-
+                    <span>Likes</span>
+                    <img src="img/logo-youtube.svg" alt="logo-youtube">
+                    <h4>107</h4>
                 </div>
 
                 <div class="marco2">
-
+                    <span>Likes</span>
+                    <img src="img/logo-youtube.svg" alt="logo-youtube">
+                    <h4>1407</h4>
                 </div>
         </section>
+    </main>    
         
-        
+    <script src="js/js10.js"></script>
 </body>
 </html>

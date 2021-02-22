@@ -1,0 +1,212 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+    position: absolute;
+    margin: 0;
+    background: #FF7A7A;
+    background-image: url("../img/bg-intro-desktop.png");
+     /* Do not repeat the image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  main{
+      width: 75%;
+      height: 75%;
+      display: flex;
+margin-bottom: 40px;  
+  }
+  .text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      
+  }
+  .title{
+      font-size: 3em;
+      margin-bottom: 30px;
+      position: relative;
+      animation: text 3s 1;
+      
+  }
+  @keyframes text{
+      0%{
+          font-size: 2em;
+          margin-bottom: -40%;
+      }
+      45%{
+        width: 80%;
+          letter-spacing: 10px;
+        
+      }
+      65%{
+        width: 80%;
+          font-size: 2em;
+          letter-spacing: 5px;
+          margin-bottom: -20px;
+      }
+  }
+  .pTitle{
+      margin-top: 0;
+      width: 80%;
+      line-height: 20pt;
+      animation: maquina 5s  alternate steps(5);
+  }
+  
+  .sectionForm{
+      width: 90%;
+  }
+  .containerAbove{
+      width: 100%;
+      height: 70px;
+      background-color: #5D54A3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.17);
+  }
+  .textContainer{
+      font-size: 1em;
+      text-align: center;
+  }
+  form{
+      background-color: #ffffff;
+      width: 100%;
+     padding-top: 30px;
+     padding-bottom: 30px;
+      margin-top: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  .inputs{
+
+    margin-bottom: 0;
+    width: 100%;
+    height: 90px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input{
+      width: 80%;
+      margin-top: 10px ;
+      padding: 18px;
+      border-radius: 5px;
+      border: 1px solid #DFDFDF;
+      margin-bottom: 0%;
+  }
+  .inputAlert{
+    border: 1px solid #D18D8C;
+    outline: 4px dotted #F96464;
+  }
+
+  
+  .icono{
+      position: relative;
+      right: -35%; 
+  top: -39px;
+
+  }
+  .alerta{
+      display: none;
+  }
+  .a{
+    display: none;
+  }
+  .spanAlert{
+      color: #D18D8C;
+      position: relative;
+      top: -20px;
+      font-size: 0.8em;
+      width: 87%;
+      text-align: right;
+      display: none;
+   
+      
+  }
+  ::-webkit-input-placeholder {
+      font-weight: bold;
+      
+  }
+  .button{
+      width: 87%;
+      padding: 18px;
+      background-color: #37CC8A;
+      color: #CBFFF3;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 4px 2px #55AB86;
+      outline: none;
+  }
+  .button:hover{
+      
+      background-color: #77E2B4;
+  }
+  .notification{
+      margin-top: 10px;
+      color: #BFBDC8;
+      font-size: .8vw;
+  }
+  .notificationRed{
+      color: #D88C8C;
+  }
+  @media screen and (max-width: 650px) {
+      body{
+        background-image: url("../img/bg-intro-mobile.png");
+      }
+      main{
+          flex-direction: column;
+          width: 100%;
+      height: 90%;
+      }
+      .title{
+        font-size: 2em;
+        margin-bottom: 10px;
+        
+    }
+    .pTitle{
+        margin-top: 0;
+        width: 90%;
+        font-size: 1.2em;
+        line-height: 25pt;
+    }
+    .text{
+        align-items: center;
+        text-align: center;
+    }
+    .sectionForm{
+        width: 90%;
+      margin: auto;
+      
+    }
+    form{
+        margin-bottom: 50px;
+    }
+    .textContainer{
+        text-align: center;
+        font-size: 3.8vw;
+        width: 50%;
+    }
+     .containerAbove{
+        height: 80px;
+     }
+     .notification{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.8em;
+        width: 75%;
+    }
+  }
+ 
+ 

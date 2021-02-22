@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Poppins normal";
+    src: url("Poppins/Poppins-Light.ttf");
+  }
+  @font-face {
+    font-family: "Poppins bold";
+    src: url("Poppins/Poppins-Bold.ttf");
+  }
+  @font-face{
+      font-family: "Open bold";
+      src: url("Open-Sans/OpenSans-Bold.ttf");
+  }
+  @font-face{
+      font-family: "Open normal";
+      src: url("Open-Sans/OpenSans-Light.ttf");
+  }
+  .logo{
+      background-color: transparent;
+      width: 10% ;
+      height: 20%;
+      margin-left: 5%;
+      margin-top: 2%;
+      margin-bottom: 5%;
+  }
+.primera-parte{
+background: url(img/bg-hero-desktop.svg);
+background-color: hsl(193, 100%, 96%);
+}
+h1#build{
+    font-family: Poppins bold;
+    width: 28%;
+    margin-left: 5%;
+}
+p#huddle{
+    margin-left: 5%;
+    font-family: Poppins normal;
+    width: 35%;
+    height: 10%;
+}

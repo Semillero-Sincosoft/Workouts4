@@ -4,6 +4,7 @@ body{
     padding: 0 20px;
     margin: 0;
     color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 #subt{
@@ -13,8 +14,6 @@ body{
     width: 150px;
     left: 150px;
     color: #FFFFFF;
-
-
 }
 
 .mode{
@@ -24,7 +23,6 @@ body{
     height: auto;
     width: 200px;
     left: 70%; 
-    right: 5%;
     top: -80px;
 }
 
@@ -178,7 +176,7 @@ span{
   position: relative;
   width: 80%;
   height: 25px;
-  left: 80%;
+  left: 75%;
 
   padding: 2px;
   box-sizing: content-box;
@@ -281,6 +279,14 @@ input:checked + .slider:before {
     background: hsl(230, 22%, 74%);
 }
 
+.lightmode .marco1:hover{
+    background-color:  hsl(226, 22%, 80%); 
+}
+
+.lightmode .marco2:hover{
+    background-color: hsl(226, 22%, 80%); 
+}
+
 @media(max-width: 710px){
 
     h2{
@@ -357,9 +363,18 @@ input:checked + .slider:before {
     }
 
     .mode{
-        width: 200px;
-        margin-left: 5px; 
-        right: 0;
-        top: -80px;
+
+        width: 50%;
+        left: 0px; 
+        top: auto;
     }
+
+    #subt{
+        left: 2px;
+        top: auto;
+        margin: 0;
+        width: 110px;
+        font-size: 14px;
+    }
+
 }

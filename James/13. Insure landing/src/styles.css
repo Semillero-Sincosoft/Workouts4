@@ -49,12 +49,14 @@
     right: 35%;
     top: 40px;
     color: var(--grayBlue);
+    margin-right: 10px;
   }
   li.option2 {
     position: absolute;
     right: 30%;
     top: 40px;
     color: var(--grayBlue);
+    margin-right: 10px;
   }
   li.option3 {
     position: absolute;

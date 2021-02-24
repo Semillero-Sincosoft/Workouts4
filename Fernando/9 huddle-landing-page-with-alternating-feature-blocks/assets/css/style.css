@@ -2,24 +2,29 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Poppins';
-    position: absolute;
-    margin: 0;
   
+    margin: 0;
+
   }
 header{
     margin: 0%;
     width: 100%;
-    position: absolute;
+    padding-top: 4%;
+  
     background-image: url("../img/bg-hero-desktop.svg");
     background-color: #EDFBFE;
-    height: 718px;
+    height: auto;
+    padding-bottom: 5%;
     
 }
 nav{
     display: flex;
     width: 90%;
-    margin:49px 5%;
-    justify-content: space-between;    
+ 
+   margin-left: 5%;
+    justify-content: space-between;   
+
+    
 }
 .logo{
     height: 32px;
@@ -33,6 +38,7 @@ nav{
     background-color: #ffffff;
     border:none;
     font-weight: bold;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .containerHeader{
     width: 90%;
@@ -42,17 +48,22 @@ nav{
 }
 .mockups{
     width: 49%;
+    height: 500px;
 }
 .left{
-    margin-top: 50px;
+    margin-top: 5%;
+ 
 }
 .titleHeader{
     font-size: 2.5em;
     width: 75%;
+    margin-block-start: 1%;
+    margin-block-end: 1%;
 }
 .textHeader{
     font-size: 1.2rem;
     width: 83%;
+    margin-bottom: 0;
 }
 .buttonHeader{
     width: 45%;
@@ -60,28 +71,183 @@ nav{
     height: 55px;
     border-radius: 25px;
     border:none;
-    margin-top: 18px;
+    margin-top: 4%;
+    margin-bottom: 5%;
     color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media screen and (max-width: 600px) {
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    margin-top: 150px;
+}
+.sectionMain{
+    width: 88%;
+    height: 390px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+border-radius: 17px;
+display: flex;
+padding-top: 50px;
+
+}
+.imgSection{
+    width: 90%;
+    height: 330px;
+}
+.leftSection{
+    margin-left: 10%;
+}
+.rightSection{
+    margin-right: 0%;
+}
+.titleSection{
+    font-size: 30px;
+    margin-top: 13%;
+    margin-bottom: 0;
+}
+.textSection{
+    font-size: 18px;
+    width: 80%;
+    color: #9FA3A6;
+}
+.second{
+    
+    margin-right: 1%;
+    margin-left: 10%;
+}
+.text2{
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
     header{
         
-        position: absolute;
+       padding-top: 10px;
         background-image: url("../img/bg-hero-mobile.svg");
         background-size: cover;
         background-color: #EDFBFE;
-        height: 859px;
+        padding-bottom: 70%;
         width: 100%;
-        
+        background-size: 100% 600px;
+        background-repeat: no-repeat;
+        background-position: 0px 150px;
     }
     .logo{
-        height: 32px;
-width: 50%;
-        margin-top: 4px;
+        height: 25px;
+width: 35%;
+
+    }
+    nav{
+      
+        margin:29px 5%;
+           
     }
     .containerHeader{
-         
-   
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        
+    
     }
+    .left{
+        flex-direction: column;
+        display: flex;
+       margin-top: 35px;
+        align-items: center;
+    }
+    .titleHeader{
+        margin-top: 0;
+        font-size: 30px;
+        width: 90%;
+        text-align: center;
+        
+    }
+    .textHeader{
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+        margin-block-start: 0em;
+    margin-block-end: 0.5em;
+    }
+    .buttonHeader{
+        width: 70%; 
+        height: 50px;
+        
+    }
+    .mockups{
+        width: 85%;
+        margin:80px auto;
+    }
+    main{
+        
+        margin-top: 80px;
+    }
+    .sectionMain{
+       
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 0px;
+    align-items: center;
+    padding-bottom: 40px;
+    
+    }
+    .imgSection{
+        width: 70%;
+        height: 235px;
+    }
+    .leftSection{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+       
+    }
+    .rightSection{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titleSection{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .textSection{
+        font-size: 15px;
+        width: 85%;
+        color: #9FA3A6;
+        text-align: center;  
+    }
+    .sectionSecond{
+        display: flex;
+        flex-direction: column;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 0;
+        
+    }
+    .sectionResponsive{
+        margin-top: 50px;
+    }
+    .text2{
+        width: 82%;
+    }
+    .text3{
+        width: 77%;
+    }
+    
 
 }
